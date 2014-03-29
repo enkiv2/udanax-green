@@ -1,0 +1,68 @@
+corediskout.c:			deletefullcrumandgarbageddescendents(olddiskptr,TRUE,(typediskloaf*)NULL,olddiskptr/*olddiskptr is just a place holder*/);
+corediskout.c:			deletefullcrumandgarbageddescendents(olddiskptr,FALSE
+corediskout.c:void deletefullcrumandgarbageddescendents( typediskloafptr diskptr, bool deletefullcrumflag, typediskloaf *loafp, typediskloafptr newdiskptr)/*function_definition*/
+corediskout.c:	deletewithgarbageddescendents(diskptr, (typecuc*)tempcbc, deletefullcrumflag);
+corediskout.c:void deletewithgarbageddescendents( typediskloafptr diskptr, typecuc *  father, bool deletefullcrumflag)/*function_definition*/
+corediskout.c:		   if (ptr->height >0) deletewithgarbageddescendents(((typecuc *)ptr)->sonorigin,(typecuc*)ptr,TRUE);
+corediskout.c:		deletefullcrumandgarbageddescendents (((typecbc *)father)->cinfo.granstuff.orglstuff.diskorglptr,TRUE,/*ECH 8-28-88ignoreddiskptr,*/(typediskloaf*)NULL,ignoreddiskptr);
+credel.c:		if (grimreaper->age == RESERVED) {
+credel.c:		grimreaper->age++;
+credel.c:	if(localreaper ->age < OLD || localreaper-> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){	
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if (ptr->age == RESERVED) {
+credel.c:	if (ptr->age == RESERVED) {
+credel.c:	ptr->age = NEW;
+credel.c:	if (ptr->age != RESERVED) {
+credel.c:	ptr->age = RESERVED;
+credel.c:		if (ptr->age == RESERVED) {
+credel.c:	if (ptr->age == RESERVED)
+credel.c:	ptr->age = NEW;
+disk.c:warning (message)
+disk.c:  char *message;
+disk.c:	fprintf (stderr, "Warning: %s",message);
+genf.c:  INT oldage;
+genf.c:	oldage = ptr->age;
+genf.c:		if (oldage != RESERVED) /* zzz experimental zz */
+genf.c:qerror (message)
+genf.c:  char *message;
+genf.c:	fprintf (stderr, "Error: %s\n",message);
+genf.c:nferror(message)
+genf.c: char *message;
+genf.c:	fprintf(stderr," Non Fatal Error %s\n",message);
+recombine.c:                if (ptr->age == RESERVED)
+recombine.c:                if (ptr->age == RESERVED)
+recombine.c:        if (dest->age == RESERVED || src->age == RESERVED)
+split.c:  INT ofatherage,optrage;
+split.c:	ofatherage = father->age;
+split.c:	optrage = ptr->age;
+split.c:	father->age = NEW;
+split.c:	ptr->age = NEW;
+split.c:	if (ofatherage == RESERVED){
+split.c:		father->age = RESERVED;
+split.c:	if (optrage == RESERVED){
+split.c:		ptr->age = RESERVED;
+test.c:		if(ptr->age == RESERVED){
+test.c:        fprintf(stderr," age = %x ",ptr -> age);
+test.c:checkenftypes (father, message)
+test.c:  char *message;
+test.c:                fputs(stderr,message);
+test.c:                        fputs(stderr,message);
+test.c:                        fputs(stderr,message);
+test.c:                        fputs(stderr,message);
+test.c:                checkenftypes (ptr, message);
+common.h:corediskout.c: In function `deletefullcrumandgarbageddescendents':
+common.h:#define rejuvinateifnotRESERVED(x) (((x)->age==RESERVED)?(int)(x):((x)->age = NEW))
+common.h:#define rejuvinate(x) ((x)->age==RESERVED)?(reservnumber?--reservnumber:testforrejuvinate(x)):0,(x)->age = NEW
+coredisk.h:                /* disk garbage collecting */
+enf.h:        /*SINT*/unsigned char age;         /* for deciding to grimly reap */
+enf.h:        /*SINT*/unsigned char age;         /* for deciding to grimly reap */
+enf.h:        /*SINT*/unsigned char age;         /* for deciding to grimly reap */
+enf.h:        /*SINT*/unsigned char age;         /* for deciding to grimly reap */
+functiondefinitions.h:void deletefullcrumandgarbageddescendents( typediskloafptr diskptr, bool deletefullcrumflag, typediskloaf *loafp, typediskloafptr newdiskptr)/*function_definition*/;
+functiondefinitions.h:void deletewithgarbageddescendents( typediskloafptr diskptr, typecuc *  father, bool deletefullcrumflag)/*function_definition*/;
+reap.h: /* age values */
+reap.h:#define OLD 1           /* set this as you wish, age */

@@ -1,0 +1,13 @@
+void inloaf ( typecuc *father)/*function_definition*/;
+void inorgl ( typecbc *granorglptr)/*function_definition*/;
+void inorglinternal ( typecbc *granorglptr, typeuberrawdiskloaf *crumptr)/*function_definition*/;
+void hgetinfo(typecbc *ptr, char **loafptrptr)/*this assumes ptr crum is ok except for info*//*function_definition*/;
+void diskexit()/*function_definition*/;
+void diskflush ()/*function_definition*/ ;
+void writeenfilades()/*function_definition*/;
+void hputinfo( typecbc *ptr, char **loafptrptr)/*function_definition*/;
+void orglwrite ( typecbc *orglcbcptr)/*function_definition*/;
+void deletefullcrumandgarbageddescendents( typediskloafptr diskptr, bool deletefullcrumflag, typediskloaf *loafp, typediskloafptr newdiskptr)/*function_definition*/;
+void deletewithgarbageddescendents( typediskloafptr diskptr, typecuc *  father, bool deletefullcrumflag)/*function_definition*/;
+void subtreewrite ( typecuc *father)/*function_definition*/;
+void checkmodifiednotthere( typecuc *father, char *string)/*function_definition*/;

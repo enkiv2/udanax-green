@@ -1,0 +1,2275 @@
+cc                          -pg -ggdb -Wall -c  alloc.c
+In file included from alloc.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+alloc.c:28: warning: return type defaults to 'int'
+alloc.c: In function 'lookatalloc':
+alloc.c:29: warning: implicit declaration of function 'lookatalloc2'
+alloc.c:30: warning: control reaches end of non-void function
+alloc.c: In function 'checkalloc':
+alloc.c:49: warning: implicit declaration of function 'validallocthinge'
+alloc.c:51: warning: format '%x' expects type 'unsigned int', but argument 3 has type 'union HEADER *'
+alloc.c:51: warning: format '%x' expects type 'unsigned int', but argument 4 has type 'char *'
+alloc.c:51: warning: format '%x' expects type 'unsigned int', but argument 5 has type 'char *'
+alloc.c:52: warning: implicit declaration of function 'statusofalloc'
+alloc.c:53: warning: implicit declaration of function 'qerror'
+alloc.c: At top level:
+alloc.c:64: warning: return type defaults to 'int'
+alloc.c: In function 'checkallocedptr':
+alloc.c:72: warning: control reaches end of non-void function
+alloc.c: In function 'validallocthinge':
+alloc.c:77: warning: unused variable 'p'
+alloc.c: In function 'weresurethatthisisourmorecore':
+alloc.c:163: warning: cast from pointer to integer of different size
+alloc.c:180: warning: implicit declaration of function 'ffree'
+alloc.c: At top level:
+alloc.c:186: warning: return type defaults to 'int'
+alloc.c: In function 'ffree':
+alloc.c:226: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  allocdebug.c
+In file included from xanadu.h:11,
+                 from allocdebug.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+allocdebug.c:14: warning: return type defaults to 'int'
+allocdebug.c: In function 'lookatalloc2':
+allocdebug.c:34: warning: control reaches end of non-void function
+allocdebug.c: At top level:
+allocdebug.c:37: warning: return type defaults to 'int'
+allocdebug.c: In function 'analyzeanddebug':
+allocdebug.c:128: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  bert.c
+In file included from xanadu.h:11,
+                 from bert.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+bert.c: In function 'checkforopen':
+bert.c:66: warning: implicit declaration of function 'hashoftumbler'
+bert.c: At top level:
+bert.c:95: warning: return type defaults to 'int'
+bert.c: In function 'logbertmodifiedforcrum':
+bert.c:99: warning: control reaches end of non-void function
+bert.c: At top level:
+bert.c:103: warning: return type defaults to 'int'
+bert.c: In function 'logbertmodified':
+bert.c:116: warning: control reaches end of non-void function
+bert.c: At top level:
+bert.c:120: warning: return type defaults to 'int'
+bert.c: In function 'incrementopen':
+bert.c:134: warning: control reaches end of non-void function
+bert.c: At top level:
+bert.c:138: warning: return type defaults to 'int'
+bert.c: In function 'addtoopen':
+bert.c:152: warning: implicit declaration of function 'qerror'
+bert.c:153: warning: implicit declaration of function 'tumblercopy'
+bert.c:164: warning: control reaches end of non-void function
+bert.c: In function 'removefromopen':
+bert.c:190: warning: implicit declaration of function 'deleteversion'
+bert.c: At top level:
+bert.c:211: warning: return type defaults to 'int'
+bert.c: In function 'exitbert':
+bert.c:247: warning: control reaches end of non-void function
+bert.c: At top level:
+bert.c:355: warning: return type defaults to 'int'
+bert.c: In function 'dobertexit':
+bert.c:361: warning: control reaches end of non-void function
+bert.c: At top level:
+bert.c:365: warning: return type defaults to 'int'
+bert.c: In function 'deleteversion':
+bert.c:370: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  context.c
+In file included from xanadu.h:11,
+                 from context.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+context.c: In function 'createcontext':
+context.c:25: warning: implicit declaration of function 'memset'
+context.c:25: warning: incompatible implicit declaration of built-in function 'memset'
+context.c:29: warning: incompatible implicit declaration of built-in function 'memset'
+context.c: At top level:
+context.c:37: warning: return type defaults to 'int'
+context.c: In function 'contextfree':
+context.c:51: warning: control reaches end of non-void function
+context.c: In function 'createcrumcontext':
+context.c:65: warning: implicit declaration of function 'memmove'
+context.c:65: warning: incompatible implicit declaration of built-in function 'memmove'
+context.c: At top level:
+context.c:71: warning: return type defaults to 'int'
+context.c: In function 'crumcontextfree':
+context.c:76: warning: implicit declaration of function 'testforrejuvinate'
+context.c:79: warning: control reaches end of non-void function
+context.c: At top level:
+context.c:83: warning: return type defaults to 'int'
+context.c: In function 'incontextlistnd':
+context.c:90: warning: implicit declaration of function 'prologuecontextnd'
+context.c:100: warning: implicit declaration of function 'whereoncontext'
+context.c:121: warning: control reaches end of non-void function
+context.c: At top level:
+context.c:124: warning: return type defaults to 'int'
+context.c: In function 'oncontextlistseq':
+context.c:135: warning: control reaches end of non-void function
+context.c: In function 'whereoncontext':
+context.c:147: warning: implicit declaration of function 'functiontumbleradd'
+context.c:161: warning: implicit declaration of function 'qerror'
+context.c: In function 'makecontextfromcbc':
+context.c:179: warning: incompatible implicit declaration of built-in function 'memmove'
+context.c:186: warning: implicit declaration of function 'dspadd'
+context.c: At top level:
+context.c:196: warning: return type defaults to 'int'
+context.c: In function 'context2span':
+context.c:216: warning: implicit declaration of function 'tumblerincrement'
+context.c:216: warning: implicit declaration of function 'tumblerintdiff'
+context.c:229: warning: implicit declaration of function 'tumblersub'
+context.c:231: warning: implicit declaration of function 'index2itemid'
+context.c:234: warning: control reaches end of non-void function
+context.c: At top level:
+context.c:239: warning: return type defaults to 'int'
+context.c: In function 'prologuecontextnd':
+context.c:242: warning: incompatible implicit declaration of built-in function 'memmove'
+context.c:245: warning: control reaches end of non-void function
+context.c: In function 'context2vstuff':
+context.c:292: warning: implicit declaration of function 'context2vtext'
+context.c: At top level:
+context.c:310: warning: return type defaults to 'int'
+context.c: In function 'context2vtext':
+context.c:343: warning: incompatible implicit declaration of built-in function 'memmove'
+context.c:344: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  corediskin.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from corediskin.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+corediskin.c:13: warning: type defaults to 'int' in declaration of 'hgetwiddsp'
+corediskin.c:14: warning: type defaults to 'int' in declaration of 'varunpackloaf'
+corediskin.c:46: warning: return type defaults to 'int'
+corediskin.c:57: warning: return type defaults to 'int'
+corediskin.c: In function 'varunpackloaf':
+corediskin.c:73: warning: implicit declaration of function 'qerror'
+corediskin.c:79: warning: implicit declaration of function 'functionintof'
+corediskin.c:79: warning: implicit declaration of function 'functionlengthof'
+corediskin.c:121: warning: implicit declaration of function 'adopt'
+corediskin.c:153: warning: control reaches end of non-void function
+corediskin.c: In function 'inorglinternal':
+corediskin.c:230: warning: implicit declaration of function 'testforrejuvinate'
+corediskin.c: At top level:
+corediskin.c:237: warning: return type defaults to 'int'
+corediskin.c: In function 'hgetwiddsp':
+corediskin.c:246: warning: implicit declaration of function 'tumblerptrtofixed'
+corediskin.c:254: warning: control reaches end of non-void function
+corediskin.c: In function 'hgetinfo':
+corediskin.c:265: warning: implicit declaration of function 'memmove'
+corediskin.c:265: warning: incompatible implicit declaration of built-in function 'memmove'
+cc                          -pg -ggdb -Wall -c  corediskout.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from corediskout.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+corediskout.c: In function 'indiskexit':
+corediskout.c:31: warning: 'return' with a value, in function returning void
+corediskout.c:35: warning: implicit declaration of function 'closediskfile'
+corediskout.c:42: warning: implicit declaration of function 'exit'
+corediskout.c:42: warning: incompatible implicit declaration of built-in function 'exit'
+corediskout.c: At top level:
+corediskout.c:90: warning: return type defaults to 'int'
+corediskout.c: In function 'hputwiddsp':
+corediskout.c:101: warning: implicit declaration of function 'tumblerfixedtoptr'
+corediskout.c:109: warning: control reaches end of non-void function
+corediskout.c: In function 'varpackloaf':
+corediskout.c:143: warning: implicit declaration of function 'qerror'
+corediskout.c:193: warning: cast from pointer to integer of different size
+corediskout.c:193: warning: cast from pointer to integer of different size
+corediskout.c:222: warning: cast from pointer to integer of different size
+corediskout.c:222: warning: cast from pointer to integer of different size
+corediskout.c: In function 'hputinfo':
+corediskout.c:243: warning: implicit declaration of function 'memmove'
+corediskout.c:243: warning: incompatible implicit declaration of built-in function 'memmove'
+corediskout.c: In function 'orglwritepart2':
+corediskout.c:326: warning: implicit declaration of function 'changerefcount'
+corediskout.c:341: warning: implicit declaration of function 'testforrejuvinate'
+corediskout.c:344: warning: 'return' with a value, in function returning void
+corediskout.c: In function 'orglwrite':
+corediskout.c:359: warning: implicit declaration of function 'inittask'
+corediskout.c:361: warning: implicit declaration of function 'tfree'
+corediskout.c: In function 'deletefullcrumandgarbageddescendents':
+corediskout.c:370: warning: 'return' with a value, in function returning void
+corediskout.c:385: warning: implicit declaration of function 'diskset'
+corediskout.c: In function 'uniqueoutloaf':
+corediskout.c:550: warning: implicit declaration of function 'addallocatedloaftopartialallocedtables'
+cc                          -pg -ggdb -Wall -c  correspond.c
+In file included from xanadu.h:11,
+                 from correspond.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+correspond.c:15: warning: return type defaults to 'int'
+correspond.c: In function 'restrictspecsetsaccordingtoispans':
+correspond.c:26: warning: implicit declaration of function 'restrictvspecsetovercommonispans'
+correspond.c:28: warning: implicit declaration of function 'removespansnotinoriginal'
+correspond.c:29: warning: implicit declaration of function 'tfreeitemset'
+correspond.c:40: warning: control reaches end of non-void function
+correspond.c: At top level:
+correspond.c:43: warning: return type defaults to 'int'
+correspond.c: In function 'restrictvspecsetovercommonispans':
+correspond.c:65: warning: implicit declaration of function 'qerror'
+correspond.c:84: warning: control reaches end of non-void function
+correspond.c: At top level:
+correspond.c:87: warning: return type defaults to 'int'
+correspond.c: In function 'removespansnotinoriginal':
+correspond.c:132: warning: control reaches end of non-void function
+correspond.c: In function 'comparespans':
+correspond.c:194: warning: implicit declaration of function 'tfreeexplicit'
+correspond.c: In function 'spanintersection':
+correspond.c:208: warning: implicit declaration of function 'functiontumbleradd'
+correspond.c:235: warning: implicit declaration of function 'tumblersub'
+correspond.c: At top level:
+correspond.c:260: warning: return type defaults to 'int'
+correspond.c: In function 'makespanpairset':
+correspond.c:277: warning: implicit declaration of function 'makespanpairsforispan'
+correspond.c:285: warning: control reaches end of non-void function
+correspond.c: At top level:
+correspond.c:288: warning: return type defaults to 'int'
+correspond.c: In function 'makespanpairsforispan':
+correspond.c:351: warning: control reaches end of non-void function
+correspond.c: In function 'makespanpair':
+correspond.c:364: warning: implicit declaration of function 'docidandvstream2tumbler'
+cc                          -pg -ggdb -Wall -c  credel.c
+In file included from credel.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+credel.c: In function 'ealloc':
+credel.c:76: warning: implicit declaration of function 'xgrabmorecore'
+credel.c:79: warning: implicit declaration of function 'grimlyreap'
+credel.c: In function 'efree':
+credel.c:95: warning: implicit declaration of function 'free'
+credel.c: At top level:
+credel.c:112: warning: return type defaults to 'int'
+credel.c: In function 'grimlyreap':
+credel.c:128: warning: implicit declaration of function 'qerror'
+credel.c:153: warning: implicit declaration of function 'reap'
+credel.c:167: warning: control reaches end of non-void function
+credel.c: In function 'isreapable':
+credel.c:243: warning: implicit declaration of function 'functionweakfindfather'
+credel.c:243: warning: cast to pointer from integer of different size
+credel.c: At top level:
+credel.c:301: warning: conflicting types for 'reap'
+credel.c:153: warning: previous implicit declaration of 'reap' was here
+credel.c: In function 'reap':
+credel.c:318: warning: implicit declaration of function 'orglwrite'
+credel.c:327: warning: cast to pointer from integer of different size
+credel.c:338: warning: implicit declaration of function 'subtreewrite'
+credel.c: At top level:
+credel.c:342: warning: return type defaults to 'int'
+credel.c: In function 'testforrejuvinate':
+credel.c:354: warning: control reaches end of non-void function
+credel.c: At top level:
+credel.c:358: warning: return type defaults to 'int'
+credel.c: In function 'funcrejuvinate':
+credel.c:372: warning: control reaches end of non-void function
+credel.c: In function 'testforreservedness':
+credel.c:406: warning: implicit declaration of function 'dump'
+credel.c: In function 'subtreefree':
+credel.c:442: warning: implicit declaration of function 'disown'
+credel.c: In function 'loaffree':
+credel.c:482: warning: implicit declaration of function 'disownnomodify'
+credel.c: In function 'createenf':
+credel.c:522: warning: implicit declaration of function 'adopt'
+credel.c:526: warning: implicit declaration of function 'ivemodified'
+credel.c: In function 'createcruminternal':
+credel.c:611: warning: implicit declaration of function 'memset'
+credel.c:611: warning: incompatible implicit declaration of built-in function 'memset'
+credel.c: At top level:
+credel.c:634: warning: return type defaults to 'int'
+credel.c: In function 'initqueues':
+credel.c:651: warning: control reaches end of non-void function
+credel.c: At top level:
+credel.c:653: warning: return type defaults to 'int'
+credel.c: In function 'dumptable':
+credel.c:662: warning: control reaches end of non-void function
+credel.c: At top level:
+credel.c:686: warning: return type defaults to 'int'
+credel.c: In function 'xgrabmorecore':
+credel.c:688: warning: implicit declaration of function 'sbrk'
+credel.c:688: warning: cast to pointer from integer of different size
+credel.c:693: warning: implicit declaration of function 'ffree'
+credel.c:695: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  disk.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from disk.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+disk.c: In function 'findnumberofdamnsons':
+disk.c:42: warning: implicit declaration of function 'qerror'
+disk.c:46: warning: implicit declaration of function 'functionintof'
+disk.c:46: warning: implicit declaration of function 'functionlengthof'
+disk.c: In function 'changerefcount':
+disk.c:73: warning: implicit declaration of function 'changeunterrefcount'
+disk.c:74: warning: implicit declaration of function 'numberofliveunterloafs'
+disk.c:78: warning: implicit declaration of function 'diskfree'
+disk.c: In function 'changeunterrefcount':
+disk.c:129: warning: implicit declaration of function 'memmove'
+disk.c:129: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c:132: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c:146: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c: In function 'readloaf':
+disk.c:174: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c: In function 'actuallyreadrawloaf':
+disk.c:196: warning: implicit declaration of function 'close'
+disk.c:202: warning: implicit declaration of function 'open'
+disk.c:213: warning: implicit declaration of function 'abort'
+disk.c:213: warning: incompatible implicit declaration of built-in function 'abort'
+disk.c:215: warning: implicit declaration of function 'lseek'
+disk.c:221: warning: implicit declaration of function 'read'
+disk.c: In function 'writeloaf':
+disk.c:278: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c:284: warning: incompatible implicit declaration of built-in function 'memmove'
+disk.c: In function 'actuallywriteloaf':
+disk.c:314: warning: implicit declaration of function 'write'
+disk.c: In function 'initenffile':
+disk.c:327: warning: type defaults to 'int' in declaration of 'times'
+disk.c:332: warning: implicit declaration of function 'initincorealloctables'
+disk.c:341: warning: implicit declaration of function 'initheader'
+disk.c:349: warning: implicit declaration of function 'writeallocinfo'
+disk.c: At top level:
+disk.c:356: warning: return type defaults to 'int'
+disk.c: In function 'closediskfile':
+disk.c:357: warning: implicit declaration of function 'diskallocexit'
+disk.c:362: warning: control reaches end of non-void function
+disk.c: At top level:
+disk.c:365: warning: return type defaults to 'int'
+disk.c: In function 'dieandclosefiles':
+disk.c:366: warning: incompatible implicit declaration of built-in function 'abort'
+disk.c: At top level:
+disk.c:370: warning: return type defaults to 'int'
+disk.c: In function 'warning':
+disk.c:373: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  diskalloc.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from diskalloc.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+diskalloc.c: In function 'diskalloc':
+diskalloc.c:39: warning: implicit declaration of function 'qerror'
+diskalloc.c: At top level:
+diskalloc.c:60: warning: return type defaults to 'int'
+diskalloc.c: In function 'diskfree':
+diskalloc.c:65: warning: 'return' with no value, in function returning non-void
+diskalloc.c: At top level:
+diskalloc.c:73: warning: return type defaults to 'int'
+diskalloc.c: In function 'diskset':
+diskalloc.c:78: warning: 'return' with no value, in function returning non-void
+diskalloc.c: In function 'readallocinfo':
+diskalloc.c:91: warning: implicit declaration of function 'lseek'
+diskalloc.c:95: warning: implicit declaration of function 'read'
+diskalloc.c:102: warning: implicit declaration of function 'initheader'
+diskalloc.c:106: warning: implicit declaration of function 'readpartialdiskalloctablefromdisk'
+diskalloc.c: At top level:
+diskalloc.c:112: warning: return type defaults to 'int'
+diskalloc.c: In function 'initheader':
+diskalloc.c:113: warning: implicit declaration of function 'setmem'
+diskalloc.c:114: warning: implicit declaration of function 'memset'
+diskalloc.c:114: warning: incompatible implicit declaration of built-in function 'memset'
+diskalloc.c:120: warning: implicit declaration of function 'initincorealloctables'
+diskalloc.c:121: warning: control reaches end of non-void function
+diskalloc.c: At top level:
+diskalloc.c:124: warning: return type defaults to 'int'
+diskalloc.c: In function 'diskallocexit':
+diskalloc.c:127: warning: implicit declaration of function 'savepartialdiskalloctabletodisk'
+diskalloc.c:128: warning: implicit declaration of function 'writeallocinfo'
+diskalloc.c:129: warning: control reaches end of non-void function
+diskalloc.c: At top level:
+diskalloc.c:132: warning: return type defaults to 'int'
+diskalloc.c: In function 'writeallocinfo':
+diskalloc.c:138: warning: implicit declaration of function 'write'
+diskalloc.c:142: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  do1.c
+In file included from xanadu.h:11,
+                 from do1.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+do1.c:112: warning: missing braces around initializer
+do1.c:112: warning: (near initialization for 'fivetumbler.mantissa')
+do1.c: In function 'doinsert':
+do1.c:148: warning: implicit declaration of function 'makehint'
+do1.c: At top level:
+do1.c:157: warning: return type defaults to 'int'
+do1.c: In function 'checkspecandstringbefore':
+do1.c:158: warning: 'return' with no value, in function returning non-void
+do1.c: At top level:
+do1.c:163: warning: return type defaults to 'int'
+do1.c: In function 'copyspecset':
+do1.c:169: warning: 'return' with no value, in function returning non-void
+do1.c:173: warning: implicit declaration of function 'copyspanset'
+do1.c: At top level:
+do1.c:179: warning: return type defaults to 'int'
+do1.c: In function 'copyspanset':
+do1.c:191: warning: control reaches end of non-void function
+do1.c: In function 'docreatenode_or_account':
+do1.c:312: warning: implicit declaration of function 'tumblercopy'
+do1.c: In function 'docreatenewversion':
+do1.c:330: warning: implicit declaration of function 'isthisusersdocument'
+do1.c:350: warning: implicit declaration of function 'doopen'
+do1.c:358: warning: implicit declaration of function 'qerror'
+do1.c:362: warning: implicit declaration of function 'doclose'
+cc                          -pg -ggdb -Wall -c  do2.c
+In file included from xanadu.h:11,
+                 from do2.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+do2.c: In function 'specset2ispanset':
+do2.c:37: warning: implicit declaration of function 'qerror'
+do2.c: In function 'tumbler2spanset':
+do2.c:67: warning: implicit declaration of function 'tumblerincrement'
+do2.c:67: warning: implicit declaration of function 'tumblerlength'
+do2.c: At top level:
+do2.c:88: warning: return type defaults to 'int'
+do2.c: In function 'makehint':
+do2.c:96: warning: control reaches end of non-void function
+do2.c: At top level:
+do2.c:99: warning: return type defaults to 'int'
+do2.c: In function 'validhint':
+do2.c:121: warning: control reaches end of non-void function
+do2.c: In function 'findnextlinkvsa':
+do2.c:196: warning: implicit declaration of function 'functiontumbleradd'
+do2.c: In function 'ispansetandspecsets2spanpairset':
+do2.c:239: warning: implicit declaration of function 'restrictspecsetsaccordingtoispans'
+do2.c:240: warning: implicit declaration of function 'makespanpairset'
+cc                          -pg -ggdb -Wall -c  edit.c
+In file included from edit.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+edit.c:17: warning: return type defaults to 'int'
+edit.c: In function 'deleteseq':
+edit.c:28: warning: implicit declaration of function 'crumcontextfree'
+edit.c:29: warning: implicit declaration of function 'setwispupwards'
+edit.c:30: warning: implicit declaration of function 'recombine'
+edit.c:31: warning: control reaches end of non-void function
+edit.c: At top level:
+edit.c:35: warning: return type defaults to 'int'
+edit.c: In function 'deletend':
+edit.c:44: warning: implicit declaration of function 'memset'
+edit.c:44: warning: incompatible implicit declaration of built-in function 'memset'
+edit.c:45: warning: implicit declaration of function 'prologuend'
+edit.c:47: warning: implicit declaration of function 'functiontumbleradd'
+edit.c:50: warning: implicit declaration of function 'makecutsnd'
+edit.c:51: warning: implicit declaration of function 'newfindintersectionnd'
+edit.c:55: warning: implicit declaration of function 'deletecutsectionnd'
+edit.c:60: warning: implicit declaration of function 'qerror'
+edit.c:65: warning: implicit declaration of function 'disown'
+edit.c:69: warning: implicit declaration of function 'tumblersub'
+edit.c:82: warning: control reaches end of non-void function
+edit.c: At top level:
+edit.c:85: warning: return type defaults to 'int'
+edit.c: In function 'rearrangend':
+edit.c:116: warning: implicit declaration of function 'sortknives'
+edit.c:117: warning: implicit declaration of function 'makeoffsetsfor3or4cuts'
+edit.c:123: warning: implicit declaration of function 'rearrangecutsectionnd'
+edit.c:136: warning: implicit declaration of function 'ivemodified'
+edit.c:169: warning: control reaches end of non-void function
+edit.c: At top level:
+edit.c:174: warning: return type defaults to 'int'
+edit.c: In function 'makeoffsetsfor3or4cuts':
+edit.c:195: warning: control reaches end of non-void function
+edit.c: In function 'rearrangecutsectionnd':
+edit.c:211: warning: implicit declaration of function 'whereoncrum'
+edit.c: In function 'insertcutsectionnd':
+edit.c:235: warning: implicit declaration of function 'dumpwid'
+edit.c: At top level:
+edit.c:274: warning: return type defaults to 'int'
+edit.c: In function 'sortknives':
+edit.c:287: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  entexit.c
+In file included from xanadu.h:11,
+                 from entexit.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+entexit.c:20: warning: return type defaults to 'int'
+entexit.c: In function 'initmagicktricks':
+entexit.c:39: warning: implicit declaration of function 'initqueues'
+entexit.c:40: warning: implicit declaration of function 'memset'
+entexit.c:40: warning: incompatible implicit declaration of built-in function 'memset'
+entexit.c:47: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  fns.c
+In file included from xanadu.h:11,
+                 from fns.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+fns.c: In function 'finddocscontaining':
+fns.c:30: warning: implicit declaration of function 'putfinddocscontaining'
+fns.c:32: warning: implicit declaration of function 'putrequestfailed'
+fns.c: In function 'copy':
+fns.c:46: warning: implicit declaration of function 'putcopy'
+fns.c: In function 'insert':
+fns.c:94: warning: implicit declaration of function 'putinsert'
+fns.c: In function 'createlink':
+fns.c:113: warning: implicit declaration of function 'putcreatelink'
+fns.c: In function 'followlink':
+fns.c:129: warning: implicit declaration of function 'putfollowlink'
+fns.c: In function 'retrievedocvspanset':
+fns.c:144: warning: implicit declaration of function 'putretrievedocvspanset'
+fns.c: In function 'rearrange':
+fns.c:173: warning: implicit declaration of function 'putrearrange'
+fns.c: In function 'retrievev':
+fns.c:192: warning: implicit declaration of function 'putretrievev'
+fns.c: In function 'findlinksfromtothree':
+fns.c:208: warning: implicit declaration of function 'putfindlinksfromtothree'
+fns.c: In function 'findnumoflinksfromtothree':
+fns.c:224: warning: implicit declaration of function 'putfindnumoflinksfromtothree'
+fns.c: In function 'findnextnlinksfromtothree':
+fns.c:242: warning: implicit declaration of function 'putfindnextnlinksfromtothree'
+fns.c: In function 'showrelationof2versions':
+fns.c:271: warning: implicit declaration of function 'putshowrelationof2versions'
+fns.c: In function 'createnewdocument':
+fns.c:296: warning: implicit declaration of function 'getcreatenewdocument'
+fns.c:298: warning: implicit declaration of function 'putcreatenewdocument'
+fns.c: In function 'createnewversion':
+fns.c:313: warning: implicit declaration of function 'putcreatenewversion'
+fns.c: In function 'retrievedocvspan':
+fns.c:329: warning: implicit declaration of function 'putretrievedocvspan'
+fns.c: In function 'deletevspan':
+fns.c:358: warning: implicit declaration of function 'putdeletevspan'
+fns.c: In function 'retrieveendsets':
+fns.c:378: warning: implicit declaration of function 'putretrieveendsets'
+fns.c: In function 'xaccount':
+fns.c:389: warning: implicit declaration of function 'putxaccount'
+fns.c: In function 'createnode_or_account':
+fns.c:403: warning: implicit declaration of function 'putcreatenode_or_account'
+fns.c: In function 'myopen':
+fns.c:419: warning: implicit declaration of function 'putopen'
+fns.c: In function 'myclose':
+fns.c:435: warning: implicit declaration of function 'putclose'
+fns.c: In function 'quitxanadu':
+fns.c:447: warning: implicit declaration of function 'putquitxanadu'
+fns.c:455: warning: implicit declaration of function 'dobertexit'
+cc                          -pg -ggdb -Wall -c  genf.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from genf.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+genf.c: In function 'getleftson':
+genf.c:30: warning: cast from pointer to integer of different size
+genf.c:33: warning: cast from pointer to integer of different size
+genf.c: In function 'routinegetrightbro':
+genf.c:42: warning: cast from pointer to integer of different size
+genf.c:45: warning: cast from pointer to integer of different size
+genf.c: In function 'getleftbro':
+genf.c:65: warning: cast from pointer to integer of different size
+genf.c:70: warning: cast from pointer to integer of different size
+genf.c: In function 'getfather':
+genf.c:92: warning: cast from pointer to integer of different size
+genf.c: In function 'isemptyenfilade':
+genf.c:131: warning: implicit declaration of function 'qerror'
+genf.c: In function 'findfather':
+genf.c:166: warning: cast from pointer to integer of different size
+genf.c: In function 'findleftbro':
+genf.c:175: warning: cast from pointer to integer of different size
+genf.c:179: warning: cast from pointer to integer of different size
+genf.c: In function 'findleftmostbro':
+genf.c:189: warning: cast from pointer to integer of different size
+genf.c: In function 'funcfindrightbro':
+genf.c:210: warning: cast from pointer to integer of different size
+genf.c:214: warning: cast from pointer to integer of different size
+genf.c: In function 'findrightmostbro':
+genf.c:236: warning: cast from pointer to integer of different size
+genf.c: In function 'findleftson':
+genf.c:261: warning: implicit declaration of function 'inloaf'
+genf.c:264: warning: implicit declaration of function 'testforrejuvinate'
+genf.c:266: warning: cast from pointer to integer of different size
+genf.c: At top level:
+genf.c:308: warning: return type defaults to 'int'
+genf.c: In function 'levelpush':
+genf.c:327: warning: implicit declaration of function 'transferloaf'
+genf.c:331: warning: implicit declaration of function 'adopt'
+genf.c:333: warning: implicit declaration of function 'setwispupwards'
+genf.c:334: warning: implicit declaration of function 'ivemodified'
+genf.c:339: warning: control reaches end of non-void function
+genf.c: At top level:
+genf.c:342: warning: return type defaults to 'int'
+genf.c: In function 'transferloaf':
+genf.c:348: warning: 'return' with no value, in function returning non-void
+genf.c: At top level:
+genf.c:365: warning: return type defaults to 'int'
+genf.c: In function 'levelpull':
+genf.c:368: warning: 'return' with no value, in function returning non-void
+genf.c: At top level:
+genf.c:397: warning: return type defaults to 'int'
+genf.c: In function 'disown':
+genf.c:417: warning: implicit declaration of function 'disownnomodify'
+genf.c:419: warning: control reaches end of non-void function
+genf.c: At top level:
+genf.c:422: warning: return type defaults to 'int'
+genf.c: In function 'disownnomodify':
+genf.c:462: warning: control reaches end of non-void function
+genf.c: At top level:
+genf.c:469: warning: return type defaults to 'int'
+genf.c: In function 'adopt':
+genf.c:571: warning: control reaches end of non-void function
+genf.c: At top level:
+genf.c:574: warning: return type defaults to 'int'
+genf.c: In function 'ivemodified':
+genf.c:579: warning: 'return' with no value, in function returning non-void
+genf.c:580: warning: cast from pointer to integer of different size
+genf.c:587: warning: cast from pointer to integer of different size
+genf.c: In function 'qerror':
+genf.c:603: warning: implicit declaration of function 'abort'
+genf.c:603: warning: incompatible implicit declaration of built-in function 'abort'
+genf.c: In function 'nferror':
+genf.c:611: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  granf1.c
+In file included from xanadu.h:11,
+                 from granf1.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+granf1.c: In function 'findorgl':
+granf1.c:27: warning: implicit declaration of function 'checkforopen'
+cc                          -pg -ggdb -Wall -c  granf2.c
+In file included from xanadu.h:11,
+                 from granf2.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+granf2.c:17: warning: type defaults to 'int' in declaration of 'findisatoinsertnonmolecule'
+granf2.c:18: warning: type defaults to 'int' in declaration of 'klugefindisatoinsertnonmolecule'
+granf2.c:19: warning: type defaults to 'int' in declaration of 'findisatoinsertmolecule'
+granf2.c: In function 'fetchorglgr':
+granf2.c:42: warning: implicit declaration of function 'crumcontextfree'
+granf2.c:51: warning: implicit declaration of function 'qerror'
+granf2.c:64: warning: implicit declaration of function 'inorgl'
+granf2.c:83: warning: implicit declaration of function 'testforrejuvinate'
+granf2.c: In function 'inserttextgr':
+granf2.c:108: warning: implicit declaration of function 'memmove'
+granf2.c:108: warning: incompatible implicit declaration of built-in function 'memmove'
+granf2.c:109: warning: implicit declaration of function 'insertseq'
+granf2.c:110: warning: implicit declaration of function 'tumblerincrement'
+granf2.c:116: warning: implicit declaration of function 'tumblersub'
+granf2.c: In function 'findisatoinsertgr':
+granf2.c:158: warning: implicit declaration of function 'tumblerjustify'
+granf2.c: At top level:
+granf2.c:176: warning: return type defaults to 'int'
+granf2.c: In function 'findisatoinsertmolecule':
+granf2.c:183: warning: implicit declaration of function 'memset'
+granf2.c:183: warning: incompatible implicit declaration of built-in function 'memset'
+granf2.c:184: warning: implicit declaration of function 'findpreviousisagr'
+granf2.c:185: warning: implicit declaration of function 'tumblerlength'
+granf2.c:201: warning: control reaches end of non-void function
+granf2.c: At top level:
+granf2.c:204: warning: return type defaults to 'int'
+granf2.c: In function 'klugefindisatoinsertnonmolecule':
+granf2.c:222: warning: implicit declaration of function 'tumblercopy'
+granf2.c:224: warning: control reaches end of non-void function
+granf2.c: At top level:
+granf2.c:227: warning: return type defaults to 'int'
+granf2.c: In function 'findisatoinsertnonmolecule':
+granf2.c:240: warning: incompatible implicit declaration of built-in function 'memset'
+granf2.c:244: warning: implicit declaration of function 'tumblertruncate'
+granf2.c:247: warning: control reaches end of non-void function
+granf2.c: In function 'isaexistsgr':
+granf2.c:259: warning: implicit declaration of function 'contextfree'
+granf2.c: At top level:
+granf2.c:264: warning: return type defaults to 'int'
+granf2.c: In function 'findpreviousisagr':
+granf2.c:274: warning: implicit declaration of function 'findlastisaincbcgr'
+granf2.c:275: warning: 'return' with no value, in function returning non-void
+granf2.c:279: warning: implicit declaration of function 'whereoncrum'
+granf2.c:283: warning: 'return' with no value, in function returning non-void
+granf2.c:285: warning: implicit declaration of function 'functiontumbleradd'
+granf2.c: At top level:
+granf2.c:291: warning: return type defaults to 'int'
+granf2.c: In function 'findlastisaincbcgr':
+granf2.c:296: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  init.c
+In file included from xanadu.h:11,
+                 from init.c:13:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+init.c: In function 'nullfun':
+init.c:22: warning: implicit declaration of function 'putrequestfailed'
+init.c: At top level:
+init.c:27: warning: return type defaults to 'int'
+init.c: In function 'init':
+init.c:80: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  insert.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from insert.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+insert.c:18: warning: return type defaults to 'int'
+insert.c: In function 'insertseq':
+insert.c:33: warning: implicit declaration of function 'memset'
+insert.c:33: warning: incompatible implicit declaration of built-in function 'memset'
+insert.c:34: warning: implicit declaration of function 'memmove'
+insert.c:34: warning: incompatible implicit declaration of built-in function 'memmove'
+insert.c:35: warning: implicit declaration of function 'crumcontextfree'
+insert.c:42: warning: implicit declaration of function 'ivemodified'
+insert.c:43: warning: 'return' with no value, in function returning non-void
+insert.c:49: warning: implicit declaration of function 'adopt'
+insert.c:58: warning: implicit declaration of function 'tumblersub'
+insert.c:60: warning: implicit declaration of function 'dspadd'
+insert.c:65: warning: implicit declaration of function 'setwispupwards'
+insert.c:68: warning: implicit declaration of function 'testforrejuvinate'
+insert.c:71: warning: implicit declaration of function 'recombine'
+insert.c: At top level:
+insert.c:74: warning: return type defaults to 'int'
+insert.c: In function 'foocounter':
+insert.c:74: warning: control reaches end of non-void function
+insert.c: At top level:
+insert.c:75: warning: return type defaults to 'int'
+insert.c: In function 'barcounter':
+insert.c:75: warning: control reaches end of non-void function
+insert.c: In function 'fillupcbcseq':
+insert.c:93: warning: incompatible implicit declaration of built-in function 'memmove'
+insert.c:95: warning: implicit declaration of function 'tumblerincrement'
+insert.c:98: warning: incompatible implicit declaration of built-in function 'memmove'
+insert.c:105: warning: incompatible implicit declaration of built-in function 'memmove'
+insert.c:106: warning: incompatible implicit declaration of built-in function 'memset'
+insert.c: At top level:
+insert.c:74: warning: 'foocounter' defined but not used
+insert.c:75: warning: 'barcounter' defined but not used
+cc                          -pg -ggdb -Wall -c  insertnd.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from insertnd.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+insertnd.c:16: warning: return type defaults to 'int'
+insertnd.c: In function 'insertnd':
+insertnd.c:53: warning: implicit declaration of function 'qerror'
+insertnd.c:54: warning: implicit declaration of function 'tumblercopy'
+insertnd.c:58: warning: implicit declaration of function 'makegappm'
+insertnd.c:59: warning: implicit declaration of function 'checkspecandstringbefore'
+insertnd.c:60: warning: implicit declaration of function 'setwispupwards'
+insertnd.c:61: warning: implicit declaration of function 'doinsertnd'
+insertnd.c:80: warning: implicit declaration of function 'recombine'
+insertnd.c:115: warning: control reaches end of non-void function
+insertnd.c: In function 'widdiffs':
+insertnd.c:125: warning: implicit declaration of function 'lastdigitintumbler'
+insertnd.c: At top level:
+insertnd.c:131: warning: return type defaults to 'int'
+insertnd.c: In function 'makegappm':
+insertnd.c:147: warning: implicit declaration of function 'memset'
+insertnd.c:147: warning: incompatible implicit declaration of built-in function 'memset'
+insertnd.c:148: warning: implicit declaration of function 'prologuend'
+insertnd.c:152: warning: 'return' with no value, in function returning non-void
+insertnd.c:154: warning: implicit declaration of function 'findaddressofsecondcutforinsert'
+insertnd.c:157: warning: implicit declaration of function 'makecutsnd'
+insertnd.c:158: warning: implicit declaration of function 'newfindintersectionnd'
+insertnd.c:161: warning: implicit declaration of function 'insertcutsectionnd'
+insertnd.c:167: warning: implicit declaration of function 'dump'
+insertnd.c:171: warning: implicit declaration of function 'functiontumbleradd'
+insertnd.c:173: warning: implicit declaration of function 'ivemodified'
+insertnd.c:179: warning: implicit declaration of function 'setwidnd'
+insertnd.c: At top level:
+insertnd.c:184: warning: return type defaults to 'int'
+insertnd.c: In function 'findaddressofsecondcutforinsert':
+insertnd.c:190: warning: implicit declaration of function 'tumblerincrement'
+insertnd.c:191: warning: implicit declaration of function 'beheadtumbler'
+insertnd.c:192: warning: implicit declaration of function 'tumblerintdiff'
+insertnd.c:194: warning: control reaches end of non-void function
+insertnd.c: In function 'doinsertnd':
+insertnd.c:208: warning: implicit declaration of function 'firstinsertionnd'
+insertnd.c:211: warning: incompatible implicit declaration of built-in function 'memset'
+insertnd.c:212: warning: implicit declaration of function 'insertmorend'
+insertnd.c: At top level:
+insertnd.c:216: warning: return type defaults to 'int'
+insertnd.c: In function 'firstinsertionnd':
+insertnd.c:223: warning: implicit declaration of function 'memmove'
+insertnd.c:223: warning: incompatible implicit declaration of built-in function 'memmove'
+insertnd.c:228: warning: 'return' with no value, in function returning non-void
+insertnd.c: In function 'insertmorend':
+insertnd.c:246: warning: implicit declaration of function 'makeroomonleftnd'
+insertnd.c:248: warning: implicit declaration of function 'insertcbcnd'
+insertnd.c: In function 'insertcbcnd':
+insertnd.c:273: warning: implicit declaration of function 'dspadd'
+insertnd.c:284: warning: implicit declaration of function 'adopt'
+insertnd.c:285: warning: implicit declaration of function 'dspsub'
+insertnd.c:288: warning: incompatible implicit declaration of built-in function 'memmove'
+insertnd.c:295: warning: implicit declaration of function 'testforrejuvinate'
+insertnd.c: In function 'findsontoinsertundernd':
+insertnd.c:321: warning: implicit declaration of function 'whereoncrum'
+cc                          -pg -ggdb -Wall -c  makeroom.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from makeroom.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+makeroom.c:14: warning: return type defaults to 'int'
+makeroom.c: In function 'makeroomonleftnd':
+makeroom.c:27: warning: implicit declaration of function 'prologuend'
+makeroom.c:34: warning: implicit declaration of function 'tumblersub'
+makeroom.c:44: warning: implicit declaration of function 'expandcrumleftward'
+makeroom.c:21: warning: unused variable 'savedebug'
+makeroom.c:52: warning: control reaches end of non-void function
+makeroom.c: At top level:
+makeroom.c:56: warning: return type defaults to 'int'
+makeroom.c: In function 'expandcrumleftward':
+makeroom.c:65: warning: implicit declaration of function 'functiontumbleradd'
+makeroom.c:72: warning: implicit declaration of function 'ivemodified'
+makeroom.c:80: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  multiloaf.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from multiloaf.c:10:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+multiloaf.c:33: warning: return type defaults to 'int'
+multiloaf.c: In function 'dumpincoretables':
+multiloaf.c:38: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:43: warning: return type defaults to 'int'
+multiloaf.c: In function 'dumpfdhashtable':
+multiloaf.c:58: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:61: warning: return type defaults to 'int'
+multiloaf.c: In function 'dumpfdorderedtable':
+multiloaf.c:76: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:79: warning: return type defaults to 'int'
+multiloaf.c: In function 'dumpfreediskentry':
+multiloaf.c:84: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:88: warning: return type defaults to 'int'
+multiloaf.c: In function 'initincorealloctables':
+multiloaf.c:97: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:101: warning: return type defaults to 'int'
+multiloaf.c: In function 'savepartialdiskalloctabletodisk':
+multiloaf.c:119: warning: 'return' with no value, in function returning non-void
+multiloaf.c: At top level:
+multiloaf.c:136: warning: return type defaults to 'int'
+multiloaf.c: In function 'readpartialdiskalloctablefromdisk':
+multiloaf.c:144: warning: implicit declaration of function 'actuallyreadrawloaf'
+multiloaf.c:146: warning: implicit declaration of function 'diskfree'
+multiloaf.c:153: warning: implicit declaration of function 'qerror'
+multiloaf.c:156: warning: implicit declaration of function 'addtofreediskstructures'
+multiloaf.c:159: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:162: warning: return type defaults to 'int'
+multiloaf.c: In function 'addtofreediskstructures':
+multiloaf.c:181: warning: implicit declaration of function 'fdhash'
+multiloaf.c:188: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:191: warning: return type defaults to 'int'
+multiloaf.c: In function 'addallocatedloaftopartialallocedtables':
+multiloaf.c:200: warning: control reaches end of non-void function
+multiloaf.c: At top level:
+multiloaf.c:203: warning: return type defaults to 'int'
+multiloaf.c: In function 'changefreediskstructures':
+multiloaf.c:254: warning: implicit declaration of function 'free'
+multiloaf.c:258: warning: control reaches end of non-void function
+multiloaf.c: In function 'fdhash':
+multiloaf.c:282: warning: implicit declaration of function 'abs'
+multiloaf.c: In function 'findfreeenoughloafinbucket':
+multiloaf.c:293: warning: statement with no effect
+multiloaf.c: At top level:
+multiloaf.c:370: warning: return type defaults to 'int'
+multiloaf.c: In function 'deletefromfreediskstructures':
+multiloaf.c:414: warning: control reaches end of non-void function
+multiloaf.c: In function 'deallocateinloaf':
+multiloaf.c:453: warning: implicit declaration of function 'functionlengthof'
+multiloaf.c:454: warning: implicit declaration of function 'functionintof'
+multiloaf.c:456: warning: implicit declaration of function 'memmove'
+multiloaf.c:456: warning: incompatible implicit declaration of built-in function 'memmove'
+multiloaf.c: At top level:
+multiloaf.c:475: warning: return type defaults to 'int'
+multiloaf.c: In function 'findandallocateinsidediskblocknumber':
+multiloaf.c:511: warning: incompatible implicit declaration of built-in function 'memmove'
+cc                          -pg -ggdb -Wall -c  ndcuts.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from ndcuts.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+ndcuts.c:16: warning: return type defaults to 'int'
+ndcuts.c: In function 'makecutsnd':
+ndcuts.c:21: warning: implicit declaration of function 'logbertmodifiedforcrum'
+ndcuts.c:23: warning: implicit declaration of function 'memset'
+ndcuts.c:23: warning: incompatible implicit declaration of built-in function 'memset'
+ndcuts.c:24: warning: implicit declaration of function 'makecutsdownnd'
+ndcuts.c:33: warning: control reaches end of non-void function
+ndcuts.c: At top level:
+ndcuts.c:36: warning: return type defaults to 'int'
+ndcuts.c: In function 'makecutsdownnd':
+ndcuts.c:53: warning: implicit declaration of function 'prologuend'
+ndcuts.c:59: warning: implicit declaration of function 'makecutsbackuptohere'
+ndcuts.c:65: warning: implicit declaration of function 'levelpush'
+ndcuts.c:72: warning: control reaches end of non-void function
+ndcuts.c: At top level:
+ndcuts.c:75: warning: return type defaults to 'int'
+ndcuts.c: In function 'makecutsbackuptohere':
+ndcuts.c:87: warning: implicit declaration of function 'whereoncrum'
+ndcuts.c:92: warning: implicit declaration of function 'slicecbcpm'
+ndcuts.c:93: warning: implicit declaration of function 'ivemodified'
+ndcuts.c:99: warning: 'return' with no value, in function returning non-void
+ndcuts.c:102: warning: implicit declaration of function 'cutsons'
+ndcuts.c:105: warning: implicit declaration of function 'setwispupwards'
+ndcuts.c:111: warning: implicit declaration of function 'makeithcutonson'
+ndcuts.c:114: warning: 'return' with no value, in function returning non-void
+ndcuts.c:135: warning: implicit declaration of function 'peeloffcorrectson'
+ndcuts.c: At top level:
+ndcuts.c:151: warning: return type defaults to 'int'
+ndcuts.c: In function 'cutsons':
+ndcuts.c:169: warning: control reaches end of non-void function
+ndcuts.c: At top level:
+ndcuts.c:172: warning: return type defaults to 'int'
+ndcuts.c: In function 'makeithcutonson':
+ndcuts.c:182: warning: 'return' with no value, in function returning non-void
+ndcuts.c:185: warning: implicit declaration of function 'peelsoncorrectly'
+ndcuts.c:197: warning: 'return' with no value, in function returning non-void
+ndcuts.c:199: warning: 'return' with no value, in function returning non-void
+ndcuts.c:210: warning: implicit declaration of function 'qerror'
+ndcuts.c: At top level:
+ndcuts.c:224: warning: return type defaults to 'int'
+ndcuts.c: In function 'peelsoncorrectly':
+ndcuts.c:240: warning: implicit declaration of function 'newpeelcrumoffnd'
+ndcuts.c:241: warning: 'return' with no value, in function returning non-void
+ndcuts.c:246: warning: implicit declaration of function 'adopt'
+ndcuts.c:247: warning: implicit declaration of function 'memmove'
+ndcuts.c:247: warning: incompatible implicit declaration of built-in function 'memmove'
+ndcuts.c: At top level:
+ndcuts.c:266: warning: return type defaults to 'int'
+ndcuts.c: In function 'peeloffcorrectson':
+ndcuts.c:280: warning: incompatible implicit declaration of built-in function 'memmove'
+ndcuts.c: At top level:
+ndcuts.c:289: warning: return type defaults to 'int'
+ndcuts.c: In function 'newpeelcrumoffnd':
+ndcuts.c:313: warning: incompatible implicit declaration of built-in function 'memset'
+ndcuts.c:314: warning: implicit declaration of function 'dspadd'
+ndcuts.c:324: warning: implicit declaration of function 'makeroomonleftnd'
+ndcuts.c:325: warning: implicit declaration of function 'disown'
+ndcuts.c:338: warning: implicit declaration of function 'dspsub'
+ndcuts.c:362: warning: control reaches end of non-void function
+ndcuts.c: At top level:
+ndcuts.c:414: warning: return type defaults to 'int'
+ndcuts.c: In function 'slicecbcpm':
+ndcuts.c:441: warning: implicit declaration of function 'tumblersub'
+ndcuts.c:476: warning: implicit declaration of function 'tumblerlength'
+ndcuts.c:483: warning: incompatible implicit declaration of built-in function 'memmove'
+ndcuts.c:486: warning: implicit declaration of function 'tumblerjustify'
+ndcuts.c:489: warning: implicit declaration of function 'locksubtract'
+ndcuts.c:495: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  ndinters.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from ndinters.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+ndinters.c:39: warning: return type defaults to 'int'
+ndinters.c: In function 'newfindintersectionnd':
+ndinters.c:45: warning: implicit declaration of function 'memset'
+ndinters.c:45: warning: incompatible implicit declaration of built-in function 'memset'
+ndinters.c:46: warning: control reaches end of non-void function
+ndinters.c: In function 'cutinthiscrumnd':
+ndinters.c:90: warning: implicit declaration of function 'whereoncrum'
+ndinters.c: In function 'allcutswiththiscrumnd':
+ndinters.c:127: warning: implicit declaration of function 'tumblercopy'
+cc                          -pg -ggdb -Wall -c  orglinks.c
+In file included from xanadu.h:11,
+                 from orglinks.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+orglinks.c: In function 'appendpm':
+orglinks.c:29: warning: implicit declaration of function 'findvsatoappend'
+orglinks.c: At top level:
+orglinks.c:34: warning: return type defaults to 'int'
+orglinks.c: In function 'findvsatoappend':
+orglinks.c:40: warning: implicit declaration of function 'memset'
+orglinks.c:40: warning: incompatible implicit declaration of built-in function 'memset'
+orglinks.c:43: warning: implicit declaration of function 'tumblerincrement'
+orglinks.c:44: warning: implicit declaration of function 'prologuend'
+orglinks.c:53: warning: implicit declaration of function 'findnextaddressinvspace'
+orglinks.c:55: warning: control reaches end of non-void function
+orglinks.c: At top level:
+orglinks.c:58: warning: return type defaults to 'int'
+orglinks.c: In function 'findnextaddressinvspace':
+orglinks.c:67: warning: 'return' with no value, in function returning non-void
+orglinks.c:71: warning: implicit declaration of function 'whereoncrum'
+orglinks.c:73: warning: 'return' with no value, in function returning non-void
+orglinks.c:76: warning: implicit declaration of function 'tumblermax'
+orglinks.c: In function 'insertpm':
+orglinks.c:112: warning: implicit declaration of function 'qerror'
+orglinks.c:114: warning: implicit declaration of function 'logbertmodified'
+orglinks.c:116: warning: implicit declaration of function 'unpacksporgl'
+orglinks.c:130: warning: implicit declaration of function 'tumblerlength'
+orglinks.c:131: warning: implicit declaration of function 'tumblerintdiff'
+orglinks.c:145: warning: implicit declaration of function 'insertnd'
+orglinks.c:146: warning: implicit declaration of function 'functiontumbleradd'
+orglinks.c: In function 'rearrangepm':
+orglinks.c:159: warning: implicit declaration of function 'rearrangend'
+orglinks.c: In function 'deletevspanpm':
+orglinks.c:174: warning: implicit declaration of function 'deletend'
+orglinks.c: In function 'retrievevspansetpm':
+orglinks.c:226: warning: implicit declaration of function 'putvspaninlist'
+orglinks.c:236: warning: implicit declaration of function 'tumblerjustify'
+orglinks.c:244: warning: implicit declaration of function 'maxtextwid'
+orglinks.c: At top level:
+orglinks.c:262: warning: return type defaults to 'int'
+orglinks.c: In function 'maxtextwid':
+orglinks.c:268: warning: unused variable 'vspan'
+orglinks.c:286: warning: control reaches end of non-void function
+orglinks.c: At top level:
+orglinks.c:386: warning: return type defaults to 'int'
+orglinks.c: In function 'putvspaninlist':
+orglinks.c:399: warning: 'return' with no value, in function returning non-void
+orglinks.c:407: warning: 'return' with no value, in function returning non-void
+orglinks.c:414: warning: 'return' with no value, in function returning non-void
+orglinks.c:420: warning: 'return' with no value, in function returning non-void
+orglinks.c:425: warning: 'return' with no value, in function returning non-void
+orglinks.c:430: warning: 'return' with no value, in function returning non-void
+orglinks.c:436: warning: implicit declaration of function 'tumblersub'
+orglinks.c:441: warning: 'return' with no value, in function returning non-void
+orglinks.c: In function 'span2spanset':
+orglinks.c:524: warning: implicit declaration of function 'context2span'
+orglinks.c:533: warning: implicit declaration of function 'contextfree'
+orglinks.c: In function 'onitemlist':
+orglinks.c:566: warning: implicit declaration of function 'memmove'
+orglinks.c:566: warning: incompatible implicit declaration of built-in function 'memmove'
+cc                          -pg -ggdb -Wall -c  recombine.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from recombine.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+recombine.c:17: warning: return type defaults to 'int'
+recombine.c: In function 'recombine':
+recombine.c:21: warning: implicit declaration of function 'recombineseq'
+recombine.c:24: warning: implicit declaration of function 'recombinend'
+recombine.c:29: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:34: warning: return type defaults to 'int'
+recombine.c: In function 'recombineseq':
+recombine.c:38: warning: 'return' with no value, in function returning non-void
+recombine.c:41: warning: 'return' with no value, in function returning non-void
+recombine.c:43: warning: cast from pointer to integer of different size
+recombine.c:43: warning: assignment from incompatible pointer type
+recombine.c:43: warning: cast from pointer to integer of different size
+recombine.c:46: warning: cast from pointer to integer of different size
+recombine.c:46: warning: assignment from incompatible pointer type
+recombine.c:46: warning: cast from pointer to integer of different size
+recombine.c:53: warning: implicit declaration of function 'eatbrossubtreeseq'
+recombine.c:56: warning: implicit declaration of function 'takeovernephewsseq'
+recombine.c:63: warning: implicit declaration of function 'levelpull'
+recombine.c: At top level:
+recombine.c:67: warning: return type defaults to 'int'
+recombine.c: In function 'takeovernephewsseq':
+recombine.c:76: warning: implicit declaration of function 'disown'
+recombine.c:77: warning: implicit declaration of function 'adopt'
+recombine.c:78: warning: implicit declaration of function 'ivemodified'
+recombine.c:80: warning: implicit declaration of function 'setwispupwards'
+recombine.c:82: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:85: warning: return type defaults to 'int'
+recombine.c: In function 'eatbrossubtreeseq':
+recombine.c:98: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:103: warning: return type defaults to 'int'
+recombine.c: In function 'recombinend':
+recombine.c:112: warning: 'return' with no value, in function returning non-void
+recombine.c:117: warning: implicit declaration of function 'getorderedsons'
+recombine.c:122: warning: implicit declaration of function 'takeovernephewsnd'
+recombine.c: In function 'randomness':
+recombine.c:134: warning: unused variable 'i'
+recombine.c: In function 'ishouldbother':
+recombine.c:157: warning: implicit declaration of function 'check'
+recombine.c: At top level:
+recombine.c:168: warning: return type defaults to 'int'
+recombine.c: In function 'takeovernephewsnd':
+recombine.c:183: warning: implicit declaration of function 'eatbrossubtreend'
+recombine.c:192: warning: implicit declaration of function 'takenephewnd'
+recombine.c: At top level:
+recombine.c:209: warning: return type defaults to 'int'
+recombine.c: In function 'eatbrossubtreend':
+recombine.c:217: warning: implicit declaration of function 'memset'
+recombine.c:217: warning: incompatible implicit declaration of built-in function 'memset'
+recombine.c:219: warning: implicit declaration of function 'makeroomonleftnd'
+recombine.c:220: warning: implicit declaration of function 'fixdspsofbroschildren'
+recombine.c:230: warning: implicit declaration of function 'testforrejuvinate'
+recombine.c:237: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:240: warning: return type defaults to 'int'
+recombine.c: In function 'takenephewnd':
+recombine.c:248: warning: implicit declaration of function 'dspadd'
+recombine.c:250: warning: implicit declaration of function 'prologuend'
+recombine.c:253: warning: implicit declaration of function 'dspsub'
+recombine.c:262: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:265: warning: return type defaults to 'int'
+recombine.c: In function 'fixdspsofbroschildren':
+recombine.c:274: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:277: warning: return type defaults to 'int'
+recombine.c: In function 'getorderedsons':
+recombine.c:287: warning: implicit declaration of function 'shellsort'
+recombine.c:288: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:291: warning: return type defaults to 'int'
+recombine.c: In function 'shellsort':
+recombine.c:302: warning: implicit declaration of function 'qerror'
+recombine.c:308: warning: implicit declaration of function 'functiontumbleradd'
+recombine.c:321: warning: control reaches end of non-void function
+recombine.c: At top level:
+recombine.c:334: warning: return type defaults to 'int'
+recombine.c: In function 'fixincoresubtreewids':
+recombine.c:338: warning: 'return' with no value, in function returning non-void
+cc                          -pg -ggdb -Wall -c  retrie.c
+In file included from xanadu.h:11,
+                 from retrie.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+retrie.c: In function 'retrievecrums':
+retrie.c:23: warning: implicit declaration of function 'memset'
+retrie.c:23: warning: incompatible implicit declaration of built-in function 'memset'
+retrie.c:30: warning: implicit declaration of function 'qerror'
+retrie.c: In function 'retrieve':
+retrie.c:47: warning: incompatible implicit declaration of built-in function 'memset'
+retrie.c: In function 'retrieverestricted':
+retrie.c:78: warning: implicit declaration of function 'functiontumbleradd'
+retrie.c: In function 'retrieveinarea':
+retrie.c:110: warning: incompatible implicit declaration of built-in function 'memset'
+retrie.c:115: warning: implicit declaration of function 'findcbcinarea2d'
+retrie.c: In function 'retrieveinspan':
+retrie.c:140: warning: incompatible implicit declaration of built-in function 'memset'
+retrie.c:144: warning: implicit declaration of function 'findcbcinspanseq'
+retrie.c:147: warning: implicit declaration of function 'oncontextlistseq'
+retrie.c: In function 'findcbcseqcrum':
+retrie.c:207: warning: implicit declaration of function 'whereoncrum'
+retrie.c:209: warning: implicit declaration of function 'dspadd'
+retrie.c: In function 'findcbcnd':
+retrie.c:256: warning: implicit declaration of function 'prologuend'
+retrie.c: At top level:
+retrie.c:267: warning: return type defaults to 'int'
+retrie.c: In function 'findcbcinarea2d':
+retrie.c:306: warning: implicit declaration of function 'incontextlistnd'
+retrie.c:311: warning: control reaches end of non-void function
+retrie.c: At top level:
+retrie.c:357: warning: return type defaults to 'int'
+retrie.c: In function 'findcbcinspanseq':
+retrie.c:367: warning: implicit declaration of function 'memmove'
+retrie.c:367: warning: incompatible implicit declaration of built-in function 'memmove'
+retrie.c:382: warning: control reaches end of non-void function
+retrie.c: At top level:
+retrie.c:388: warning: return type defaults to 'int'
+retrie.c: In function 'prologuend':
+retrie.c:394: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  spanf1.c
+In file included from xanadu.h:11,
+                 from spanf1.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+spanf1.c: In function 'insertspanf':
+spanf1.c:28: warning: implicit declaration of function 'prefixtumbler'
+spanf1.c:30: warning: implicit declaration of function 'memset'
+spanf1.c:30: warning: incompatible implicit declaration of built-in function 'memset'
+spanf1.c:46: warning: implicit declaration of function 'tumblerjustify'
+spanf1.c:53: warning: implicit declaration of function 'qerror'
+spanf1.c:57: warning: implicit declaration of function 'insertnd'
+spanf1.c: In function 'findlinksfromtothreesp':
+spanf1.c:91: warning: implicit declaration of function 'sporglset2linkset'
+spanf1.c:114: warning: implicit declaration of function 'intersectlinksets'
+spanf1.c: In function 'finddocscontainingsp':
+spanf1.c:202: warning: incompatible implicit declaration of built-in function 'memset'
+spanf1.c:203: warning: implicit declaration of function 'tumblerincrement'
+spanf1.c:209: warning: implicit declaration of function 'beheadtumbler'
+spanf1.c:216: warning: implicit declaration of function 'contextfree'
+spanf1.c: In function 'retrieveendsetsfromspanf':
+spanf1.c:247: warning: incompatible implicit declaration of built-in function 'memset'
+spanf1.c: In function 'retrievesporglsetinrange':
+spanf1.c:296: warning: implicit declaration of function 'contextintosporgl'
+cc                          -pg -ggdb -Wall -c  spanf2.c
+In file included from xanadu.h:11,
+                 from spanf2.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+spanf2.c: In function 'onlinklist':
+spanf2.c:40: warning: 'return' with no value, in function returning non-void
+spanf2.c:45: warning: 'return' with no value, in function returning non-void
+spanf2.c: At top level:
+spanf2.c:52: warning: return type defaults to 'int'
+spanf2.c: In function 'intersectlinksets':
+spanf2.c:88: warning: 'return' with no value, in function returning non-void
+cc                          -pg -ggdb -Wall -c  split.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from split.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+split.c: In function 'splitcrumupwards':
+split.c:27: warning: implicit declaration of function 'qerror'
+split.c:31: warning: implicit declaration of function 'levelpush'
+split.c:32: warning: implicit declaration of function 'splitcrum'
+split.c: At top level:
+split.c:50: warning: return type defaults to 'int'
+split.c: In function 'splitcrum':
+split.c:54: warning: implicit declaration of function 'splitcrumseq'
+split.c:57: warning: implicit declaration of function 'splitcrumpm'
+split.c:60: warning: implicit declaration of function 'splitcrumsp'
+split.c:69: warning: implicit declaration of function 'setwispupwards'
+split.c:70: warning: control reaches end of non-void function
+split.c: At top level:
+split.c:74: warning: return type defaults to 'int'
+split.c: In function 'splitcrumseq':
+split.c:80: warning: implicit declaration of function 'ivemodified'
+split.c:83: warning: implicit declaration of function 'adopt'
+split.c:84: warning: implicit declaration of function 'testforrejuvinate'
+split.c:89: warning: implicit declaration of function 'disown'
+split.c:97: warning: control reaches end of non-void function
+split.c: At top level:
+split.c:100: warning: return type defaults to 'int'
+split.c: In function 'splitcrumsp':
+split.c:107: warning: implicit declaration of function 'comparecrumsdiagonally'
+split.c:110: warning: implicit declaration of function 'peelcrumoffnd'
+split.c:111: warning: control reaches end of non-void function
+split.c: At top level:
+split.c:114: warning: return type defaults to 'int'
+split.c: In function 'splitcrumpminthiscrum':
+split.c:121: warning: control reaches end of non-void function
+split.c: At top level:
+split.c:124: warning: return type defaults to 'int'
+split.c: In function 'splitcrumpm':
+split.c:135: warning: control reaches end of non-void function
+split.c: At top level:
+split.c:138: warning: return type defaults to 'int'
+split.c: In function 'peelcrumoffnd':
+split.c:162: warning: implicit declaration of function 'memmove'
+split.c:162: warning: incompatible implicit declaration of built-in function 'memmove'
+split.c:177: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  sporgl.c
+In file included from xanadu.h:11,
+                 from sporgl.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+sporgl.c: In function 'link2sporglset':
+sporgl.c:98: warning: implicit declaration of function 'tumblerincrement'
+sporgl.c:103: warning: implicit declaration of function 'contextintosporgl'
+sporgl.c:107: warning: implicit declaration of function 'contextfree'
+sporgl.c: In function 'linksporglset2specset':
+sporgl.c:133: warning: implicit declaration of function 'qerror'
+sporgl.c:139: warning: implicit declaration of function 'linksporglset2vspec'
+sporgl.c: At top level:
+sporgl.c:151: warning: return type defaults to 'int'
+sporgl.c: In function 'linksporglset2vspec':
+sporgl.c:164: warning: implicit declaration of function 'sporglset2vspanset'
+sporgl.c:165: warning: control reaches end of non-void function
+sporgl.c: At top level:
+sporgl.c:170: warning: return type defaults to 'int'
+sporgl.c: In function 'sporglset2vspanset':
+sporgl.c:197: warning: 'return' with no value, in function returning non-void
+sporgl.c: At top level:
+sporgl.c:212: warning: return type defaults to 'int'
+sporgl.c: In function 'unpacksporgl':
+sporgl.c:239: warning: control reaches end of non-void function
+sporgl.c: At top level:
+sporgl.c:242: warning: return type defaults to 'int'
+sporgl.c: In function 'contextintosporgl':
+sporgl.c:260: warning: control reaches end of non-void function
+sporgl.c: At top level:
+sporgl.c:263: warning: return type defaults to 'int'
+sporgl.c: In function 'sporglset2linkset':
+sporgl.c:281: warning: implicit declaration of function 'sporglset2linksetinrange'
+sporgl.c:283: warning: control reaches end of non-void function
+sporgl.c: At top level:
+sporgl.c:286: warning: return type defaults to 'int'
+sporgl.c: In function 'sporglset2linksetinrange':
+sporgl.c:309: warning: implicit declaration of function 'prefixtumbler'
+sporgl.c:316: warning: implicit declaration of function 'beheadtumbler'
+sporgl.c:321: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  task.c
+In file included from xanadu.h:11,
+                 from task.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+task.c:16: warning: return type defaults to 'int'
+task.c: In function 'inittask':
+task.c:26: warning: control reaches end of non-void function
+task.c: In function 'talloc':
+task.c:69: warning: cast from pointer to integer of different size
+task.c:70: warning: implicit declaration of function 'qerror'
+task.c:77: warning: cast from pointer to integer of different size
+task.c: At top level:
+task.c:83: warning: return type defaults to 'int'
+task.c: In function 'tfree':
+task.c:90: warning: implicit declaration of function 'checkpointer'
+task.c:96: warning: control reaches end of non-void function
+task.c: At top level:
+task.c:99: warning: return type defaults to 'int'
+task.c: In function 'tfreeexplicit':
+task.c:118: warning: control reaches end of non-void function
+task.c: At top level:
+task.c:121: warning: return type defaults to 'int'
+task.c: In function 'tfreeitemset':
+task.c:127: warning: implicit declaration of function 'checkitem'
+task.c:133: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  test.c
+In file included from xanadu.h:11,
+                 from test.c:18:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+test.c:36: warning: return type defaults to 'int'
+test.c: In function 'foo':
+test.c:42: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:45: warning: return type defaults to 'int'
+test.c: In function 'foospan':
+test.c:54: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:57: warning: return type defaults to 'int'
+test.c: In function 'foospanset':
+test.c:72: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:75: warning: return type defaults to 'int'
+test.c: In function 'dumpspanset':
+test.c:86: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:89: warning: return type defaults to 'int'
+test.c: In function 'foocrum':
+test.c:98: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:101: warning: return type defaults to 'int'
+test.c: In function 'foohex':
+test.c:108: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:111: warning: return type defaults to 'int'
+test.c: In function 'foodec':
+test.c:118: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:121: warning: return type defaults to 'int'
+test.c: In function 'foocontext':
+test.c:130: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:133: warning: return type defaults to 'int'
+test.c: In function 'foocontextlist':
+test.c:142: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:145: warning: return type defaults to 'int'
+test.c: In function 'fooitemset':
+test.c:154: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:157: warning: return type defaults to 'int'
+test.c: In function 'fooitem':
+test.c:167: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:170: warning: return type defaults to 'int'
+test.c: In function 'footumbler':
+test.c:183: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:186: warning: return type defaults to 'int'
+test.c: In function 'foodsp':
+test.c:200: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:203: warning: return type defaults to 'int'
+test.c: In function 'foowid':
+test.c:217: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:220: warning: return type defaults to 'int'
+test.c: In function 'dumpsubtree':
+test.c:235: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:237: warning: return type defaults to 'int'
+test.c: In function 'dumpwholesubtree':
+test.c:253: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:256: warning: return type defaults to 'int'
+test.c: In function 'assertspecisstring':
+test.c:286: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:301: warning: return type defaults to 'int'
+test.c: In function 'assertsubtreeisok':
+test.c:330: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:333: warning: return type defaults to 'int'
+test.c: In function 'assertsonswispmatchesfather':
+test.c:351: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:353: warning: return type defaults to 'int'
+test.c: In function 'assertwidsarepositive':
+test.c:371: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:374: warning: return type defaults to 'int'
+test.c: In function 'dumpwholetree':
+test.c:382: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:385: warning: return type defaults to 'int'
+test.c: In function 'checkwholesubtree':
+test.c:408: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:411: warning: return type defaults to 'int'
+test.c:430: warning: return type defaults to 'int'
+test.c: In function 'dump':
+test.c:444: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:447: warning: return type defaults to 'int'
+test.c: In function 'yesdump':
+test.c:452: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:455: warning: return type defaults to 'int'
+test.c: In function 'dumphedr':
+test.c:481: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:484: warning: return type defaults to 'int'
+test.c: In function 'dumpwid':
+test.c:499: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:502: warning: return type defaults to 'int'
+test.c: In function 'dumpdsp':
+test.c:519: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:522: warning: return type defaults to 'int'
+test.c: In function 'dumpinfo':
+test.c:548: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:551: warning: return type defaults to 'int'
+test.c: In function 'dumptumbler':
+test.c:573: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:576: warning: return type defaults to 'int'
+test.c: In function 'displaycutspm':
+test.c:588: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:592: warning: return type defaults to 'int'
+test.c: In function 'dumphint':
+test.c:603: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:606: warning: return type defaults to 'int'
+test.c: In function 'examine':
+test.c:642: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:646: warning: return type defaults to 'int'
+test.c: In function 'showorgl':
+test.c:662: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:665: warning: return type defaults to 'int'
+test.c: In function 'showsubtree':
+test.c:674: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:677: warning: return type defaults to 'int'
+test.c: In function 'showistream':
+test.c:686: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:689: warning: return type defaults to 'int'
+test.c: In function 'showspanf':
+test.c:700: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:704: warning: return type defaults to 'int'
+test.c: In function 'doshowspanf':
+test.c:718: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:721: warning: return type defaults to 'int'
+test.c: In function 'showspanfcrum':
+test.c:748: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:751: warning: return type defaults to 'int'
+test.c: In function 'dumpmem':
+test.c:768: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:796: warning: return type defaults to 'int'
+test.c: In function 'showgranwids':
+test.c:840: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:843: warning: return type defaults to 'int'
+test.c: In function 'dumppoomwisps':
+test.c:852: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:855: warning: return type defaults to 'int'
+test.c: In function 'showpoomwisps':
+test.c:884: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:889: warning: return type defaults to 'int'
+test.c: In function 'dumpistreamgr':
+test.c:897: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:900: warning: return type defaults to 'int'
+test.c: In function 'dodumpistreamgr':
+test.c:913: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:916: warning: return type defaults to 'int'
+test.c: In function 'dumpmoleculegr':
+test.c:955: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:958: warning: return type defaults to 'int'
+test.c: In function 'dumpisagr':
+test.c:977: warning: control reaches end of non-void function
+test.c: In function 'checkenftypes':
+test.c:1016: warning: control reaches end of non-void function
+test.c: In function 'checkthebleedingcrum':
+test.c:1052: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1055: warning: return type defaults to 'int'
+test.c: In function 'teststack':
+test.c:1056: warning: unused variable 'testloc'
+test.c:1059: warning: control reaches end of non-void function
+test.c:1067:23: warning: "/*" within comment
+test.c: In function 'enftypestring':
+test.c:1081: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1109: warning: return type defaults to 'int'
+test.c: In function 'dumpcontextlist':
+test.c:1121: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1124: warning: return type defaults to 'int'
+test.c: In function 'dumpcontext':
+test.c:1144: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1147: warning: return type defaults to 'int'
+test.c: In function 'dumpitemset':
+test.c:1158: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1161: warning: return type defaults to 'int'
+test.c: In function 'dumpitem':
+test.c:1207: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1210: warning: return type defaults to 'int'
+test.c: In function 'dumpspan':
+test.c:1224: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1227: warning: return type defaults to 'int'
+test.c: In function 'dumptext':
+test.c:1232: warning: control reaches end of non-void function
+test.c: In function 'showenfilades':
+test.c:1271: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1299: warning: return type defaults to 'int'
+test.c: In function 'checkitem':
+test.c:1331: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1334: warning: return type defaults to 'int'
+test.c: In function 'checkpointer':
+test.c:1337: warning: 'return' with no value, in function returning non-void
+test.c: At top level:
+test.c:1367: warning: return type defaults to 'int'
+test.c: In function 'dumpspanpairset':
+test.c:1373: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1376: warning: return type defaults to 'int'
+test.c: In function 'dumpspanpair':
+test.c:1387: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1389: warning: return type defaults to 'int'
+test.c: In function 'dumphexstuff':
+test.c:1401: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1404: warning: return type defaults to 'int'
+test.c: In function 'checknumofsons':
+test.c:1423: warning: control reaches end of non-void function
+test.c: At top level:
+test.c:1426: warning: return type defaults to 'int'
+test.c: In function 'nchecknumofsons':
+test.c:1445: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  tumble.c
+In file included from tumble.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+tumble.c: In function 'tumblereq':
+tumble.c:27: warning: cast from pointer to integer of different size
+tumble.c:28: warning: cast from pointer to integer of different size
+tumble.c: In function 'tumblercheckptr':
+tumble.c:216: warning: implicit declaration of function 'qerror'
+tumble.c: At top level:
+tumble.c:294: warning: return type defaults to 'int'
+tumble.c: In function 'tumblerjustify':
+tumble.c:302: warning: 'return' with no value, in function returning non-void
+tumble.c:308: warning: 'return' with no value, in function returning non-void
+tumble.c: At top level:
+tumble.c:321: warning: return type defaults to 'int'
+tumble.c: In function 'partialtumblerjustify':
+tumble.c:336: warning: 'return' with no value, in function returning non-void
+tumble.c: At top level:
+tumble.c:349: warning: return type defaults to 'int'
+tumble.c: In function 'tumblercopy':
+tumble.c:353: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:365: warning: return type defaults to 'int'
+tumble.c: In function 'tumblermax':
+tumble.c:371: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:375: warning: return type defaults to 'int'
+tumble.c: In function 'functiontumbleradd':
+tumble.c:379: warning: 'return' with no value, in function returning non-void
+tumble.c:382: warning: 'return' with no value, in function returning non-void
+tumble.c:384: warning: implicit declaration of function 'absadd'
+tumble.c:394: warning: implicit declaration of function 'strongsub'
+tumble.c:400: warning: implicit declaration of function 'weaksub'
+tumble.c: At top level:
+tumble.c:416: warning: return type defaults to 'int'
+tumble.c: In function 'tumblersub':
+tumble.c:450: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:455: warning: return type defaults to 'int'
+tumble.c: In function 'absadd':
+tumble.c:496: warning: 'return' with no value, in function returning non-void
+tumble.c:459: warning: unused variable 'place'
+tumble.c: At top level:
+tumble.c:549: warning: return type defaults to 'int'
+tumble.c: In function 'strongsub':
+tumble.c:558: warning: 'return' with no value, in function returning non-void
+tumble.c:562: warning: 'return' with no value, in function returning non-void
+tumble.c:569: warning: 'return' with no value, in function returning non-void
+tumble.c:575: warning: 'return' with no value, in function returning non-void
+tumble.c:580: warning: 'return' with no value, in function returning non-void
+tumble.c: At top level:
+tumble.c:584: warning: return type defaults to 'int'
+tumble.c: In function 'weaksub':
+tumble.c:594: warning: 'return' with no value, in function returning non-void
+tumble.c:602: warning: 'return' with no value, in function returning non-void
+tumble.c: At top level:
+tumble.c:620: warning: return type defaults to 'int'
+tumble.c: In function 'tumblerincrement':
+tumble.c:629: warning: 'return' with no value, in function returning non-void
+tumble.c: At top level:
+tumble.c:648: warning: return type defaults to 'int'
+tumble.c: In function 'tumblertruncate':
+tumble.c:663: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:666: warning: return type defaults to 'int'
+tumble.c: In function 'prefixtumbler':
+tumble.c:677: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:701: warning: return type defaults to 'int'
+tumble.c: In function 'beheadtumbler':
+tumble.c:711: warning: control reaches end of non-void function
+tumble.c: At top level:
+tumble.c:714: warning: return type defaults to 'int'
+tumble.c: In function 'docidandvstream2tumbler':
+tumble.c:730: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  tumbleari.c
+In file included from tumbleari.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+tumbleari.c: In function 'tumblerptrtofixed':
+tumbleari.c:36: warning: unused variable 'temp2'
+tumbleari.c: In function 'tumblerfixedtoptr':
+tumbleari.c:82: warning: implicit declaration of function 'qerror'
+tumbleari.c:89: warning: implicit declaration of function 'nstories'
+tumbleari.c:97: warning: implicit declaration of function 'memmove'
+tumbleari.c:97: warning: incompatible implicit declaration of built-in function 'memmove'
+tumbleari.c: At top level:
+tumbleari.c:124: warning: return type defaults to 'int'
+tumbleari.c: In function 'foofree':
+tumbleari.c:127: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  usefull.c
+In file included from xanadu.h:11,
+                 from usefull.c:9:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+usefull.c:26: warning: return type defaults to 'int'
+usefull.c: In function 'setmem':
+usefull.c:33: warning: control reaches end of non-void function
+usefull.c: At top level:
+usefull.c:36: warning: return type defaults to 'int'
+usefull.c: In function 'mymovmem':
+usefull.c:49: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  wisp.c
+In file included from wisp.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+wisp.c:16: warning: return type defaults to 'int'
+wisp.c: In function 'dspadd':
+wisp.c:21: warning: implicit declaration of function 'lockadd'
+wisp.c:22: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:26: warning: return type defaults to 'int'
+wisp.c: In function 'dspsub':
+wisp.c:31: warning: implicit declaration of function 'locksubtract'
+wisp.c:32: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:92: warning: return type defaults to 'int'
+wisp.c: In function 'setwispupwards':
+wisp.c:113: warning: implicit declaration of function 'ivemodified'
+wisp.c: At top level:
+wisp.c:124: warning: return type defaults to 'int'
+wisp.c: In function 'setwispsofsons':
+wisp.c:129: warning: control reaches end of non-void function
+wisp.c: In function 'setwisp':
+wisp.c:149: warning: implicit declaration of function 'qerror'
+wisp.c: In function 'setwidseq':
+wisp.c:174: warning: implicit declaration of function 'memset'
+wisp.c:174: warning: incompatible implicit declaration of built-in function 'memset'
+wisp.c:180: warning: implicit declaration of function 'memmove'
+wisp.c:180: warning: incompatible implicit declaration of built-in function 'memmove'
+wisp.c: In function 'setwispnd':
+wisp.c:214: warning: incompatible implicit declaration of built-in function 'memmove'
+wisp.c:216: warning: implicit declaration of function 'lockmin'
+wisp.c:228: warning: incompatible implicit declaration of built-in function 'memset'
+wisp.c:235: warning: implicit declaration of function 'lockmax'
+wisp.c:242: warning: implicit declaration of function 'didntchangewisps'
+wisp.c: At top level:
+wisp.c:252: warning: return type defaults to 'int'
+wisp.c: In function 'didntchangewisps':
+wisp.c:253: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:257: warning: return type defaults to 'int'
+wisp.c: In function 'setwidnd':
+wisp.c:262: warning: incompatible implicit declaration of built-in function 'memset'
+wisp.c:266: warning: incompatible implicit declaration of built-in function 'memmove'
+wisp.c:269: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:298: warning: return type defaults to 'int'
+wisp.c: In function 'lockadd':
+wisp.c:302: warning: implicit declaration of function 'functiontumbleradd'
+wisp.c:303: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:306: warning: return type defaults to 'int'
+wisp.c: In function 'locksubtract':
+wisp.c:310: warning: implicit declaration of function 'tumblersub'
+wisp.c:311: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:314: warning: return type defaults to 'int'
+wisp.c: In function 'lockmin':
+wisp.c:321: warning: control reaches end of non-void function
+wisp.c: At top level:
+wisp.c:324: warning: return type defaults to 'int'
+wisp.c: In function 'lockmax':
+wisp.c:331: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  queues.c
+cc                          -pg -ggdb -Wall -c  rcfile.c
+rcfile.c: In function 'processrcfile':
+rcfile.c:55: warning: implicit declaration of function 'strcmp'
+rcfile.c:56: warning: implicit declaration of function 'strcpy'
+rcfile.c:56: warning: incompatible implicit declaration of built-in function 'strcpy'
+rcfile.c:76: warning: format '%d' expects type 'int *', but argument 3 has type 'int'
+rcfile.c:82: warning: format '%d' expects type 'int *', but argument 3 has type 'int'
+cc                          -pg -ggdb -Wall -c  xumain.c
+In file included from xanadu.h:11,
+                 from xumain.c:13:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+xumain.c:31: warning: return type defaults to 'int'
+xumain.c: In function 'main':
+xumain.c:39: warning: implicit declaration of function 'processrcfile'
+xumain.c:40: warning: implicit declaration of function 'init'
+xumain.c:41: warning: implicit declaration of function 'inittask'
+xumain.c:47: warning: implicit declaration of function 'initmagicktricks'
+xumain.c:49: warning: implicit declaration of function 'getaccount'
+xumain.c:55: warning: implicit declaration of function 'xanadu'
+xumain.c:56: warning: implicit declaration of function 'testforreservedness'
+xumain.c:35: warning: unused variable 'i'
+xumain.c:33: warning: unused variable 'fd'
+xumain.c: At top level:
+xumain.c:68: warning: return type defaults to 'int'
+xumain.c: In function 'xanadu':
+xumain.c:73: warning: implicit declaration of function 'getrequest'
+xumain.c:80: warning: implicit declaration of function 'tfree'
+xumain.c:81: warning: control reaches end of non-void function
+xumain.c: In function 'setmaximumsetupsize':
+xumain.c:90: warning: implicit declaration of function 'atoi'
+xumain.c: In function 'sourceunixcommand':
+xumain.c:113: warning: implicit declaration of function 'getpid'
+xumain.c:114: warning: implicit declaration of function 'prompt'
+xumain.c:116: warning: implicit declaration of function 'strlen'
+xumain.c:116: warning: incompatible implicit declaration of built-in function 'strlen'
+xumain.c:118: warning: implicit declaration of function 'strcat'
+xumain.c:118: warning: incompatible implicit declaration of built-in function 'strcat'
+xumain.c:120: warning: implicit declaration of function 'system'
+xumain.c:120: warning: suggest parentheses around assignment used as truth value
+xumain.c:132: warning: implicit declaration of function 'docreatenewdocument'
+xumain.c:134: warning: implicit declaration of function 'putcreatenewdocument'
+xumain.c:140: warning: implicit declaration of function 'qerror'
+xumain.c:149: warning: implicit declaration of function 'doappend'
+xumain.c:157: warning: implicit declaration of function 'unlink'
+xumain.c: In function 'getmuchtext':
+xumain.c:179: warning: incompatible implicit declaration of built-in function 'strlen'
+xumain.c: At top level:
+xumain.c:208: warning: return type defaults to 'int'
+cc                          -pg -ggdb -Wall -c  get1.c
+In file included from xanadu.h:11,
+                 from get1.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+get1.c: In function 'getfinddocscontaining':
+get1.c:19: warning: implicit declaration of function 'getspecset'
+get1.c: In function 'getcopy':
+get1.c:29: warning: implicit declaration of function 'prompt'
+get1.c:30: warning: implicit declaration of function 'getisa'
+get1.c:33: warning: implicit declaration of function 'getvsa'
+get1.c: In function 'getinsert':
+get1.c:46: warning: implicit declaration of function 'gettextset'
+get1.c: In function 'getfollowlink':
+get1.c:91: warning: implicit declaration of function 'getnumber'
+get1.c: In function 'getrearrange':
+get1.c:134: warning: implicit declaration of function 'getcutseq'
+get1.c: In function 'getfindlinksfromtothree':
+get1.c:165: warning: implicit declaration of function 'getspanset'
+get1.c: At top level:
+get1.c:220: warning: return type defaults to 'int'
+get1.c: In function 'getcreatenewdocument':
+get1.c:221: warning: control reaches end of non-void function
+get1.c: In function 'getdeletevspan':
+get1.c:233: warning: implicit declaration of function 'getspan'
+get1.c: At top level:
+get1.c:239: warning: return type defaults to 'int'
+get1.c: In function 'setdebug':
+get1.c:243: warning: control reaches end of non-void function
+get1.c: At top level:
+get1.c:246: warning: return type defaults to 'int'
+get1.c: In function 'playwithalloc':
+get1.c:249: warning: implicit declaration of function 'lookatalloc'
+get1.c:250: warning: control reaches end of non-void function
+get1.c: In function 'getxaccount':
+get1.c:271: warning: implicit declaration of function 'gettumbler'
+get1.c:272: warning: value computed is not used
+get1.c: At top level:
+get1.c:281: warning: return type defaults to 'int'
+get1.c:289: warning: return type defaults to 'int'
+get1.c:303: warning: return type defaults to 'int'
+cc                          -pg -ggdb -Wall -c  get2.c
+In file included from xanadu.h:11,
+                 from get2.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+get2.c: In function 'needchar':
+get2.c:69: warning: too few arguments for format
+get2.c: In function 'getbool':
+get2.c:121: warning: implicit declaration of function 'prompt'
+get2.c:133: warning: implicit declaration of function 'error'
+get2.c: In function 'getspecset':
+get2.c:201: warning: conflicting types for built-in function 'gettext'
+get2.c: In function 'gettext':
+get2.c:320: warning: implicit declaration of function 'strlen'
+get2.c:320: warning: incompatible implicit declaration of built-in function 'strlen'
+get2.c: In function 'getcutseq':
+get2.c:340: warning: unused variable 'cutaddress'
+cc                          -pg -ggdb -Wall -c  put.c
+In file included from xanadu.h:11,
+                 from put.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+put.c:17: warning: return type defaults to 'int'
+put.c: In function 'prompt':
+put.c:21: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:24: warning: return type defaults to 'int'
+put.c: In function 'error':
+put.c:28: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:31: warning: return type defaults to 'int'
+put.c: In function 'puttumbler':
+put.c:36: warning: implicit declaration of function 'tumblercheck'
+put.c:37: warning: implicit declaration of function 'dumptumbler'
+put.c:38: warning: 'return' with no value, in function returning non-void
+put.c:48: warning: implicit declaration of function 'putnum'
+put.c: At top level:
+put.c:55: warning: return type defaults to 'int'
+put.c: In function 'putnum':
+put.c:59: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:63: warning: return type defaults to 'int'
+put.c: In function 'putisa':
+put.c:67: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:71: warning: return type defaults to 'int'
+put.c: In function 'putitemset':
+put.c:76: warning: 'return' with no value, in function returning non-void
+put.c:79: warning: implicit declaration of function 'putitem'
+put.c: At top level:
+put.c:86: warning: return type defaults to 'int'
+put.c: In function 'putitem':
+put.c:92: warning: implicit declaration of function 'putspan'
+put.c:105: warning: implicit declaration of function 'puttext'
+put.c:123: warning: format '%x' expects type 'unsigned int', but argument 3 has type 'union typeitem *'
+put.c:124: warning: 'return' with no value, in function returning non-void
+put.c: At top level:
+put.c:130: warning: return type defaults to 'int'
+put.c: In function 'putspan':
+put.c:137: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:140: warning: return type defaults to 'int'
+put.c: In function 'puttext':
+put.c:143: warning: implicit declaration of function 'write'
+put.c:144: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:147: warning: return type defaults to 'int'
+put.c: In function 'putspanpairset':
+put.c:154: warning: implicit declaration of function 'putspanpair'
+put.c:155: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:158: warning: return type defaults to 'int'
+put.c: In function 'putspanpair':
+put.c:168: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:171: warning: return type defaults to 'int'
+put.c: In function 'putcreatelink':
+put.c:177: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:180: warning: return type defaults to 'int'
+put.c: In function 'putfollowlink':
+put.c:185: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:188: warning: return type defaults to 'int'
+put.c: In function 'putretrievedocvspanset':
+put.c:193: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:196: warning: return type defaults to 'int'
+put.c: In function 'putretrievedocvspan':
+put.c:201: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:204: warning: return type defaults to 'int'
+put.c: In function 'putretrievev':
+put.c:209: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:212: warning: return type defaults to 'int'
+put.c: In function 'putfindlinksfromtothree':
+put.c:217: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:220: warning: return type defaults to 'int'
+put.c: In function 'putfindnumoflinksfromtothree':
+put.c:224: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:227: warning: return type defaults to 'int'
+put.c: In function 'putfindnextnlinksfromtothree':
+put.c:233: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:236: warning: return type defaults to 'int'
+put.c: In function 'putshowrelationof2versions':
+put.c:241: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:244: warning: return type defaults to 'int'
+put.c: In function 'putcreatenewdocument':
+put.c:250: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:253: warning: return type defaults to 'int'
+put.c: In function 'putcreatenewversion':
+put.c:259: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:262: warning: return type defaults to 'int'
+put.c: In function 'putfinddocscontaining':
+put.c:267: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:270: warning: return type defaults to 'int'
+put.c: In function 'putretrieveendsets':
+put.c:281: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:284: warning: return type defaults to 'int'
+put.c: In function 'putinsert':
+put.c:286: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:289: warning: return type defaults to 'int'
+put.c: In function 'putcopy':
+put.c:291: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:294: warning: return type defaults to 'int'
+put.c: In function 'putdeletevspan':
+put.c:296: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:299: warning: return type defaults to 'int'
+put.c: In function 'putrearrange':
+put.c:301: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:304: warning: return type defaults to 'int'
+put.c: In function 'putrequestfailed':
+put.c:307: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:309: warning: return type defaults to 'int'
+put.c: In function 'kluge':
+put.c:310: warning: control reaches end of non-void function
+put.c: At top level:
+put.c:312: warning: return type defaults to 'int'
+put.c:317: warning: return type defaults to 'int'
+put.c:326: warning: return type defaults to 'int'
+put.c:335: warning: return type defaults to 'int'
+put.c:341: warning: return type defaults to 'int'
+cc                          alloc.o allocdebug.o bert.o  context.o corediskin.o corediskout.o correspond.o credel.o disk.o diskalloc.o do1.o do2.o edit.o entexit.o fns.o genf.o granf1.o granf2.o init.o insert.o insertnd.o makeroom.o multiloaf.o ndcuts.o ndinters.o orglinks.o recombine.o retrie.o spanf1.o spanf2.o split.o sporgl.o task.o test.o tumble.o tumbleari.o usefull.o wisp.o queues.o rcfile.o xumain.o get1.o get2.o put.o -g -pg  -o m
+/usr/bin/ld: Warning: alignment 4 of symbol `nolread' in disk.o is smaller than 8 in test.o
+rm -f xumain
+mv m xumain
+chmod +w xumain
+cc                          -pg -ggdb -Wall -c  be.c
+In file included from xanadu.h:11,
+                 from be.c:14:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+be.c:33: warning: missing braces around initializer
+be.c:33: warning: (near initialization for 'defaultaccount.mantissa')
+be.c:36: warning: return type defaults to 'int'
+be.c: In function 'main':
+be.c:60: warning: implicit declaration of function 'processrcfile'
+be.c:70: warning: implicit declaration of function 'init'
+be.c:71: warning: implicit declaration of function 'inittask'
+be.c:73: warning: implicit declaration of function 'initmagicktricks'
+be.c:79: warning: implicit declaration of function 'xanadu'
+be.c: At top level:
+be.c:87: warning: return type defaults to 'int'
+be.c: In function 'xanadu':
+be.c:95: warning: implicit declaration of function 'getrequest'
+be.c:97: warning: implicit declaration of function 'sendresultoutput'
+be.c:101: warning: implicit declaration of function 'tfree'
+be.c:106: warning: control reaches end of non-void function
+be.c: In function 'establishprotocol':
+be.c:125: warning: implicit declaration of function 'pullc'
+be.c:128: warning: implicit declaration of function 'xuputstring'
+be.c: At top level:
+be.c:140: warning: return type defaults to 'int'
+be.c: In function 'frontenddied':
+be.c:142: warning: implicit declaration of function 'diskexit'
+be.c:143: warning: implicit declaration of function 'qerror'
+be.c:144: warning: control reaches end of non-void function
+be.c: In function 'setmaximumsetupsize':
+be.c:148: warning: control reaches end of non-void function
+be.c: In function 'sourceunixcommand':
+be.c:150: warning: control reaches end of non-void function
+be.c: At top level:
+be.c:160: warning: return type defaults to 'int'
+cc                          -pg -ggdb -Wall -c  get1fe.c
+In file included from xanadu.h:11,
+                 from get1fe.c:13:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+get1fe.c: In function 'getinsert':
+get1fe.c:33: warning: implicit declaration of function 'gettumbler'
+get1fe.c:35: warning: implicit declaration of function 'gettextset'
+get1fe.c: In function 'getcopy':
+get1fe.c:73: warning: implicit declaration of function 'getspecset'
+get1fe.c: In function 'getrearrange':
+get1fe.c:87: warning: implicit declaration of function 'getcutseq'
+get1fe.c: In function 'getfindlinksfromtothree':
+get1fe.c:148: warning: implicit declaration of function 'getspanset'
+get1fe.c: In function 'getfindnextnlinksfromtothree':
+get1fe.c:164: warning: implicit declaration of function 'getnumber'
+get1fe.c: At top level:
+get1fe.c:181: warning: return type defaults to 'int'
+get1fe.c: In function 'getcreatenewdocument':
+get1fe.c:184: warning: control reaches end of non-void function
+get1fe.c: In function 'getdeletevspan':
+get1fe.c:197: warning: implicit declaration of function 'getspan'
+get1fe.c: At top level:
+get1fe.c:277: warning: return type defaults to 'int'
+get1fe.c: In function 'playwithalloc':
+get1fe.c:279: warning: implicit declaration of function 'prompt'
+get1fe.c:280: warning: implicit declaration of function 'lookatalloc'
+get1fe.c:281: warning: control reaches end of non-void function
+get1fe.c: In function 'getxaccount':
+get1fe.c:297: warning: value computed is not used
+get1fe.c: At top level:
+get1fe.c:304: warning: return type defaults to 'int'
+get1fe.c:316: warning: return type defaults to 'int'
+get1fe.c: In function 'logaccount':
+get1fe.c:320: warning: implicit declaration of function 'puttumbler'
+get1fe.c:322: warning: control reaches end of non-void function
+get1fe.c: At top level:
+get1fe.c:325: warning: return type defaults to 'int'
+get1fe.c:336: warning: return type defaults to 'int'
+cc                          -pg -ggdb -Wall -c  get2fe.c
+In file included from xanadu.h:11,
+                 from get2fe.c:12:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+get2fe.c:30: warning: return type defaults to 'int'
+get2fe.c: In function 'pushc':
+get2fe.c:34: warning: implicit declaration of function 'error'
+get2fe.c:39: warning: control reaches end of non-void function
+get2fe.c: In function 'pullc':
+get2fe.c:55: warning: implicit declaration of function 'frontenddied'
+get2fe.c: In function 'getspecset':
+get2fe.c:192: warning: implicit declaration of function 'taskalloc'
+get2fe.c:192: warning: cast to pointer from integer of different size
+get2fe.c:196: warning: cast to pointer from integer of different size
+get2fe.c: In function 'getspanset':
+get2fe.c:235: warning: cast to pointer from integer of different size
+get2fe.c: In function 'getcutseq':
+get2fe.c:267: warning: unused variable 'cutaddress'
+get2fe.c: In function 'gettextset':
+get2fe.c:291: warning: conflicting types for built-in function 'gettext'
+get2fe.c:298: warning: cast to pointer from integer of different size
+cc                          -pg -ggdb -Wall -c  putfe.c
+In file included from xanadu.h:11,
+                 from putfe.c:13:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+putfe.c:20: warning: 'febelog' initialized and declared 'extern'
+putfe.c:33: warning: return type defaults to 'int'
+putfe.c: In function 'xuputc':
+putfe.c:38: warning: implicit declaration of function 'frontenddied'
+putfe.c:46: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:50: warning: return type defaults to 'int'
+putfe.c: In function 'xuputstring':
+putfe.c:55: warning: implicit declaration of function 'strlen'
+putfe.c:55: warning: incompatible implicit declaration of built-in function 'strlen'
+putfe.c:56: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:60: warning: return type defaults to 'int'
+putfe.c: In function 'putnum':
+putfe.c:80: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:84: warning: return type defaults to 'int'
+putfe.c: In function 'sendresultoutput':
+putfe.c:92: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:95: warning: return type defaults to 'int'
+putfe.c: In function 'error':
+putfe.c:99: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:102: warning: return type defaults to 'int'
+putfe.c: In function 'prompt':
+putfe.c:106: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:109: warning: return type defaults to 'int'
+putfe.c: In function 'putnumber':
+putfe.c:114: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:117: warning: return type defaults to 'int'
+putfe.c: In function 'puttumbler':
+putfe.c:131: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:134: warning: return type defaults to 'int'
+putfe.c: In function 'putisa':
+putfe.c:138: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:141: warning: return type defaults to 'int'
+putfe.c: In function 'putitemset':
+putfe.c:155: warning: implicit declaration of function 'puttextset'
+putfe.c:157: warning: implicit declaration of function 'putitem'
+putfe.c:159: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:162: warning: return type defaults to 'int'
+putfe.c: In function 'putitem':
+putfe.c:172: warning: implicit declaration of function 'putspan'
+putfe.c:185: warning: implicit declaration of function 'puttext'
+putfe.c:198: warning: 'return' with no value, in function returning non-void
+putfe.c: At top level:
+putfe.c:203: warning: return type defaults to 'int'
+putfe.c: In function 'putspan':
+putfe.c:209: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:212: warning: return type defaults to 'int'
+putfe.c: In function 'puttextset':
+putfe.c:230: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:233: warning: return type defaults to 'int'
+putfe.c: In function 'puttext':
+putfe.c:245: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:249: warning: return type defaults to 'int'
+putfe.c: In function 'putspanpairset':
+putfe.c:258: warning: implicit declaration of function 'putspanpair'
+putfe.c:259: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:262: warning: return type defaults to 'int'
+putfe.c: In function 'putspanpair':
+putfe.c:268: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:274: warning: return type defaults to 'int'
+putfe.c: In function 'putinsert':
+putfe.c:277: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:280: warning: return type defaults to 'int'
+putfe.c: In function 'putretrievedocvspanset':
+putfe.c:285: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:288: warning: return type defaults to 'int'
+putfe.c: In function 'putcopy':
+putfe.c:291: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:294: warning: return type defaults to 'int'
+putfe.c: In function 'putrearrange':
+putfe.c:297: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:300: warning: return type defaults to 'int'
+putfe.c: In function 'putcreatelink':
+putfe.c:305: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:308: warning: return type defaults to 'int'
+putfe.c: In function 'putretrievev':
+putfe.c:314: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:317: warning: return type defaults to 'int'
+putfe.c: In function 'putfindnumoflinksfromtothree':
+putfe.c:322: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:325: warning: return type defaults to 'int'
+putfe.c: In function 'putfindlinksfromtothree':
+putfe.c:331: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:334: warning: return type defaults to 'int'
+putfe.c: In function 'putfindnextnlinksfromtothree':
+putfe.c:341: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:346: warning: return type defaults to 'int'
+putfe.c: In function 'putshowrelationof2versions':
+putfe.c:351: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:354: warning: return type defaults to 'int'
+putfe.c: In function 'putcreatenewdocument':
+putfe.c:364: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:367: warning: return type defaults to 'int'
+putfe.c: In function 'putdeletevspan':
+putfe.c:370: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:373: warning: return type defaults to 'int'
+putfe.c: In function 'putcreatenewversion':
+putfe.c:378: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:381: warning: return type defaults to 'int'
+putfe.c: In function 'putretrievedocvspan':
+putfe.c:386: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:395: warning: return type defaults to 'int'
+putfe.c: In function 'putfollowlink':
+putfe.c:400: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:407: warning: return type defaults to 'int'
+putfe.c: In function 'putfinddocscontaining':
+putfe.c:413: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:416: warning: return type defaults to 'int'
+putfe.c: In function 'putretrieveendsets':
+putfe.c:425: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:428: warning: return type defaults to 'int'
+putfe.c: In function 'putrequestfailed':
+putfe.c:432: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:435: warning: return type defaults to 'int'
+putfe.c: In function 'putxaccount':
+putfe.c:438: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:441: warning: return type defaults to 'int'
+putfe.c: In function 'putcreatenode_or_account':
+putfe.c:446: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:449: warning: return type defaults to 'int'
+putfe.c: In function 'putopen':
+putfe.c:454: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:457: warning: return type defaults to 'int'
+putfe.c: In function 'putclose':
+putfe.c:460: warning: control reaches end of non-void function
+putfe.c: At top level:
+putfe.c:463: warning: return type defaults to 'int'
+putfe.c: In function 'putquitxanadu':
+putfe.c:466: warning: control reaches end of non-void function
+cc                          alloc.o allocdebug.o bert.o  context.o corediskin.o corediskout.o correspond.o credel.o disk.o diskalloc.o do1.o do2.o edit.o entexit.o fns.o genf.o granf1.o granf2.o init.o insert.o insertnd.o makeroom.o multiloaf.o ndcuts.o ndinters.o orglinks.o recombine.o retrie.o spanf1.o spanf2.o split.o sporgl.o task.o test.o tumble.o tumbleari.o usefull.o wisp.o queues.o rcfile.o be.o get1fe.o get2fe.o putfe.o -g -pg -o be
+/usr/bin/ld: Warning: alignment 4 of symbol `nolread' in disk.o is smaller than 8 in test.o
+rm -f backend
+mv be backend
+chmod +w backend
+cc                          -pg -ggdb -Wall -c  bed.c
+In file included from xanadu.h:11,
+                 from bed.c:20:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+bed.c:48: warning: return type defaults to 'int'
+bed.c: In function 'main':
+bed.c:68: warning: implicit declaration of function 'processrcfile'
+bed.c:70: warning: passing argument 2 of 'signal' from incompatible pointer type
+bed.c:71: warning: passing argument 2 of 'signal' from incompatible pointer type
+bed.c:92: warning: implicit declaration of function 'init'
+bed.c:93: warning: implicit declaration of function 'inittask'
+bed.c:95: warning: implicit declaration of function 'initmagicktricks'
+bed.c:96: warning: implicit declaration of function 'open_sock'
+bed.c:105: warning: implicit declaration of function 'diskflush'
+bed.c:111: warning: passing argument 2 of 'select' from incompatible pointer type
+bed.c:116: warning: implicit declaration of function 'qerror'
+bed.c:126: warning: implicit declaration of function 'logaccount'
+bed.c:128: warning: implicit declaration of function 'xanadu'
+bed.c:134: warning: implicit declaration of function 'writeenfilades'
+bed.c:135: warning: implicit declaration of function 'closediskfile'
+bed.c:59: warning: unused variable 's'
+bed.c:52: warning: unused variable 'fd'
+bed.c: At top level:
+bed.c:154: warning: return type defaults to 'int'
+bed.c: In function 'xanadu':
+bed.c:160: warning: implicit declaration of function 'dobertexit'
+bed.c:162: warning: implicit declaration of function 'getrequest'
+bed.c:164: warning: implicit declaration of function 'sendresultoutput'
+bed.c:169: warning: implicit declaration of function 'tfree'
+bed.c:173: warning: control reaches end of non-void function
+bed.c: In function 'flagquitting':
+bed.c:186: warning: implicit declaration of function 'exit'
+bed.c:186: warning: incompatible implicit declaration of built-in function 'exit'
+bed.c: In function 'establishprotocol':
+bed.c:203: warning: implicit declaration of function 'xuputstring'
+bed.c: At top level:
+bed.c:218: warning: return type defaults to 'int'
+bed.c: In function 'setmaximumsetupsize':
+bed.c:228: warning: control reaches end of non-void function
+bed.c: In function 'sourceunixcommand':
+bed.c:234: warning: control reaches end of non-void function
+cc                          -pg -ggdb -Wall -c  socketbe.c
+In file included from socketbe.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+socketbe.c:32: warning: missing braces around initializer
+socketbe.c:32: warning: (near initialization for 'defaultaccount.mantissa')
+socketbe.c: In function 'new_players':
+socketbe.c:73: warning: passing argument 2 of 'select' from incompatible pointer type
+socketbe.c:79: warning: passing argument 2 of 'accept' from incompatible pointer type
+socketbe.c:79: warning: pointer targets in passing argument 3 of 'accept' differ in signedness
+socketbe.c:86: warning: implicit declaration of function 'close'
+socketbe.c:109: warning: implicit declaration of function 'establishprotocol'
+socketbe.c:59: warning: unused variable 'requestinstance'
+socketbe.c:58: warning: unused variable 'len'
+socketbe.c:57: warning: unused variable 'devicename'
+socketbe.c:56: warning: unused variable 'temp'
+socketbe.c:55: warning: unused variable 'i'
+socketbe.c:126: warning: control reaches end of non-void function
+socketbe.c: In function 'leave':
+socketbe.c:148: warning: control reaches end of non-void function
+socketbe.c: In function 'open_sock':
+socketbe.c:161: warning: implicit declaration of function 'exit'
+socketbe.c:161: warning: incompatible implicit declaration of built-in function 'exit'
+socketbe.c:175: warning: passing argument 2 of 'bind' from incompatible pointer type
+socketbe.c:177: warning: incompatible implicit declaration of built-in function 'exit'
+socketbe.c:181: warning: incompatible implicit declaration of built-in function 'exit'
+socketbe.c:156: warning: unused variable 'host'
+socketbe.c: In function 'crash':
+socketbe.c:194: warning: incompatible implicit declaration of built-in function 'exit'
+cc                          alloc.o allocdebug.o bert.o  context.o corediskin.o corediskout.o correspond.o credel.o disk.o diskalloc.o do1.o do2.o edit.o entexit.o fns.o genf.o granf1.o granf2.o init.o insert.o insertnd.o makeroom.o multiloaf.o ndcuts.o ndinters.o orglinks.o recombine.o retrie.o spanf1.o spanf2.o split.o sporgl.o task.o test.o tumble.o tumbleari.o usefull.o wisp.o queues.o rcfile.o bed.o socketbe.o get1fe.o get2fe.o putfe.o \
+	-g -pg -o bed
+/usr/bin/ld: Warning: alignment 4 of symbol `nolread' in disk.o is smaller than 8 in test.o
+rm -f backenddaemon
+mv bed backenddaemon
+chmod +w backenddaemon

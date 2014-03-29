@@ -1,0 +1,48 @@
+credel.c:		if (grimreaper->age == RESERVED) {
+credel.c:	if(localreaper ->age < OLD || localreaper-> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){	
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if(p ->age < OLD ||p -> age == RESERVED){
+credel.c:	if (ptr->age == RESERVED) {
+credel.c:	if (ptr->age == RESERVED) {
+credel.c:	if (ptr->age != RESERVED) {
+credel.c:	ptr->age = RESERVED;
+credel.c:		if (ptr->age == RESERVED) {
+credel.c:	if (ptr->age == RESERVED)
+credel.c:		gerror ("freecrum called with RESERVED crum.\n");
+genf.c:#ifndef RESERVED
+genf.c:#define RESERVED -1 /*in this file, this is used to flag calls from coredisk*/
+genf.c:	rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:		rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:	rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:		rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:	rejuvinateifnotRESERVED(ptr);
+genf.c:		rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:		rejuvinateifnotRESERVED(ptr);
+genf.c:		rejuvinateifnotRESERVED((typecorecrum *)ptr);
+genf.c:		rejuvinateifnotRESERVED(ptr);
+genf.c:	rejuvinateifnotRESERVED(ptr);
+genf.c:		rejuvinateifnotRESERVED(ptr);
+genf.c:		rejuvinateifnotRESERVED (ptr);
+genf.c:	rejuvinateifnotRESERVED (ptr);
+genf.c:	rejuvinateifnotRESERVED (leftbro);
+genf.c:		if (oldage != RESERVED) /* zzz experimental zz */
+genf.c:	rejuvinateifnotRESERVED (ptr->leftson);
+genf.c:	rejuvinateifnotRESERVED (ptr);
+genf.c:	rejuvinateifnotRESERVED (ptr);
+recombine.c:                if (ptr->age == RESERVED)
+recombine.c:                if (ptr->age == RESERVED)
+recombine.c:        if (dest->age == RESERVED || src->age == RESERVED)
+split.c:	if (ofatherage == RESERVED){
+split.c:		father->age = RESERVED;
+split.c:	if (optrage == RESERVED){
+split.c:		ptr->age = RESERVED;
+test.c:		if(ptr->age == RESERVED){
+common.h:#define rejuvinateifnotRESERVED(x) (((x)->age==RESERVED)?(int)(x):((x)->age = NEW))
+common.h:#define rejuvinate(x) ((x)->age==RESERVED)?(reservnumber?--reservnumber:testforrejuvinate(x)):0,(x)->age = NEW
+common.h:#define macrogetrightbro(x)    ((rejuvinateifnotRESERVED (x), (x) = (x)->rightbro,  ((x)? (rejuvinateifnotRESERVED (x)): 0),(x)))
+enf.h:	extern void          rejuvinateifnotRESERVED();
+reap.h:#ifndef RESERVED
+reap.h:#define RESERVED 0xff     /* keeps a crum from being reaped */

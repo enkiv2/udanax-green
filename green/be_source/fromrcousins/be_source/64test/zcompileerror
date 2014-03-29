@@ -1,0 +1,69 @@
+cc                          -pg -ggdb -Wall -c  corediskout.c
+In file included from xanadu.h:11,
+                 from crum.h:9,
+                 from corediskout.c:11:
+common.h:158: warning: conflicting types for built-in function 'malloc'
+corediskout.c: In function 'diskexit':
+corediskout.c:26: warning: type defaults to 'int' in declaration of 'indiskexit'
+corediskout.c:26: error: invalid storage class for function 'indiskexit'
+corediskout.c:27: warning: implicit declaration of function 'indiskexit'
+corediskout.c: At top level:
+corediskout.c:33: warning: conflicting types for 'indiskexit'
+corediskout.c:33: error: static declaration of 'indiskexit' follows non-static declaration
+corediskout.c:27: error: previous implicit declaration of 'indiskexit' was here
+corediskout.c: In function 'indiskexit':
+corediskout.c:37: warning: 'return' with a value, in function returning void
+corediskout.c:41: warning: implicit declaration of function 'closediskfile'
+corediskout.c:48: warning: implicit declaration of function 'exit'
+corediskout.c:48: warning: incompatible implicit declaration of built-in function 'exit'
+corediskout.c: At top level:
+corediskout.c:91: warning: return type defaults to 'int'
+corediskout.c: In function 'hputwiddsp':
+corediskout.c:102: warning: implicit declaration of function 'tumblerfixedtoptr'
+corediskout.c:110: warning: control reaches end of non-void function
+corediskout.c: In function 'varpackloaf':
+corediskout.c:144: warning: implicit declaration of function 'qerror'
+corediskout.c:194: warning: cast from pointer to integer of different size
+corediskout.c:194: warning: cast from pointer to integer of different size
+corediskout.c:223: warning: cast from pointer to integer of different size
+corediskout.c:223: warning: cast from pointer to integer of different size
+corediskout.c: In function 'hputinfo':
+corediskout.c:244: warning: implicit declaration of function 'memmove'
+corediskout.c:244: warning: incompatible implicit declaration of built-in function 'memmove'
+corediskout.c: In function 'orglwrite':
+corediskout.c:287: error: invalid storage class for function 'orglwritepart2'
+corediskout.c:296: warning: implicit declaration of function 'inittask'
+corediskout.c:297: warning: implicit declaration of function 'orglwritepart2'
+corediskout.c:298: warning: implicit declaration of function 'tfree'
+corediskout.c: At top level:
+corediskout.c:305: warning: conflicting types for 'orglwritepart2'
+corediskout.c:305: error: static declaration of 'orglwritepart2' follows non-static declaration
+corediskout.c:297: error: previous implicit declaration of 'orglwritepart2' was here
+corediskout.c: In function 'orglwritepart2':
+corediskout.c:317: warning: type defaults to 'int' in declaration of 'subtreewriterecurs'
+corediskout.c:317: error: invalid storage class for function 'subtreewriterecurs'
+corediskout.c:335: warning: implicit declaration of function 'subtreewriterecurs'
+corediskout.c:343: warning: implicit declaration of function 'changerefcount'
+corediskout.c:358: warning: implicit declaration of function 'testforrejuvinate'
+corediskout.c:361: warning: 'return' with a value, in function returning void
+corediskout.c: In function 'deletefullcrumandgarbageddescendents':
+corediskout.c:372: warning: 'return' with a value, in function returning void
+corediskout.c:387: warning: implicit declaration of function 'diskset'
+corediskout.c: In function 'subtreewrite':
+corediskout.c:424: warning: type defaults to 'int' in declaration of 'subtreewriterecurs'
+corediskout.c:424: error: invalid storage class for function 'subtreewriterecurs'
+corediskout.c: At top level:
+corediskout.c:433: warning: conflicting types for 'subtreewriterecurs'
+corediskout.c:433: error: static declaration of 'subtreewriterecurs' follows non-static declaration
+corediskout.c:335: error: previous implicit declaration of 'subtreewriterecurs' was here
+corediskout.c: In function 'subtreewriterecurs':
+corediskout.c:437: warning: type defaults to 'int' in declaration of 'uniqueoutloaf'
+corediskout.c:437: error: invalid storage class for function 'uniqueoutloaf'
+corediskout.c:498: warning: implicit declaration of function 'uniqueoutloaf'
+corediskout.c: At top level:
+corediskout.c:521: warning: conflicting types for 'uniqueoutloaf'
+corediskout.c:521: error: static declaration of 'uniqueoutloaf' follows non-static declaration
+corediskout.c:498: error: previous implicit declaration of 'uniqueoutloaf' was here
+corediskout.c: In function 'uniqueoutloaf':
+corediskout.c:552: warning: implicit declaration of function 'addallocatedloaftopartialallocedtables'
+make: *** [corediskout.o] Error 1

@@ -1,0 +1,1253 @@
+/* Copyright © 1979-1999 Udanax.com. All rights reserved.
+
+* This code is licensed under the terms of The Udanax Open-Source License, 
+* which contains precisely the terms of the X11 License.  The full text of 
+* The Udanax Open-Source License can be found in the distribution in the file 
+* license.html.  If this file is absent, a copy can be found at 
+* http://udanax.xanadu.com/license.html and http://www.udanax.com/license.html
+*/
+/* credel.d -  enfilade creation and deletion routines */
+#define NEWALLOC 
+#include "common.h"
+#include "enf.h"
+#include "reap.h"
+
+typecorecrum *grimreaper;
+INT ingrimreaper = FALSE;
+INT reaplevel = 0;
+INT timesaroundreaper = 0;
+INT crumnumber = 0;
+INT reapnumber = 0;
+INT nreapings = 0;
+
+INT reservnumber = 0;
+
+extern INT *falloc();
+void freetoqueue();
+char * allocfromqueue();
+
+/*
+  void
+etag(ptr, tag)
+  char * ptr;
+  tagtype tag;
+{
+	*(ptr -sizeof(tagtype)) = tag;
+} 
+*/
+
+  INT *
+eallocwithtag(nbytes, tag)
+  unsigned nbytes;
+  tagtype tag;
+{
+  INT * ealloc();		    
+  char * ret;
+        if(tag == CBCTAG ||tag== CUCTAG){
+	   ret = (char *)ealloc(nbytes );
+	}else{
+	   ret = (char *)malloc(nbytes+sizeof(tagtype));
+	   ret += sizeof(tagtype);
+	}
+/*    etag((char*)ret,tag);*/
+     *(ret - sizeof(tagtype)) = tag;
+    return((INT *)ret);
+}
+				   
+  INT *
+ealloc (nbytes)   /* with tag*/
+  unsigned nbytes;
+{
+  char *ret;
+/*fprintf(stderr,"ealloc called with %d\n",nbytes);*/
+     for (;;) {
+    if((ret=allocfromqueue(nbytes+sizeof(tagtype)))){
+	ret += sizeof(tagtype);
+	return (INT *) ret;
+    }
+	ret = (char *)falloc (nbytes+sizeof(tagtype));
+
+	if (ret) {
+/*	      setmem(ret+sizeof(tagtype),nbytes,0xf9);  */
+		*(tagtype *)ret = FALSE;
+		return (INT *)(ret+sizeof(tagtype));
+	}
+	if (grimreaper == NULL){
+	        xgrabmorecore();
+		/*qerror ("Why am I out of room?\n");*/
+	    }
+	grimlyreap();
+     }
+}
+
+void efree (ptr)  /* with tag */
+  char *ptr;
+{
+
+      /*  ffree(ptr);   */
+      if(*(ptr-sizeof(tagtype)) == CBCTAG||*(ptr-sizeof(tagtype)) ==CUCTAG){
+#ifdef NEWALLOC
+	freetoqueue(ptr-sizeof(tagtype));
+#else		
+		ffree(ptr - sizeof(tagtype));
+#endif		
+	}else{
+		free(ptr - sizeof(tagtype));
+	}
+
+}
+/*
+void efreewithtag(ptr)
+  char * ptr;
+{
+	ffree(ptr - sizeof(tagtype));
+}
+*/
+void initgrimreaper()
+{
+	grimreaper = NULL;
+}
+
+grimlyreap ()
+{
+  typecorecrum *ptr;
+  bool isreapable();
+  int eh;
+
+	ingrimreaper = TRUE;
+	if (reaplevel++)
+#ifndef DISTRIBUTION
+if(reaplevel ==1){
+		fprintf(stderr,"Recursive grimreaper call.\n");
+}
+#endif
+	if (!grimreaper)
+#ifndef DISTRIBUTION
+		gerror ("nothing to reap!\n");
+#else
+		gerror ("memory fouled\n");
+#endif
+	reapnumber = 0;
+	timesaroundreaper = 0;
+	for (ptr = grimreaper; grimreaper; grimreaper = (typecorecrum *)grimreaper->nextcrum) {
+		if (grimreaper == ptr){
+			++timesaroundreaper;
+		}
+		if (timesaroundreaper > 10){
+			fprintf(stderr,"urk in grimlyreap\n");
+			/*lookatalloc();*/
+			xgrabmorecore();
+			break;
+/*
+#ifndef DISTRIBUTION
+			gerror ("I'm getting bored in grimlyreap.\n");
+#else
+			gerror ("memory fouled\n");
+#endif
+*/
+		}
+		if (grimreaper->age == RESERVED) {
+			continue;
+		}
+		if (isreapable (&eh,grimreaper)) {
+			reap (grimreaper);
+			reapnumber = 0;
+			timesaroundreaper = 0;
+			--reaplevel;
+			break;
+		}else{
+			if(eh){
+				/*dump(grimreaper);*/
+			}
+		}
+		++reapnumber;
+		grimreaper->age++;
+	}
+	ingrimreaper = FALSE;
+}
+
+  bool
+isreapable (fuckinap,localreaper)
+  int *fuckinap;
+  typecorecrum *localreaper;
+{
+  register typecorecrum *p;
+  typecuc *father;
+	
+	*fuckinap = 0;
+	if (!localreaper)
+#ifndef DISTRIBUTION
+		gerror ("localreaper NULL\n");
+#else
+		gerror("memory fouled\n");
+#endif
+	if(localreaper ->age < OLD || localreaper-> age == RESERVED){
+		*fuckinap = 1;
+		return(FALSE);
+	}
+
+	if (localreaper->isapex) {
+		if (localreaper->cenftype != POOM){
+			return(FALSE);
+		}
+		if(localreaper->modified){
+		    if(!((typecuc *)localreaper)->leftson){
+#ifndef DISTRIBUTION
+				dump(localreaper);
+			    fprintf(stderr,"in isreapable modified and no son in apex");
+#endif
+				return(FALSE);
+		    }
+		    for (p = ((typecuc *)localreaper)->leftson; p; p = p->rightbro) {
+			if(p->modified){
+				return(FALSE);
+			}
+
+	if(p ->age < OLD ||p -> age == RESERVED){
+				return(FALSE);
+			}
+			if (p->height > 0 && ((typecuc *)p)->leftson){
+				return(FALSE);
+			}
+			if (p->height == 0 && p->cenftype == GRAN && ((typecbc *)p)->cinfo.infotype == GRANORGL && ((typecbc *)p)->cinfo.granstuff.orglstuff.orglincore){
+				return(FALSE);
+			}
+		    }
+		    return(TRUE);
+		}else{
+		    for (p = ((typecuc *)localreaper)->leftson; p; p = p->rightbro) {
+			if(p->modified){
+				return(FALSE);
+			}
+	if(p ->age < OLD ||p -> age == RESERVED){
+				return(FALSE);
+			}
+			if (p->height > 0 && ((typecuc *)p)->leftson){
+				return(FALSE);
+			}
+			if (p->height == 0 && p->cenftype == GRAN && ((typecbc *)p)->cinfo.infotype == GRANORGL && ((typecbc *)p)->cinfo.granstuff.orglstuff.orglincore){
+				return(FALSE);
+			}
+		    }
+		    return(TRUE);
+		}
+	}
+/*if height == 0 and not cinfo.orglincore return TRUE */
+	if(!localreaper){
+#ifndef DISTRIBUTION
+		gerror("in isreapable localreaper is NULL\n");
+#else
+		gerror("memory fouled\n");
+#endif
+	}
+	father = weakfindfather(localreaper);
+	if(!father){
+#ifndef DISTRIBUTION
+		fprintf(stderr,"in isreapable no father !! \n");
+#endif
+		return(FALSE);
+	}
+	if (localreaper->height == 0) {
+	      if (localreaper->cenftype == GRAN) {
+		    if (((typecbc *)localreaper)->cinfo.infotype == GRANORGL) {
+			if (((typecbc *)localreaper)->cinfo.granstuff.orglstuff.orglincore){
+			       return(FALSE);
+			}
+		    }
+	      }
+	      for (p = weakfindleftmostbro(localreaper); p; p = p->rightbro) {
+	if(p ->age < OLD ||p -> age == RESERVED){	
+			return(FALSE);
+			}
+			if (p->height == 0 && p->cenftype == GRAN && ((typecbc *)p)->cinfo.infotype == GRANORGL && ((typecbc *)p)->cinfo.granstuff.orglstuff.orglincore){
+				return(FALSE);
+			}
+	       }
+	       return (TRUE);
+
+	}else{ /* != 0*/
+	    if(father->modified){
+		for (p = weakfindleftmostbro(localreaper); p; p = p->rightbro) {
+		     if(p->modified){
+			   return(FALSE);
+		     }
+	if(p ->age < OLD ||p -> age == RESERVED){
+			   return(FALSE);
+		     }
+		     if (p->height > 0 && ((typecuc *)p)->leftson){
+			   return(FALSE);
+		     }
+		}
+		return(TRUE);
+	    } else /* if (!father->modified) */ {
+		for(p=weakfindleftmostbro(localreaper);p; p = p->rightbro) {
+		     if(p->modified){
+			   return(FALSE);
+		     }
+	if(p ->age < OLD ||p -> age == RESERVED){
+			   return(FALSE);
+		     }
+		     if (p->height > 0 && ((typecuc *)p)->leftson){
+			   return(FALSE);
+		     }
+		}
+		return (TRUE);
+	    }
+	}
+}
+
+
+void reap(localreaper)
+  typecorecrum *localreaper;
+{
+  typecuc *temp;
+
+	if (!localreaper)
+#ifndef DISTRIBUTION
+		gerror("localreaper NULL0\n");
+#else
+		gerror("memory fouled\n");
+#endif
+	++nreapings;
+	if (localreaper->isapex) {
+		temp = (typecuc *)localreaper->leftbroorfather;
+		grimreaper = grimreaper->nextcrum;
+		if (!temp) {
+			return;
+		}
+		orglwrite((typecbc*)temp);
+		if (!localreaper)
+#ifndef DISTRIBUTION
+			gerror("localreaper NULL2\n");
+#else
+			gerror("memory fouled\n");
+#endif
+		return;
+	}
+	temp = weakfindfather(localreaper);
+	if (!temp)
+#ifndef DISTRIBUTION
+		gerror("localreaper doesn't have a father\n");
+#else
+		gerror("memory fouled\n");
+#endif
+	if (!temp->leftson) {
+		grimreaper = grimreaper->nextcrum;
+		return;
+	}
+	subtreewrite(temp);
+}
+
+testforrejuvinate(ptr)
+   register typecorecrum *ptr;
+{
+	if (ptr->age == RESERVED) {
+		if (!reservnumber)
+#ifndef DISTRIBUTION
+			gerror("There shouldn't be any more reserved.\n");
+#else
+			gerror("memory mess\n");
+#endif
+		--reservnumber;
+	}
+}
+
+
+funcrejuvinate(ptr)  /* inner if is testing very useful test */
+   register typecorecrum *ptr;
+{
+	if (ptr->age == RESERVED) {
+		if (!reservnumber) {
+#ifndef DISTRIBUTION
+			dump(ptr);
+			gerror ("There shouldn't be any more reserved.\n");
+#else
+			gerror("memory mess\n");
+#endif
+		}
+		--reservnumber;
+	}
+	ptr->age = NEW;
+}
+
+
+/* protect a crum and its ancestors from being grimly reaped */
+void reserve(ptr)
+  typecorecrum *ptr;
+{
+#ifndef DISTRIBUTION
+foohex( "reserve\n",ptr);
+#endif
+	if (ptr->age != RESERVED) {
+		++reservnumber;
+	} else {
+#ifndef DISTRIBUTION
+		gerror("reserve already reserved \n");
+#else
+		gerror("arg!\n");
+#endif
+	}
+	ptr->age = RESERVED;
+}
+
+void testforreservedness(msg)/* test to see if any reserved flags linger in the memory.  if they do is a gross error in crum stuff */
+  char *msg;
+{
+  typecorecrum *ptr;
+  INT numreserved = 0;
+  bool first;
+
+	for (ptr = grimreaper, first = TRUE; ptr && (first ? TRUE : ptr != grimreaper); ptr = ptr->nextcrum, first = FALSE)
+		if (ptr->age == RESERVED) {
+			++numreserved;
+			if (TRUE||debug)
+				dump(ptr);
+		}
+
+	if (numreserved) {
+#ifndef DISTRIBUTION
+		fprintf (stderr, "numreserved = %s:  There are %d reserved crums. (reservnumber = %d)\n", msg, numreserved, reservnumber);
+		gerror ("This isn't supposed to be the case.\n");
+#else
+		gerror("arg!\n");
+#endif
+	}
+	if (reservnumber) {
+#ifndef DISTRIBUTION
+		fprintf (stderr, "reservnumber = %d\n", reservnumber);
+		gerror ("reservnumber is incorrect.\n");
+#else
+		gerror("arg!\n");
+#endif
+	}
+}
+
+/* assumes crum is disowned */
+void subtreefree (ptr)
+  typecorecrum *ptr;
+{
+  typecorecrum *p, *right;
+
+	if (!ptr)
+#ifndef DISTRIBUTION
+		gerror ("boom in subtreefree called with ptr == NULL");
+#else
+		gerror("boom\n");
+#endif
+	if (ptr->height > 0) {
+		for (p = ((typecuc *)ptr)->leftson; p; p = right) {
+			right = p->rightbro;
+			disown (p);
+			subtreefree (p);
+		}
+	} else if (ptr->cenftype == GRAN && ((typecbc *)ptr)->cinfo.infotype == GRANORGL && ((typecbc *)ptr)->cinfo.granstuff.orglstuff.orglincore)
+		orglfree (((typecbc *)ptr)->cinfo.granstuff.orglstuff.orglptr);
+	freecrum (ptr);
+}
+
+void freecrum (ptr)
+  typecorecrum *ptr;
+{
+	if (ptr->age == RESERVED)
+#ifndef DISTRIBUTION
+		gerror ("freecrum called with RESERVED crum.\n");
+#else
+		gerror("pow\n");
+#endif
+	if (grimreaper == ptr){
+		grimreaper = grimreaper->nextcrum;
+	}
+	if (grimreaper == ptr){
+		grimreaper = NULL;
+	}
+	ptr->nextcrum->prevcrum = ptr->prevcrum;
+	ptr->prevcrum->nextcrum = ptr->nextcrum;
+	/*zzz should it decrement usecount here sometimes?*/
+	--crumnumber;
+	efree ((char*)ptr);
+}
+
+void loaffree (father)
+  typecuc *father;
+{
+  typecorecrum *ptr, *next;
+
+	if (father->height <= 0/* || !father->leftson*/){
+		gerror ("bad call\n");
+	}
+	for (ptr = father->leftson; ptr; ptr = next) {
+		next = ptr->rightbro;
+		disownnomodify (ptr);
+		subtreefree (ptr);
+	}
+	father->modified = FALSE;
+}
+
+void orglfree (ptr)
+  typecuc *ptr;
+{
+#ifndef DISTRIBUTION
+	if (!ptr)
+		qerror ("orglfree called with no orglptr.\n");
+	if (!ptr->isapex)
+		gerror("Orglfree called with non-fullcrum.\n");
+#else
+	if (!ptr || !ptr->isapex)
+		gerror("bad call\n");
+#endif
+	if (((typecbc *)ptr->leftbroorfather)->cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber == DISKPTRNULL)
+#ifndef DISTRIBUTION
+		qerror ("orglfree called with unwritten-out orgl.\n");
+#else
+		gerror("arg!\n");
+#endif
+	((typecbc *)ptr->leftbroorfather)->cinfo.granstuff.orglstuff.orglincore = FALSE;
+	((typecbc *)ptr->leftbroorfather)->cinfo.granstuff.orglstuff.orglptr = NULL;
+	subtreefree ((typecorecrum*)ptr);
+}
+
+  typecuc *
+createenf (enftype)
+  INT enftype;
+{
+  typecuc *fullcrumptr;
+  typecorecrum *ptr;
+
+	fullcrumptr = (typecuc *) createcrum(1,enftype);
+	fullcrumptr->cenftype = enftype;
+	fullcrumptr->isapex = TRUE;
+	fullcrumptr->isleftmost = TRUE;
+	adopt(ptr = createcrum(0, enftype), SON, (typecorecrum*)fullcrumptr);
+	if (enftype == GRAN) {
+		((typecbc *)ptr)->cinfo.infotype = GRANNULL;/*KLUGE will this work?? */
+	}
+	ivemodified  (ptr);
+/*	if(enftype == GRAN){
+		levelpush(fullcrumptr);
+		adopt (createcrum(0,enftype), RIGHTBRO, fullcrumptr->leftson);
+	       adopt(createcrum(0,enftype),SON,fullcrumptr->leftson->rightbro);
+		ptr = fullcrumptr->leftson->leftson;
+		tumblerincrement(&(ptr->cwid.dsas[WIDTH]),2,1,&(ptr->cwid.dsas[WIDTH]));
+		setwispupwards(ptr,1);
+	}
+*/
+	return (fullcrumptr);
+}
+
+  typecorecrum *
+createcrum(crumheight, enftype)
+  INT crumheight;
+  INT enftype;
+{
+  typecorecrum *createcruminternal(),*ptr;
+
+	ptr = createcruminternal(crumheight, enftype, (typecorecrum*)NULL);
+	if (grimreaper) {
+		ptr->nextcrum = grimreaper;
+		ptr->prevcrum = grimreaper->prevcrum;
+		grimreaper->prevcrum->nextcrum = ptr;
+		grimreaper->prevcrum = ptr;
+	} else {
+		grimreaper = ptr->nextcrum = ptr->prevcrum = ptr;       
+	}
+	return(ptr);
+}
+
+void initcrum(crumheight, enftype, ptr)
+  INT crumheight;
+  INT enftype;
+  typecorecrum *ptr;
+{
+  typecorecrum *createcruminternal();
+
+	createcruminternal(crumheight, enftype, ptr);
+}
+
+  typecorecrum *
+createcruminternal(crumheight, enftype, allocated)
+  INT crumheight;
+  INT enftype;
+  typecorecrum *allocated;
+{
+  typecorecrum *ptr;
+  INT *eallocwithtag();
+  unsigned crumsize;
+
+	if (crumheight == 0) {
+		switch (enftype) {
+		  case GRAN:
+			crumsize = sizeof(typecbc);
+/* Copyright © 1979-1999 Udanax.com. All rights reserved.
+
+* This code is licensed under the terms of The Udanax Open-Source License,
+* which contains precisely the terms of the X11 License.  The full text of
+* The Udanax Open-Source License can be found in the distribution in the file
+* license.html.  If this file is absent, a copy can be found at
+* http://udanax.xanadu.com/license.html and http://www.udanax.com/license.html
+*/
+/*orglwrite and subtree write are called from  reap in credel.d */
+
+#include "crum.h"
+#include "coredisk.h"
+#include "functiondefinitions.h"
+extern bool isxumain;
+ INT nolread;
+ INT nolwrote;
+ INT noishouldbother;
+ INT notakenephewnd;
+ INT noeatbrosnd;
+
+typegranf granf;
+typespanf spanf;
+
+void diskexit()/*function_definition*/
+{
+  static indiskexit();
+	indiskexit();
+}
+
+
+/* make sure file is up to date when exitting program */
+static void indiskexit ()
+{
+/*  FILE *record;*/bool decrementusers();
+
+	if (decrementusers()) {
+		return 0;
+	}
+	writeenfilades();
+
+	closediskfile ();
+	/*record = fopen ("diskiocount", "a");
+	fprintf (record, "%s:  ", (isxumain?"xumain":"backend"));
+	fprintf (record, "%5ld reads, %5ld writes, ", nolread, nolwrote);
+	fprintf (record, "%5ld isb, %5ld ebnd, %5ld tnnd\n",noishouldbother,
+						noeatbrosnd, notakenephewnd);
+	fclose (record);*/
+	exit (0);
+}
+
+
+/* Update disk copy of all enfilades, and reset core versions for multiuser */
+void diskflush ()/*function_definition*/ 
+{
+  void initkluge();
+
+	writeenfilades();
+	initkluge((typecuc**)&granf, (typecuc**)&spanf);
+}
+
+
+/* Write entire granfilade and spanfilade to disk and flag as unmodified in core */
+void writeenfilades()/*function_definition*/
+
+{
+  typecbc temporgl;
+
+	temporgl.leftbroorfather = NULL;
+	temporgl.modified = TRUE;
+	temporgl.cinfo.granstuff.orglstuff.orglincore = TRUE;
+	temporgl.cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber = GRANFDISKLOCATION;
+	temporgl.cinfo.granstuff.orglstuff.diskorglptr.insidediskblocknumber = 0;
+	temporgl.cinfo.granstuff.orglstuff.orglptr = (typecuc *)granf;
+	((typecuc *)granf)->leftbroorfather = (typecorecrum *)&temporgl;
+	orglwrite (&temporgl);
+			      
+	temporgl.modified = TRUE;
+	temporgl.cinfo.granstuff.orglstuff.orglincore = TRUE;
+	temporgl.cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber = SPANFDISKLOCATION;
+	temporgl.cinfo.granstuff.orglstuff.diskorglptr.insidediskblocknumber = 0;
+	temporgl.cinfo.granstuff.orglstuff.orglptr = (typecuc *)spanf;
+	((typecuc *)spanf)->leftbroorfather = (typecorecrum *)&temporgl;
+	orglwrite (&temporgl);
+}
+
+
+#define hputinloaf(hp,lp,tp) ((void)humberput((INT)(hp),(humber)(lp),(unsigned INT*)(tp)),(lp)=((char*)lp)+*(tp))
+/*#define hputwisp(wp,lp,tp) ((tp)=tumblerfixedtoptr((lp),&(wp.dsas[0])),((char*)lp)+=(tp),(tp)=tumblerfixedtoptr((lp),&(wp.dsas[1])),((char *)lp)+=(tp))*/
+
+  static hputwiddsp(ptr,loafptrptr)
+  typecuc *ptr;
+  char **loafptrptr;
+{
+  int i,nstreams;
+  unsigned INT temp;
+  typewid *wptr;
+
+	nstreams = widsize(ptr->cenftype);
+
+	wptr = &ptr->cdsp;
+	for (i = 0;i < nstreams; ++i) {
+	 	temp = tumblerfixedtoptr(&wptr->dsas[i], (humber) *loafptrptr);
+		*loafptrptr += temp;	
+	}
+	wptr = &ptr->cwid;
+	for (i = 0;i < nstreams; ++i) {
+	 	temp = tumblerfixedtoptr(&wptr->dsas[i], (humber) *loafptrptr);
+		*loafptrptr += temp;
+	}
+}
+
+/*hdump(n,ptr)
+  int n;
+  char *ptr;
+{
+#ifndef DISTRIBUTION
+  int i;
+
+	for (i = 0; i < n; i++) {
+		fprintf(stderr,"%x ", *(ptr+i));
+	}
+#endif
+}
+*/
+
+  static int varpackloaf (father, xloafptr, refcount,flag)
+  typecuc *father;
+  typediskloaf *xloafptr;
+  int refcount;
+  int flag;
+{
+  typecorecrum *ptr;
+  INT ret;
+  char *loafptr; /*,*tempptr;*/
+  unsigned INT temp;
+
+	loafptr = (char *)xloafptr;
+	if (!flag) {
+		if (!father || father->height == 0 || !loafptr) {
+#ifndef DISTRIBUTION
+			dump(father);
+			gerror ("bad packloaf call\n");
+#else
+	gerror("");
+#endif
+		}
+		if (father->leftson&&toomanysons (father)) {
+#ifndef DISTRIBUTION
+			fprintf(stderr, "PANIC:  %s(%d), %d sons\n",
+				enftypestring (father->cenftype), father->height,
+				father->numberofsons);
+			qerror ("Too many sons in packloaf\n");
+#else
+	gerror("");
+#endif
+		}
+/*		tempptr = loafptr;*/
+		loafptr += 3;	/*make room for loaflength*/
+		hputinloaf(FALSE,loafptr,&temp);
+		hputinloaf(father->height-1,loafptr,&temp);
+		hputinloaf(father->cenftype,loafptr,&temp);
+		hputinloaf(father->numberofsons ,loafptr,&temp);
+		hputinloaf(refcount,loafptr,&temp);
+	} else {
+/*		tempptr = loafptr;*/
+		loafptr += 3;	/*make room for loaflength*/
+		hputinloaf(TRUE,loafptr,&temp);
+		hputinloaf(father->height,loafptr,&temp);
+		hputinloaf(father->cenftype,loafptr,&temp);
+		hputinloaf(1,loafptr,&temp);
+		hputinloaf(refcount,loafptr,&temp);
+
+		hputwiddsp(father,&loafptr);
+		hputinloaf(father->sonorigin.diskblocknumber,loafptr,&temp);
+		hputinloaf(father->sonorigin.insidediskblocknumber,loafptr,&temp);
+
+		if (father->sonorigin.diskblocknumber == 0) {
+#ifndef DISTRIBUTION
+			/*dump (ptr); */
+			gerror("trying to write 0 block\n");  
+#else
+	gerror("");
+#endif
+		} 
+		if (father->sonorigin.diskblocknumber == DISKPTRNULL) {
+#ifndef DISTRIBUTION
+			/*dump (ptr); */
+			gerror("trying to write DSKPTRNULL block\n");  
+#else
+	gerror("");
+#endif
+		} 
+
+		return((INT)(loafptr)-(INT)xloafptr);
+	}
+	for (ptr = (typecorecrum *)findleftson(father) ; ptr; ptr = ptr->rightbro) {
+		hputwiddsp((typecuc*)ptr,(char **)&loafptr);
+		if (ptr->height != 0) {
+			hputinloaf(((typecuc *)ptr)->sonorigin.diskblocknumber,loafptr,&temp);
+			hputinloaf(((typecuc *)ptr)->sonorigin.insidediskblocknumber,loafptr,&temp);
+
+			if (((typecuc *)ptr)->sonorigin.diskblocknumber == 0) {
+#ifndef DISTRIBUTION
+				dump (ptr); 
+				gerror("trying to write 0 block\n");  
+#else
+	gerror("");
+#endif
+			} 
+			if (((typecuc *)ptr)->sonorigin.diskblocknumber == DISKPTRNULL) {
+#ifndef DISTRIBUTION
+				dump (ptr); 
+				gerror("trying to write DISKPTRNULL block\n");  
+#else
+	gerror("");
+#endif
+			} 
+		} else {
+			hputinfo ((typecbc*)ptr, &loafptr);
+		}
+	}
+
+	ret = (INT)loafptr - (INT)xloafptr;
+	(void) humber3put(ret, (humber) xloafptr, &temp);
+	return (ret);
+}
+
+/*
+#define hputinloaf(hp,lp,tp) (humberput((hp),(lp),(tp)),(lp)=((char*)lp)+*(tp))
+*/
+
+void hputinfo( typecbc *ptr, char **loafptrptr)/*function_definition*/
+{
+  unsigned INT temp;
+
+	if (!is2dcrum((typecorecrum*)ptr)) {
+		(void) humberput(ptr->cinfo.infotype,(humber)*loafptrptr,&temp);
+		*loafptrptr += temp;
+		if (ptr->cinfo.infotype == GRANTEXT) {
+			(void) humberput((INT)ptr->cinfo.granstuff.textstuff.textlength,(humber)*loafptrptr,&temp);
+			*loafptrptr += temp;
+			/*hputinloaf(ptr->cinfo.granstuff.textstuff.textlength,(*loafptrptr),&temp);
+*/
+			movmem(ptr->cinfo.granstuff.textstuff.textstring,(*loafptrptr),ptr->cinfo.granstuff.textstuff.textlength);
+			*loafptrptr += ptr->cinfo.granstuff.textstuff.textlength;
+			return ;
+		} else if (ptr->cinfo.infotype == GRANORGL) {
+			(void) humberput(ptr->cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber,(humber)*loafptrptr,&temp);
+			*loafptrptr += temp;
+			(void) humberput(ptr->cinfo.granstuff.orglstuff.diskorglptr.insidediskblocknumber,(humber)*loafptrptr,&temp);
+			*loafptrptr += temp;
+			/*hputinloaf(ptr->cinfo.granstuff.orglstuff.diskorglptr,(*loafptrptr),&temp);*/
+			return ;
+		} else if (ptr->cinfo.infotype == GRANNULL) {
+			return ;
+		} else {
+#ifndef DISTRIBUTION
+			fprintf(stderr,"weird infotype in hputinfo %d \n",ptr->cinfo.infotype);
+			gerror("weird infotype in hputinfo\n");
+#else
+	gerror("");
+#endif
+			return ;
+		}
+	} else {
+		if (ptr ->height) {
+			/* looks like we got this all*/
+		} else {
+			temp = tumblerfixedtoptr(&((type2dcbc *)ptr)->c2dinfo.homedoc,(humber)*loafptrptr);
+			(*loafptrptr) += temp;
+		}
+	}
+}
+
+  static int packloaf (father, loafptr,refcount,flag)
+  typecuc *father;
+  typediskloaf *loafptr;
+  int refcount;
+  int flag;
+{
+	return(varpackloaf (father, loafptr,refcount,flag));
+}
+
+void orglwrite ( typecbc *orglcbcptr)/*function_definition*/
+{
+  typetask task;
+  static void orglwritepart2();
+
+	if (!orglcbcptr) {
+#ifndef DISTRIBUTION
+		gerror("in orglwrite passed NULL\n");
+#else
+	gerror("");
+#endif
+	}
+	inittask (&task);
+	orglwritepart2 (&task, orglcbcptr);
+	tfree (&task);
+}
+
+typediskloaf zzzeroloaf;
+
+  typediskloafptr partialdiskalloc(),diskalloc();
+static  void orglwritepart2 (taskptr, orglcbcptr)
+  typetask *taskptr;
+  typecbc *orglcbcptr;
+{
+  typegranbottomcruminfo *infoptr;
+  typediskloafptr partialdiskalloc(),diskalloc();
+  typediskloafptr  olddiskptr;
+  typediskloaf loaf;
+  typediskloafptr temploaf;
+  INT size;
+  unsigned INT dummy;
+  INT newloaf;
+  typecuc *orglptr;
+  static subtreewriterecurs();
+
+  	loaf = zzzeroloaf;
+	if (!orglcbcptr)
+#ifndef DISTRIBUTION
+		gerror ("orglwrite argh!");
+#else
+	gerror("");
+#endif
+	infoptr = &orglcbcptr->cinfo;
+	orglptr = infoptr->granstuff.orglstuff.orglptr;
+	if (!orglcbcptr->modified && orglptr) {
+		orglfree (orglptr);
+		return ;
+	}
+	if (infoptr->granstuff.orglstuff.orglincore) {
+		reserve((typecorecrum*)orglcbcptr);
+		olddiskptr = infoptr->granstuff.orglstuff.diskorglptr;
+		subtreewriterecurs(taskptr, orglptr);
+	/*	writefullcrum (orgl);  */
+		size = packloaf(orglptr, &loaf, 1, 1);
+		(void) humber3put(size, (humber)&loaf, &dummy);
+
+		if (orglptr->cenftype == POOM) {
+			temploaf = partialdiskalloc(size, &newloaf);
+			writeloaf(&loaf, temploaf, newloaf);
+			changerefcount(temploaf ,1);
+			infoptr->granstuff.orglstuff.diskorglptr = temploaf;
+			deletefullcrumandgarbageddescendents(olddiskptr,TRUE,(typediskloaf*)NULL,olddiskptr/*olddiskptr is just a place holder*/);
+			/*writeloaf(&loaf,infoptr->granstuff.orglstuff.diskorglptr,TRUE);*/
+		} else {
+		  if (diskheader.hasenftops) {
+			deletefullcrumandgarbageddescendents(olddiskptr,FALSE
+			,&loaf,infoptr->granstuff.orglstuff.diskorglptr);
+			/*writeloaf(&loaf,infoptr->granstuff.orglstuff.diskorglptr,TRUE);*/
+		  }else{
+			writeloaf(&loaf,infoptr->granstuff.orglstuff.diskorglptr,TRUE);
+		  }
+		}
+	/* NULL EFFECT HERE */
+		/*ptr->modified = FALSE;*/
+		rejuvinate((typecorecrum*)orglcbcptr);
+		orglfree (orglptr);
+	} else {
+		return 0;/*zzz*/
+	}
+}
+
+void deletefullcrumandgarbageddescendents( typediskloafptr diskptr, bool deletefullcrumflag, typediskloaf *loafp, typediskloafptr newdiskptr)/*function_definition*/
+{
+  typecbc *tempcbc;
+  typecbc crum;
+  typeuberrawdiskloaf crum2;
+
+	if (diskptr.diskblocknumber == DISKPTRNULL) {
+		return 0;
+	}
+	/*kluge up a bottum crum, use it to read in granf, similarly for spanf*/
+	/*tempcbc = (typecbc *)createcrum(0,GRAN);*/
+	tempcbc = &crum;
+	initcrum(0,GRAN,(typecorecrum*)&crum);
+
+	tempcbc->cinfo.infotype = GRANORGL;
+	tempcbc->cinfo.granstuff.orglstuff.diskorglptr =  diskptr;
+	if (deletefullcrumflag) {
+		inorglinternal (tempcbc,&crum2);
+		/*reserve(tempcbc);*/
+	} else {
+		inorglinternal (tempcbc,&crum2);
+		/*reserve(tempcbc);*/
+		diskset(newdiskptr.diskblocknumber);
+		writeloaf (loafp,newdiskptr,FALSE);
+	}
+	tempcbc->cinfo.granstuff.orglstuff.orglptr->leftbroorfather = NULL;
+	deletewithgarbageddescendents(diskptr, (typecuc*)tempcbc, deletefullcrumflag);
+/*kluge SKIMP reserve and rejuvinate added 11-23-86*/
+}
+
+void deletewithgarbageddescendents( typediskloafptr diskptr, typecuc *  father, bool deletefullcrumflag)/*function_definition*/
+{
+  typecbc *ptr;
+  typediskloafptr ignoreddiskptr;
+
+	if (father->height > 0) {
+		ptr = (typecbc *)findleftson(father);
+	}
+	/* if !flag changerefcount and then possibly recurse*/
+	if (!deletefullcrumflag ||!changerefcount(diskptr,-1)) {
+	   if (father->height >0) {
+		for (; ptr; ptr = (typecbc *)findrightbro((typecorecrum*)ptr)) {
+		   if (ptr->height >0) deletewithgarbageddescendents(((typecuc *)ptr)->sonorigin,(typecuc*)ptr,TRUE);
+		}
+	   } else if (father->cenftype == GRAN
+        && ((typecbc *)father)->cinfo.infotype == GRANORGL 
+	&& ((typecbc *)father)->cinfo.granstuff.orglstuff.orglincore
+        && ((typecbc *)father)->cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber != GRANFDISKLOCATION
+	&& ((typecbc *)father)->cinfo.granstuff.orglstuff.diskorglptr.diskblocknumber != SPANFDISKLOCATION) {
+		deletefullcrumandgarbageddescendents (((typecbc *)father)->cinfo.granstuff.orglstuff.diskorglptr,TRUE,/*ECH 8-28-88ignoreddiskptr,*/(typediskloaf*)NULL,ignoreddiskptr);
+	   }
+	}
+	/*subtreefree(ptr);*/ /*12/04/86*/
+}
+
+
+void subtreewrite ( typecuc *father)/*function_definition*/
+{
+  typetask task;
+  static subtreewriterecurs();
+	inittask (&task);
+	subtreewriterecurs (&task, father);
+	/*decrementandfreedisk (top);*/
+	tfree (&task);
+}
+
+
+static  void subtreewriterecurs (taskptr, father)
+  typetask *taskptr;
+  typecuc *father;
+{
+  typecbc *ptr;
+  static uniqueoutloaf();
+/*fprintf(stderr,"entering subtreewriterecurs \n");*/
+
+	if (!father || !father->height)
+#ifndef DISTRIBUTION
+		gerror ("Bad subtreewrite call\n");
+#else
+	gerror("");
+#endif
+	/* this, of course, assumes modified is set right */
+	if (!father->modified ) {
+		if (father->sonorigin.diskblocknumber == DISKPTRNULL) {
+#ifndef DISTRIBUTION
+	 	      fprintf(stderr,"insubtreewriterecurs sonorigin == -1\n");
+		      dumpsubtree(father);
+			gerror("in subtreewriterecurs");
+#else
+	gerror("");
+#endif
+		}
+		loaffree (father);
+		return;
+	}
+/*	if (//father->sonorigin.diskblocknumber == DISKPTRNULL&&//!father->leftson) {
+	       fprintf(stderr," case b insubtreewriterecurs sonorigin == -1\n");
+		dumpsubtree(father);
+		gerror("in subtreewriterecurs");
+	}
+*/
+/* in order to guarantee integrity of disk, it's     */
+/*   important to write out or increment sons before */
+	/*   father */
+
+	checkmodifiednotthere(father,"A");
+	for (ptr =(typecbc *)father->leftson;ptr;ptr=(typecbc *)ptr->rightbro) {
+		if (ptr->height == 0 &&ptr->cenftype == GRAN&& ptr->cinfo.infotype != GRANTEXT && ptr->cinfo.infotype != GRANORGL&& ptr->cinfo.infotype != GRANORGL&&ptr->cinfo.infotype != GRANNULL) {
+#ifndef DISTRIBUTION
+			fprintf(stderr,"bad infotypein subtreewriterecursive  = %d\n",ptr->cinfo.infotype);
+			dump(ptr);
+			gerror("subtreewriterecurs\n");
+#else
+	gerror("");
+#endif
+		}
+		if (ptr->height != 0) {
+			subtreewriterecurs (taskptr, (typecuc*)ptr);
+		} else if (ptr->cenftype == GRAN && ptr->height == 0
+		     && ((typecbc *)ptr)->cinfo.infotype == GRANORGL) {
+			orglwritepart2 (taskptr, ptr);
+		}
+		ptr->modified = FALSE;
+	}
+	if (father->modified) {
+		checkmodifiednotthere(father,"B");
+
+		for (ptr = (typecbc *)father->leftson; ptr; ptr = (typecbc *)ptr->rightbro) {
+			if (ptr->height >0 && ((typecuc *)ptr)->sonorigin.diskblocknumber != DISKPTRNULL) {
+				changerefcount(((typecuc *)ptr)->sonorigin,1);
+			}
+		}
+		checkmodifiednotthere(father,"C");
+		uniqueoutloaf (father, 0);
+
+	}
+/*rejuvinate(father);*/
+	loaffree (father);
+}
+
+void checkmodifiednotthere( typecuc *father, char *string)/*function_definition*/
+{
+return;
+#ifndef DISTRIBUTION
+#ifdef UnDeFineD
+    if (father->modified&&(!father->leftson)/*&&father->sonor.diskblocknumber== DISKPTRNULL*/) {
+	dump(father);
+	fprintf(stderr,"in %s subtreewrite",string);
+	gerror("in   subtreewriterecurs bad crum\n");
+    }
+#endif
+#endif
+}
+typeuberdiskloaf zzzerouberloaf;
+
+static void uniqueoutloaf (father,refcount)
+  typecuc *father;
+  int refcount;
+{
+  typeuberdiskloaf loaf;
+  typediskloafptr diskalloc();
+  INT size;
+  unsigned INT temp;
+  INT newloaf;
+/*fprintf(stderr,"entering uniqueoutloaf\n");*/
+	if (!father->modified) {
+#ifndef DISTRIBUTION
+		gerror("uniqueoutloaf called with not modified\n");
+#else
+	gerror("");
+#endif
+	}
+	loaf = zzzerouberloaf;
+	if ((!father->leftson) && father->sonorigin.diskblocknumber != DISKPTRNULL) {
+		/*fprintf(stderr,"in uniqueoutloaf calling findleftson\n");
+		dump(father);
+*/
+		(void) findleftson(father); /* get it in so we know numberof sons zzz KLUGE is this right aug 15 86*/
+		/*father->numberofsons = findnumberofdamnsons(father);*/
+	}
+	size = packloaf (father, (typediskloaf*)&loaf,refcount,0);
+	father->sonorigin = partialdiskalloc (size, &newloaf);
+/*dumphexstuff(&loaf);*/
+	(void) humber3put(size, (humber) &loaf, &temp);
+/*dumphexstuff(&loaf);*/
+/*	loaf.numberofunterloafs = 1;*/
+	if (FALSE &&newloaf) {
+		addallocatedloaftopartialallocedtables(father->sonorigin,size);
+	}
+/*dumphexstuff(&loaf);*/
+/*fprintf(stderr,"height in uniqueoutloaf = %d\n",father->height);*/
+	writeloaf ((typediskloaf*)&loaf, father->sonorigin, newloaf);
+	father->modified = FALSE;
+/*fprintf(stderr,"leaving uniqueoutloaf\n");*/
+}
+
+			break;
+		  case SPAN:
+		  case POOM:
+			crumsize = sizeof(/*typecbc*/type2dcbc);
+			break;
+		  default:
+#ifndef DISTRIBUTION
+			fprintf(stderr," enftype = %d\n",enftype);
+			gerror("createcrum illegal enftype");
+#else
+			gerror("bad type\n");
+#endif
+		}
+	} else {
+		crumsize = sizeof(typecuc);
+	}
+	if (!allocated) {
+		ptr = (typecorecrum *)eallocwithtag(crumsize, (tagtype)(crumheight > 0 ? CUCTAG : CBCTAG));
+	} else {
+		ptr = allocated;
+	}
+	ptr->height = crumheight;
+	ptr->isapex = FALSE;
+	ptr->cenftype = enftype;
+	ptr->modified = TRUE/*FALSE*/;
+	ptr->isleftmost = FALSE;
+	ptr->age = NEW;
+	ptr->leftbroorfather = NULL;
+	ptr->rightbro = NULL;
+	clear(&ptr->cdsp, sizeof(ptr->cdsp));
+	clear(&ptr->cwid, sizeof(ptr->cwid));
+	if (crumheight > 0) {
+		((typecuc *)ptr)->numberofsons = 0;
+		((typecuc *)ptr)->leftson = NULL;
+		((typecuc *)ptr)->sonorigin.diskblocknumber = DISKPTRNULL;
+	} else {
+		if (enftype == GRAN) {
+			clear(&((typecbc *)ptr)->cinfo, sizeof(((typecbc *)ptr)->cinfo));
+			((typecbc *)ptr)->cinfo.infotype = GRANCLEARLYILLEGALINFO;
+		} else {
+			clear(&((type2dcbc *)ptr)->c2dinfo, sizeof(((type2dcbc *)ptr)->c2dinfo));
+		}
+	}
+	++crumnumber;
+	return(ptr);
+}
+#include "queues.h"
+#include "alloc.h"
+#define MAXALLOCQUEUEARRAY 500
+struct queue allocqueuearray[MAXALLOCQUEUEARRAY];
+
+initqueues()
+{
+  INT i;
+  INT num;
+  INT j;
+	for(i=0;i<MAXALLOCQUEUEARRAY;i++){
+		qinit(&allocqueuearray[i]);
+	}
+#ifdef NEWALLOC
+	num = allocsize/3;
+#else
+	num = 0;
+#endif
+	for(j=0;j<num;j += sizeof(typecuc) + sizeof(typecbc)+ sizeof(type2dcbc)+3*sizeof(tagtype)){
+		qpush(&allocqueuearray[(sizeof(typecuc)+sizeof(tagtype)+sizeof(HEADER) -1)/sizeof(HEADER)],falloc(sizeof(typecuc)+sizeof(tagtype)));
+		qpush(&allocqueuearray[(sizeof(typecbc)+sizeof(tagtype)+sizeof(HEADER) -1)/sizeof(HEADER)],falloc(sizeof(typecbc)+sizeof(tagtype)));
+		qpush(&allocqueuearray[(sizeof(type2dcbc)+sizeof(tagtype)+sizeof(HEADER) -1)/sizeof(HEADER)],falloc(sizeof(type2dcbc)+sizeof(tagtype)));
+	}
+}
+dumptable()
+{
+  INT i;
+  INT tmp;
+  fprintf(stderr,"dumptable\n");
+    for(i=0;i<MAXALLOCQUEUEARRAY;i++){
+	    if((tmp=qlength(&allocqueuearray[i]))){
+		    fprintf(stderr,"len of %d = %d\n",i,tmp);
+	    }
+    }
+}
+char * allocfromqueue(n)
+  INT n;
+{
+/*fprintf(stderr,"allocfromqueue called with %x %d\n",n,((n+sizeof(HEADER) -1)/sizeof(HEADER)));*/
+    return((char*)qremove(&allocqueuearray[((n+sizeof(HEADER) -1)/sizeof(HEADER))]));
+}
+
+void freetoqueue(ptr)
+  char * ptr;
+{
+  INT n;
+/* back before the tag is the sizeof the block in align uints includint the
+  header  */
+  /*dumptable();*/
+  n = ((HEADER *)(ptr-sizeof(HEADER)))->s.size -1;
+  /*fprintf(stderr,"freetoqueue called with %x n = %d\n",ptr,n);*/
+  qpush(&allocqueuearray[n],ptr);
+  
+  /*dumptable();*/
+}
+
+
+xgrabmorecore()
+{
+  char* malloc(), *tmp;
+     tmp = (char *)sbrk(incrementalallocsize);
+if(!tmp){
+	gerror("no more memory in xgrabmorecore\n");
+	}
+     ((HEADER*)tmp)->s.size = (incrementalallocsize+sizeof(HEADER) -1)/sizeof(HEADER);
+     ffree(tmp+sizeof(HEADER));
+fprintf(stderr,"xgrabmorecore got another %d\n",incrementalallocsize);
+}

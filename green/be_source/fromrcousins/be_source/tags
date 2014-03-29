@@ -1,0 +1,1429 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.2	//
+ACCOUNT	xanadu.h	141;"	d
+ACCOUNTFILEMETANAME	rcfile.c	22;"	d	file:
+ADDRESSID	xanadu.h	31;"	d
+ALIGN	alloc.h	/^typedef INT ALIGN;$/;"	t
+ALLOCSIZE	alloc.h	10;"	d
+ALLOCSIZENAME	rcfile.c	26;"	d	file:
+ATOM	xanadu.h	143;"	d
+BACKENDDIRECTORYMETANAME	rcfile.c	20;"	d	file:
+BACKENDFILEMETANAME	rcfile.c	21;"	d	file:
+BACKENDGLUEFILEMETANAME	rcfile.c	24;"	d	file:
+BCOPYWORKS	common.h	32;"	d
+BCOPYWORKS	common.h	36;"	d
+BERTCONSCELLTAG	tags.h	29;"	d
+BERTMODECOPY	common.h	169;"	d
+BERTMODECOPYIF	common.h	168;"	d
+BERTMODEONLY	common.h	167;"	d
+BERTTAG	tags.h	28;"	d
+BESTFIT	multiloaf.c	284;"	d	file:
+BIT	common.h	/^        char sign  BIT ;  \/* 1 if negative, otherwise 0 *\/$/;"	m	struct:structtumbler
+BIT	common.h	47;"	d
+BIT	enf.h	/^        bool isapex BIT; \/* TRUE if this is the fullcrum *\/$/;"	m	struct:struct2dcbc
+BIT	enf.h	/^        bool isapex BIT; \/* TRUE if this is the fullcrum *\/$/;"	m	struct:structcbc
+BIT	enf.h	/^        bool isapex BIT; \/* TRUE if this is the fullcrum *\/$/;"	m	struct:structcorecrumhedr
+BIT	enf.h	/^        bool isapex BIT; \/* TRUE if this is the fullcrum *\/$/;"	m	struct:structcuc
+BIT	enf.h	/^        bool isleftmost BIT; \/* whether I'm leftmost sibling *\/$/;"	m	struct:struct2dcbc
+BIT	enf.h	/^        bool isleftmost BIT; \/* whether I'm leftmost sibling *\/$/;"	m	struct:structcbc
+BIT	enf.h	/^        bool isleftmost BIT; \/* whether I'm leftmost sibling *\/$/;"	m	struct:structcorecrumhedr
+BIT	enf.h	/^        bool isleftmost BIT; \/* whether I'm leftmost sibling *\/$/;"	m	struct:structcuc
+BIT	enf.h	/^        bool modified BIT;$/;"	m	struct:struct2dcbc
+BIT	enf.h	/^        bool modified BIT;$/;"	m	struct:structcbc
+BIT	enf.h	/^        bool modified BIT;$/;"	m	struct:structcorecrumhedr
+BIT	enf.h	/^        bool modified BIT;$/;"	m	struct:structcuc
+BITMAPSIZE	coredisk.h	109;"	d
+Boolean	queues.c	/^typedef int Boolean;$/;"	t	file:
+CBCTAG	tags.h	19;"	d
+CLOSE	requests.h	43;"	d
+CONTEXT2DTAG	tags.h	16;"	d
+CONTEXTTAG	tags.h	15;"	d
+COPY	requests.h	23;"	d
+CREATELINK	requests.h	36;"	d
+CREATENEWDOCUMENT	requests.h	28;"	d
+CREATENEWVERSION	requests.h	30;"	d
+CREATENODE_OR_ACCOUNT	requests.h	45;"	d
+CRUMCONTEXTTAG	tags.h	17;"	d
+CUCTAG	tags.h	18;"	d
+DELETEVSPAN	requests.h	29;"	d
+DISKPTRNULL	enf.h	23;"	d
+DISTRIBUTION	common.h	12;"	d
+DOCISPAN	xanadu.h	39;"	d
+DOCUMENT	xanadu.h	142;"	d
+DSPSIZEGR	wisp.h	22;"	d
+DSPSIZEPM	wisp.h	26;"	d
+DSPSIZESP	wisp.h	24;"	d
+DUMPGRANFWIDS	requests.h	15;"	d
+EQUAL	common.h	78;"	d
+ERROR	common.h	41;"	d
+ERROR	socketbe.c	23;"	d	file:
+ESC	common.h	48;"	d
+EXAMINE	requests.h	14;"	d
+FAILFLAG	putfe.c	28;"	d	file:
+FALSE	common.h	40;"	d
+FALSE	queues.c	27;"	d	file:
+FDHASHMULT	multiloaf.c	26;"	d	file:
+FDHASHTABLESIZE	multiloaf.c	24;"	d	file:
+FINDDOCSCONTAINING	requests.h	35;"	d
+FINDLINKSFROMTOTHREE	requests.h	39;"	d
+FINDNEXTNLINKSFROMTOTHREE	requests.h	40;"	d
+FINDNUMOFLINKSFROMTOTHREE	requests.h	38;"	d
+FIRSTCHAR	tumbleari.c	20;"	d	file:
+FOLLOWLINK	requests.h	33;"	d
+FOURTHCHAR	tumbleari.c	23;"	d	file:
+FREEDISKENTRYCONSCELLTAG	tags.h	31;"	d
+FREEDISKENTRYTAG	tags.h	30;"	d
+FREEDISKLOAFTAG	tags.h	27;"	d
+FRONTENDFILEMETANAME	rcfile.c	23;"	d	file:
+FRONTENDGLUEFILEMETANAME	rcfile.c	25;"	d	file:
+GRAN	enf.h	12;"	d
+GRANCLEARLYILLEGALINFO	wisp.h	71;"	d
+GRANFDISKLOCATION	coredisk.h	119;"	d
+GRANNULL	wisp.h	68;"	d
+GRANORGL	wisp.h	70;"	d
+GRANTEXT	wisp.h	69;"	d
+GRANTEXTLENGTH	common.h	113;"	d
+GREATER	common.h	77;"	d
+HASHMULT	cashedisk.c	13;"	d	file:
+HASHSIZE	cashedisk.c	12;"	d	file:
+HEADER	alloc.h	/^typedef union header HEADER;$/;"	t
+HOST	port.h	14;"	d
+HOSTMETANAME	rcfile.c	19;"	d	file:
+HUMBERTAG	tags.h	32;"	d
+I	wisp.h	19;"	d
+INCREMENTALALLOCSIZE	alloc.h	11;"	d
+INCREMENTALALLOCSIZENAME	rcfile.c	27;"	d	file:
+INSERT	requests.h	21;"	d
+INT	defs.h	10;"	d
+INTLEN	common.h	43;"	d
+INTTAG	tags.h	13;"	d
+IOINFO	requests.h	17;"	d
+ISPANID	xanadu.h	27;"	d
+ISPANTAG	tags.h	22;"	d
+ITEMTAG	tags.h	14;"	d
+JUSTEXIT	requests.h	16;"	d
+LEFTBRO	enf.h	138;"	d
+LEFTMOSTSON	enf.h	135;"	d
+LESS	common.h	79;"	d
+LINKATOM	xanadu.h	146;"	d
+LINKFROMSPAN	xanadu.h	36;"	d
+LINKID	xanadu.h	33;"	d
+LINKTAG	tags.h	25;"	d
+LINKTHREESPAN	xanadu.h	38;"	d
+LINKTOSPAN	xanadu.h	37;"	d
+LOAFTAG	tags.h	33;"	d
+MAX2DBCINLOAF	enf.h	28;"	d
+MAXALLOCQUEUEARRAY	credel.c	628;"	d	file:
+MAXBCINLOAF	enf.h	27;"	d
+MAXCUTS	common.h	106;"	d
+MAXLINE	common.h	50;"	d
+MAXLOXIZE	wisp.h	48;"	d
+MAXTHINGIESINLOAF	coredisk.h	106;"	d
+MAXUCINLOAF	enf.h	26;"	d
+MAX_PLAYERS	be.c	17;"	d	file:
+MAX_PLAYERS	socketbe.c	25;"	d	file:
+MAX_PLAYERS	xumain.c	17;"	d	file:
+MINEXP	put.c	14;"	d	file:
+NAMELEN	common.h	44;"	d
+NAVIGATEONHT	requests.h	26;"	d
+NEW	reap.h	12;"	d
+NEWALLOC	credel.c	10;"	d	file:
+NFREEENTRYS	coredisk.h	129;"	d
+NOBERTREQUIRED	common.h	163;"	d
+NODE	xanadu.h	140;"	d
+NODEID	xanadu.h	30;"	d
+NPLACES	common.h	51;"	d
+NREQUESTS	xanadu.h	20;"	d
+NUMBEROFBERTTABLE	bert.c	27;"	d	file:
+NUMBEROFFREEDISKBUCKETS	multiloaf.c	22;"	d	file:
+NUMBYTESINLOAF	coredisk.h	100;"	d
+NUMDISKBLOCKSINLOAF	coredisk.h	98;"	d
+NUMDISKLOAFSINHEADER	coredisk.h	117;"	d
+NUMLOAFSOFBITMAP	coredisk.h	108;"	d
+OK	common.h	49;"	d
+OLD	reap.h	13;"	d
+ONMYLEFTBORDER	common.h	85;"	d
+ONMYRIGHTBORDER	common.h	87;"	d
+OPEN	requests.h	42;"	d
+ORGLRANGE	wisp.h	15;"	d
+PARTIALFREEDISKLOCATION	coredisk.h	121;"	d
+PLAYER	players.h	/^        } PLAYER;$/;"	t
+PLAYWITHALLOC	requests.h	19;"	d
+POINTERTAG	tags.h	54;"	d
+POOM	enf.h	13;"	d
+PORT	port.h	13;"	d
+PORTMETANAME	rcfile.c	18;"	d	file:
+QUIT	requests.h	32;"	d
+RCFILENAME	rcfile.c	17;"	d	file:
+READBERT	common.h	164;"	d
+REARRANGE	requests.h	24;"	d
+RECURSIVE	common.h	52;"	d
+RESERVED	genf.c	14;"	d	file:
+RESERVED	reap.h	11;"	d
+RETRIEVEDOCVSPAN	requests.h	31;"	d
+RETRIEVEDOCVSPANSET	requests.h	22;"	d
+RETRIEVEENDSETS	requests.h	37;"	d
+RETRIEVEV	requests.h	25;"	d
+RIGHTBRO	enf.h	139;"	d
+RIGHTMOSTSON	enf.h	136;"	d
+SECONDCHAR	tumbleari.c	21;"	d	file:
+SETDEBUG	requests.h	12;"	d
+SETMAXIMUMSETUPSIZE	requests.h	18;"	d
+SHOWENFILADES	requests.h	13;"	d
+SHOWRELATIONOF2VERSIONS	requests.h	27;"	d
+SINT	defs.h	11;"	d
+SIZEMULT	common.h	27;"	d
+SIZEOFFREEDISKBUCKET	multiloaf.c	21;"	d	file:
+SIZEOFUBERDISKHEADER	coredisk.h	141;"	d
+SIZEOFZEROHUMBER	common.h	157;"	d
+SON	enf.h	137;"	d
+SOURCEUNIXCOMMAND	requests.h	34;"	d
+SPAN	enf.h	14;"	d
+SPANFDISKLOCATION	coredisk.h	120;"	d
+SPANFLAG	get2fe.c	17;"	d	file:
+SPANFLAG	putfe.c	25;"	d	file:
+SPANRANGE	wisp.h	16;"	d
+SPANTAG	tags.h	20;"	d
+SPORGLID	xanadu.h	32;"	d
+SPORGLTAG	tags.h	24;"	d
+SUN	common.h	33;"	d
+SUN	common.h	35;"	d
+TABSTOP	test.c	886;"	d	file:
+TASKEDTAG	tags.h	11;"	d
+TEXTATOM	xanadu.h	145;"	d
+TEXTFLAG	get2fe.c	19;"	d	file:
+TEXTFLAG	putfe.c	27;"	d	file:
+TEXTID	xanadu.h	26;"	d
+THIRDCHAR	tumbleari.c	22;"	d	file:
+THRUME	common.h	86;"	d
+TOMYLEFT	common.h	84;"	d
+TOMYRIGHT	common.h	88;"	d
+TRUE	common.h	39;"	d
+TRUE	queues.c	28;"	d	file:
+TUMBLERMINUS	common.h	54;"	d
+TUMBLERTAG	tags.h	21;"	d
+TUMDELIM	get2fe.c	16;"	d	file:
+TUMDELIM	putfe.c	24;"	d	file:
+V	wisp.h	20;"	d
+VSPANID	xanadu.h	28;"	d
+VSPANTAG	tags.h	23;"	d
+VSPECFLAG	get2fe.c	18;"	d	file:
+VSPECFLAG	putfe.c	26;"	d	file:
+VSPECID	xanadu.h	29;"	d
+VSPECTAG	tags.h	26;"	d
+WIDSIZEGR	wisp.h	23;"	d
+WIDSIZEPM	wisp.h	27;"	d
+WIDSIZESP	wisp.h	25;"	d
+WIDTH	wisp.h	12;"	d
+WORDELIM	get2fe.c	15;"	d	file:
+WORDELIM	putfe.c	23;"	d	file:
+WRITEBERT	common.h	165;"	d
+XACCOUNT	requests.h	41;"	d
+XUBUFSIZ	common.h	29;"	d
+ZEROTUMBLER	common.h	65;"	d
+ZEROTUMBLERvar	tumble.c	/^tumbler ZEROTUMBLERvar;$/;"	v
+_player	players.h	/^typedef struct _player {$/;"	s
+absadd	tumble.c	/^absadd (aptr, bptr, cptr)$/;"	f
+abscmp	tumble.c	/^abscmp(aptr,bptr)$/;"	f	file:
+acceptablevsa	do2.c	/^acceptablevsa (vsaptr, orglptr)$/;"	f
+account	common.h	/^        tumbler account;$/;"	m	struct:structtask
+account	players.h	/^	tumbler account; 	\/* xanadu host and account tumbler *\/$/;"	m	struct:_player
+accountfilename	rcfile.c	/^char accountfilename[256] =   "accountfile";$/;"	v
+actuallyreadrawloaf	disk.c	/^void actuallyreadrawloaf(loafptr, blocknumber)$/;"	f
+actuallyreadrawloaffromhash	cashedisk.c	/^void actuallyreadrawloaffromhash (loafptr, blocknumber)$/;"	f
+actuallywriteloaf	disk.c	/^void actuallywriteloaf (\/*size,*\/loafptr, diskblocknumber)$/;"	f
+addallocatedloaftopartialallocedtables	multiloaf.c	/^addallocatedloaftopartialallocedtables(dp, size)$/;"	f
+address	xanadu.h	/^        typeisa address;$/;"	m	struct:structtypeaddress
+addtofreediskstructures	multiloaf.c	/^addtofreediskstructures(diskentry)$/;"	f
+addtohash	cashedisk.c	/^void addtohash(loafptr,blocknumber)$/;"	f
+addtoopen	bert.c	/^addtoopen(tp, connection, created, type)$/;"	f
+adopt	genf.c	/^adopt(new, relative, old)$/;"	f
+age	enf.h	/^        \/*SINT*\/unsigned char age;         \/* for deciding to grimly reap *\/$/;"	m	struct:struct2dcbc
+age	enf.h	/^        \/*SINT*\/unsigned char age;         \/* for deciding to grimly reap *\/$/;"	m	struct:structcbc
+age	enf.h	/^        \/*SINT*\/unsigned char age;         \/* for deciding to grimly reap *\/$/;"	m	struct:structcorecrumhedr
+age	enf.h	/^        \/*SINT*\/unsigned char age;         \/* for deciding to grimly reap *\/$/;"	m	struct:structcuc
+allcutswiththiscrumnd	ndinters.c	/^allcutswiththiscrumnd (ptr, offset, knives)$/;"	f
+allignmentdummy	coredisk.h	/^	SINT allignmentdummy;$/;"	m	struct:structdiskloafhedr
+alloccount	alloc.c	/^  static INT alloccount=0;$/;"	v	file:
+allocfromqueue	credel.c	/^char * allocfromqueue(n)$/;"	f
+allocp	alloc.c	/^static HEADER *allocp = NULL;$/;"	v	file:
+allocqueuearray	credel.c	/^struct queue allocqueuearray[MAXALLOCQUEUEARRAY];$/;"	v
+allocsize	rcfile.c	/^INT  allocsize = ALLOCSIZE;$/;"	v
+analyzeanddebug	allocdebug.c	/^analyzeanddebug(ptr) \/* ptr to thing with alloc header and tag header *\/$/;"	f
+anoherallignmentdummy	coredisk.h	/^	SINT anoherallignmentdummy;$/;"	m	struct:structuberdiskloaf
+appendpm	orglinks.c	/^appendpm(taskptr, docisaptr, textset)$/;"	f
+assertsonswispmatchesfather	test.c	/^assertsonswispmatchesfather(father)$/;"	f
+assertspecisstring	test.c	/^assertspecisstring(specptr,string)$/;"	f
+assertsubtreeisok	test.c	/^assertsubtreeisok(ptr)$/;"	f
+asserttreeisok	test.c	/^bool asserttreeisok(ptr)$/;"	f
+assertwidsarepositive	test.c	/^assertwidsarepositive(ptr)$/;"	f
+atomtype	xanadu.h	/^        INT atomtype;$/;"	m
+backenddaemon	granf1.c	/^int backenddaemon = 0; $/;"	v
+backenddirectoryname	rcfile.c	/^char backenddirectoryname[256] = ".";$/;"	v
+backendfilename	rcfile.c	/^char backendfilename[256] =   "backenddaemon";$/;"	v
+backendgluefilename	rcfile.c	/^char backendgluefilename[256] =  "intx";$/;"	v
+barcounter	insert.c	/^ static barcounter(){}$/;"	f	file:
+base	alloc.c	/^static HEADER base;$/;"	v	file:
+baseallocated	alloc.c	/^static HEADER baseallocated;$/;"	v	file:
+beheadtumbler	tumble.c	/^beheadtumbler (aptr, bptr)$/;"	f
+bertModeNames	bert.c	/^char *bertModeNames[] = { "BADMODE", "ONLY", "COPYIF", "COPY" };$/;"	v
+bertMsgBuf	bert.c	/^char bertMsgBuf[256] = "";$/;"	v
+bertTypeNames	bert.c	/^char *bertTypeNames[] = { "NOBERT", "READBERT", "WRITEBERT" };$/;"	v
+bertentry	bert.c	/^}bertentry;$/;"	t	file:
+berttable	bert.c	/^static conscell *berttable[NUMBEROFBERTTABLE];$/;"	v	file:
+bitmap	coredisk.h	/^        char bitmap[BITMAPSIZE];  \/* bit set for each free block *\/$/;"	m
+blades	ndenf.h	/^        tumbler blades[MAXCUTS];$/;"	m	struct:structknives
+blockisinhash	cashedisk.c	/^INT blockisinhash(blocknumber)$/;"	f
+blocknumber	cashedisk.c	/^    INT blocknumber;$/;"	m	struct:hashfoo	file:
+bool	common.h	/^typedef unsigned  bool;$/;"	t
+c2dinfo	enf.h	/^        type2dbottomcruminfo      c2dinfo;$/;"	m	struct:struct2dcbc
+c2dontextnum	context.c	/^INT c2dontextnum = 0;$/;"	v
+calculatetotallength	tumbleari.c	/^calculatetotallength(lengthofbody) \/* of tumbler ie adds length of exponent in length of body*\/$/;"	f
+cdsp	enf.h	/^        typedsp cdsp;$/;"	m	struct:struct2dcbc
+cdsp	enf.h	/^        typedsp cdsp;$/;"	m	struct:structcbc
+cdsp	enf.h	/^        typedsp cdsp;$/;"	m	struct:structcorecrumhedr
+cdsp	enf.h	/^        typedsp cdsp;$/;"	m	struct:structcuc
+cenftype	enf.h	/^        SINT cenftype;    \/* GRAN, SPAN, or POOM *\/$/;"	m	struct:struct2dcbc
+cenftype	enf.h	/^        SINT cenftype;    \/* GRAN, SPAN, or POOM *\/$/;"	m	struct:structcbc
+cenftype	enf.h	/^        SINT cenftype;    \/* GRAN, SPAN, or POOM *\/$/;"	m	struct:structcorecrumhedr
+cenftype	enf.h	/^        SINT cenftype;    \/* GRAN, SPAN, or POOM *\/$/;"	m	struct:structcuc
+changefreediskstructures	multiloaf.c	/^changefreediskstructures(diskentry,newsize)$/;"	f
+changerefcount	disk.c	/^INT changerefcount (diskptr, delta)$/;"	f
+changeunterrefcount	disk.c	/^INT changeunterrefcount (wholeloafp,originalloafp, delta)$/;"	f
+charbuff	common.h	/^        char charbuff;$/;"	m	struct:structtask
+charinbuff	common.h	/^        bool charinbuff;$/;"	m	struct:structtask
+check	test.c	/^check(ptr)$/;"	f
+checkalloc	alloc.c	/^checkalloc(c)$/;"	f
+checkallocedptr	alloc.c	/^checkallocedptr(ptr,string)$/;"	f
+checkenftypes	test.c	/^checkenftypes (father, message)$/;"	f
+checkforopen	bert.c	/^int checkforopen(tp, type, connection)$/;"	f
+checkitem	test.c	/^checkitem (msg, ptr)$/;"	f
+checkmodifiednotthere	corediskout.c	/^void checkmodifiednotthere( typecuc *father, char *string)\/*function_definition*\/$/;"	f
+checknumofsons	test.c	/^checknumofsons(ptr)$/;"	f
+checkpointer	test.c	/^checkpointer (msg, ptr)$/;"	f
+checkspecandstringbefore	do1.c	/^checkspecandstringbefore()$/;"	f
+checkthebleedingcrum	test.c	/^checkthebleedingcrum (crumptr)$/;"	f
+checkwholesubtree	test.c	/^checkwholesubtree (father)$/;"	f
+cinfo	enf.h	/^        typegranbottomcruminfo      cinfo;$/;"	m	struct:structcbc
+cleanupvspanlist	orglinks.c	/^cleanupvspanlist (taskptr, vspansetptr)$/;"	f
+clear	common.h	160;"	d
+closediskfile	disk.c	/^closediskfile ()$/;"	f
+comparecrumsdiagonally	recombine.c	/^comparecrumsdiagonally (a, b)$/;"	f
+comparespans	correspond.c	/^comparespans (taskptr, span1, span2, span3, spantype)$/;"	f
+connection	bert.c	/^	int connection;$/;"	m	file:
+conscell	bert.c	/^typedef struct conscell{$/;"	s	file:
+conscell	bert.c	/^}conscell;$/;"	t	file:
+context2dinfo	enf.h	/^        type2dbottomcruminfo context2dinfo;$/;"	m	struct:struct2dcontext
+context2span	context.c	/^context2span (context, restrictionspanptr, idx1, foundspanptr, idx2)$/;"	f
+context2vstuff	context.c	/^context2vstuff (taskptr, context, ispanptr, vstuffsetptr)$/;"	f
+context2vtext	context.c	/^context2vtext (context, ispanptr, vstuffset)$/;"	f
+contextfree	context.c	/^contextfree (context)$/;"	f
+contextinfo	enf.h	/^        typebottomcruminfo contextinfo;$/;"	m	struct:structcontext
+contextintosporgl	sporgl.c	/^contextintosporgl (context, linkid, sporglptr, index)$/;"	f
+contextnum	context.c	/^INT contextnum = 0;$/;"	v
+contexttype	enf.h	/^        INT contexttype;$/;"	m	struct:struct2dcontext
+contexttype	enf.h	/^        INT contexttype;$/;"	m	struct:structcontext
+contextwid	enf.h	/^        typewid contextwid;$/;"	m	struct:struct2dcontext
+contextwid	enf.h	/^        typewid contextwid;$/;"	m	struct:structcontext
+copy	fns.c	/^ void copy (taskptr)$/;"	f
+copy	fns.c	/^void copy (taskptr) \/* kluged unix version for speed *\/$/;"	f
+copyspanset	do1.c	/^copyspanset (taskptr,spanptr, newptrptr)$/;"	f
+copyspecset	do1.c	/^copyspecset (taskptr,specptr, newptr)$/;"	f
+corecrum	enf.h	/^        typecbc *corecrum;$/;"	m	struct:structcrumcontext
+count	bert.c	/^	int count;$/;"	m	file:
+crash	socketbe.c	/^void *crash()$/;"	f
+createcontext	context.c	/^createcontext (type)$/;"	f
+createcrum	credel.c	/^createcrum(crumheight, enftype)$/;"	f
+createcrumcontext	context.c	/^createcrumcontext (crumptr, offsetptr)$/;"	f
+createcruminternal	credel.c	/^createcruminternal(crumheight, enftype, allocated)$/;"	f
+created	bert.c	/^	char created,modified;$/;"	m	file:
+createenf	credel.c	/^createenf (enftype)$/;"	f
+createlink	fns.c	/^void createlink (taskptr)$/;"	f
+createnewdocument	fns.c	/^void createnewdocument (taskptr)$/;"	f
+createnewversion	fns.c	/^void createnewversion (taskptr)$/;"	f
+createnode_or_account	fns.c	/^void createnode_or_account(taskptr)$/;"	f
+createorglgr	granf2.c	/^createorglgr (taskptr, fullcrumptr, hintptr, isaptr)$/;"	f
+createorglingranf	granf1.c	/^createorglingranf (taskptr, granfptr, hintptr, isaptr)$/;"	f
+crumcontextfree	context.c	/^crumcontextfree (context)$/;"	f
+crumcontextnum	context.c	/^INT crumcontextnum = 0;$/;"	v
+crumintersectsspanseq	retrie.c	/^crumintersectsspanseq (crumptr, offsetptr, spanstart, spanend)$/;"	f
+crumiscut	ndcuts.c	/^crumiscut(ptr,offset,knives)$/;"	f
+crumiscutbyithknife	ndcuts.c	/^crumiscutbyithknife(ptr, offset, knives, i)$/;"	f
+crumleftofithcut	ndcuts.c	/^crumleftofithcut(ptr,offset,knives,i)$/;"	f
+crumnumber	credel.c	/^INT crumnumber = 0;$/;"	v
+crumqualifies2d	retrie.c	/^crumqualifies2d (crumptr, offset, span1start, span1end, index1, span2start, span2end, index2, infoptr)  \/* NOTE in retrieves this is ---40% -- of cpu*\/$/;"	f
+currentaccount	bed.c	/^static tumbler currentaccount;$/;"	v	file:
+cutinthiscrumnd	ndinters.c	/^cutinthiscrumnd (ptr, offset, knives)$/;"	f
+cutsarray	common.h	/^        tumbler cutsarray[MAXCUTS];$/;"	m	struct:structcutseq
+cutsons	ndcuts.c	/^cutsons(ptr,offset,knives)$/;"	f
+cwid	enf.h	/^        typewid cwid;$/;"	m	struct:struct2dcbc
+cwid	enf.h	/^        typewid cwid;$/;"	m	struct:structcbc
+cwid	enf.h	/^        typewid cwid;$/;"	m	struct:structcorecrumhedr
+cwid	enf.h	/^        typewid cwid;$/;"	m	struct:structcuc
+d2dbcarray	coredisk.h	/^        type2ddbc               d2dbcarray[MAX2DBCINLOAF];$/;"	m	struct:struct2ddbcloaf
+d2dinfo	coredisk.h	/^        type2dbottomcruminfo    d2dinfo;$/;"	m	struct:struct2ddbc
+dbcdsp	coredisk.h	/^        typedsp                 dbcdsp;$/;"	m	struct:struct2ddbc
+dbcdsp	coredisk.h	/^        typedsp                 dbcdsp;$/;"	m	struct:structdbc
+dbcwid	coredisk.h	/^        typewid                 dbcwid;$/;"	m	struct:struct2ddbc
+dbcwid	coredisk.h	/^        typewid                 dbcwid;$/;"	m	struct:structdbc
+ddsp	coredisk.h	/^        typedsp ddsp;$/;"	m	struct:structduc
+deallocateinloaf	multiloaf.c	/^deallocateinloaf(loafp,insidediskblocknumber)$/;"	f
+debug	common.h	/^INT debug;       $/;"	v
+decrementusers	be.c	/^decrementusers()$/;"	f
+decrementusers	bed.c	/^decrementusers()$/;"	f
+decrementusers	xumain.c	/^decrementusers()$/;"	f
+defaultaccount	be.c	/^tumbler defaultaccount = {0,0,0,0, 1,1,0,1,0,0,0,0}; \/* 1.1.0.1 *\/$/;"	v
+defaultaccount	socketbe.c	/^tumbler defaultaccount = {0,0,0,0,  1,1,0,14,0};$/;"	v
+deletecutsectionnd	edit.c	/^deletecutsectionnd (ptr, offset, knives)$/;"	f
+deletefromfreediskstructures	multiloaf.c	/^deletefromfreediskstructures(diskentry)$/;"	f
+deletefullcrumandgarbageddescendents	corediskout.c	/^void deletefullcrumandgarbageddescendents( typediskloafptr diskptr, bool deletefullcrumflag, typediskloaf *loafp, typediskloafptr newdiskptr)\/*function_definition*\/$/;"	f
+deletend	edit.c	/^deletend (fullcrumptr, origin, width, index)$/;"	f
+deleteseq	edit.c	/^deleteseq (fullcrumptr, address, index)$/;"	f
+deleteversion	bert.c	/^deleteversion(tp)$/;"	f
+deletevspan	fns.c	/^void deletevspan (taskptr) \/* kluged unix version for speed *\/$/;"	f
+deletevspanpm	orglinks.c	/^deletevspanpm(taskptr, docisaptr, docorgl, vspanptr)$/;"	f
+deletewithgarbageddescendents	corediskout.c	/^void deletewithgarbageddescendents( typediskloafptr diskptr, typecuc *  father, bool deletefullcrumflag)\/*function_definition*\/$/;"	f
+denftype	coredisk.h	/^        SINT denftype;    \/* GRAN, SPAN, POOM *\/$/;"	m	struct:structdiskloafhedr
+didntchangewisps	wisp.c	/^didntchangewisps()$/;"	f
+dieandclosefiles	disk.c	/^dieandclosefiles ()$/;"	f
+dimension	ndenf.h	/^        INT dimension;  \/* always V, assigned by rearrange2d *\/$/;"	m	struct:structknives
+dinfo	coredisk.h	/^        typebottomcruminfo      dinfo;$/;"	m	struct:structdbc
+diskalloc	diskalloc.c	/^diskalloc ()$/;"	f
+diskallocexit	diskalloc.c	/^diskallocexit (fd)$/;"	f
+diskblocknumber	enf.h	/^	typediskloafptrdigit diskblocknumber;$/;"	m	struct:disktypeloafstruct
+diskexit	corediskout.c	/^void diskexit()\/*function_definition*\/$/;"	f
+diskflush	corediskout.c	/^void diskflush ()\/*function_definition*\/ $/;"	f
+diskfree	diskalloc.c	/^diskfree (loafptr)$/;"	f
+diskheader	coredisk.h	/^} diskheader;                           \/* header for file *\/$/;"	v
+diskorglptr	wisp.h	/^        typediskloafptr diskorglptr;$/;"	m	struct:structgranorgl
+diskorglptr	wisp.h	/^        typediskloafptr diskorglptr;$/;"	m	struct:structorgl
+diskset	diskalloc.c	/^diskset (loafptr)$/;"	f
+disktypeloafstruct	enf.h	/^typedef struct disktypeloafstruct{$/;"	s
+disown	genf.c	/^disown(crumptr)$/;"	f
+disownnomodify	genf.c	/^disownnomodify(crumptr)$/;"	f
+displaycutspm	test.c	/^displaycutspm (knivesptr)$/;"	f
+doappend	do1.c	/^doappend (taskptr, docptr, textset)$/;"	f
+dobertexit	bert.c	/^dobertexit(connection)$/;"	f
+docidandvstream2tumbler	tumble.c	/^docidandvstream2tumbler (docid, vstream, tumbleptr)$/;"	f
+docisa	xanadu.h	/^        typeisa docisa;$/;"	m	struct:structtypevspec
+doclose	bert.c	/^bool doclose(taskptr, tp, connection)$/;"	f
+docopy	do1.c	/^docopy (taskptr, docisaptr, vsaptr, specset)$/;"	f
+docopyinternal	do1.c	/^docopyinternal (taskptr, docisaptr, vsaptr, specset)$/;"	f
+docreatelink	do1.c	/^docreatelink (taskptr, docisaptr, fromspecset, tospecset, threespecset, linkisaptr)$/;"	f
+docreatenewdocument	do1.c	/^docreatenewdocument (taskptr, isaptr)$/;"	f
+docreatenewversion	do1.c	/^docreatenewversion (taskptr, isaptr, wheretoputit, newisaptr)$/;"	f
+docreatenode_or_account	do1.c	/^docreatenode_or_account (taskptr, isaptr)$/;"	f
+documentid	bert.c	/^	tumbler documentid;$/;"	m	file:
+dodeletevspan	do1.c	/^dodeletevspan(taskptr, docisaptr, vspanptr)$/;"	f
+dodumpistreamgr	test.c	/^dodumpistreamgr (crumptr, offsetptr)$/;"	f
+dofinddocscontaining	do1.c	/^dofinddocscontaining (taskptr, specset, addresssetptr)$/;"	f
+dofindlinksfromtothree	do1.c	/^dofindlinksfromtothree (taskptr, fromvspecset, tovspecset, threevspecset, orglrangeptr, linksetptr)$/;"	f
+dofindnextnlinksfromtothree	do1.c	/^dofindnextnlinksfromtothree (taskptr, fromvspecptr, tovspecptr, threevspecptr, orglrangeptr, lastlinkisaptr, nextlinksetptr, nptr)$/;"	f
+dofindnumoflinksfromtothree	do1.c	/^dofindnumoflinksfromtothree (taskptr, fromvspecset, tovspecset, threevspecset, orglrangeptr, numptr)$/;"	f
+dofollowlink	do1.c	/^dofollowlink (taskptr, linkisaptr, specsetptr, whichend)$/;"	f
+doinsert	do1.c	/^doinsert (taskptr, docisaptr, vsaptr, textset)$/;"	f
+doinsertnd	insertnd.c	/^doinsertnd (father, origin, width, infoptr, index)$/;"	f
+domakelink	do1.c	/^domakelink (taskptr, docisaptr, fromspecset, tospecset, linkisaptr)$/;"	f
+doopen	bert.c	/^bool doopen(taskptr, tp, newtp, type, mode, connection)$/;"	f
+dorearrange	do1.c	/^dorearrange (taskptr, docisaptr, cutseqptr)$/;"	f
+doretrievedocvspan	do1.c	/^doretrievedocvspan (taskptr, docisaptr, vspanptr)$/;"	f
+doretrievedocvspanfoo	do1.c	/^doretrievedocvspanfoo (taskptr, docisaptr, vspanptr) \/* Internal routine, no open required *\/$/;"	f
+doretrievedocvspanset	do1.c	/^doretrievedocvspanset (taskptr, docisaptr, vspansetptr)$/;"	f
+doretrieveendsets	do1.c	/^doretrieveendsets(taskptr, specset, fromsetptr, tosetptr, threesetptr)$/;"	f
+doretrievev	do1.c	/^doretrievev (taskptr, specset, vstuffsetptr)$/;"	f
+doshowrelationof2versions	do1.c	/^doshowrelationof2versions(taskptr, version1, version2, relation)$/;"	f
+doshowspanf	test.c	/^doshowspanf (crumptr, offsetptr, enfheight)$/;"	f
+dsas	wisp.h	/^        tumbler dsas[MAXLOXIZE];$/;"	m	struct:structwid
+dspadd	wisp.c	/^dspadd (a, b, c, enftype)$/;"	f
+dspsize	wisp.h	61;"	d
+dspsub	wisp.c	/^dspsub (a, b, c, enftype)$/;"	f
+ducarray	coredisk.h	/^        typeduc                 ducarray[MAXUCINLOAF];$/;"	m	struct:structducloaf
+dump	test.c	/^dump (ptr)$/;"	f
+dumpcontext	test.c	/^dumpcontext (context)$/;"	f
+dumpcontextlist	test.c	/^dumpcontextlist (context)$/;"	f
+dumpdsp	test.c	/^dumpdsp (dspptr, enftype)$/;"	f
+dumpfdhashtable	multiloaf.c	/^dumpfdhashtable()$/;"	f
+dumpfdorderedtable	multiloaf.c	/^dumpfdorderedtable()$/;"	f
+dumpfreediskentry	multiloaf.c	/^dumpfreediskentry(ptr)$/;"	f
+dumpgranfwids	test.c	/^dumpgranfwids (taskptr)$/;"	f
+dumphedr	test.c	/^dumphedr (ptr)$/;"	f
+dumphexstuff	test.c	/^dumphexstuff(ptr)$/;"	f
+dumphint	test.c	/^dumphint (hintptr)$/;"	f
+dumpincoretables	multiloaf.c	/^dumpincoretables()$/;"	f
+dumpinfo	test.c	/^dumpinfo (infoptr, enftype)$/;"	f
+dumpisagr	test.c	/^dumpisagr (offsetptr)$/;"	f
+dumpistreamgr	test.c	/^dumpistreamgr (crumptr)$/;"	f
+dumpitem	test.c	/^dumpitem (itemptr)$/;"	f
+dumpitemset	test.c	/^dumpitemset (itemset)$/;"	f
+dumpmem	test.c	/^dumpmem (loc, count)$/;"	f
+dumpmoleculegr	test.c	/^dumpmoleculegr (offsetptr, cbcptr)$/;"	f
+dumppoomwisps	test.c	/^dumppoomwisps (orgl)$/;"	f
+dumpspan	test.c	/^dumpspan (spanptr)$/;"	f
+dumpspanpair	test.c	/^dumpspanpair ( spanpair)$/;"	f
+dumpspanpairset	test.c	/^dumpspanpairset ( spanpairset)$/;"	f
+dumpspanset	test.c	/^dumpspanset(spanset)$/;"	f
+dumpsubtree	test.c	/^dumpsubtree (father)$/;"	f
+dumptable	credel.c	/^dumptable()$/;"	f
+dumptext	test.c	/^dumptext (textptr)$/;"	f
+dumptumbler	test.c	/^dumptumbler(tumblerptr)$/;"	f
+dumpwholesubtree	test.c	/^dumpwholesubtree (father)$/;"	f
+dumpwholetree	test.c	/^dumpwholetree(ptr)$/;"	f
+dumpwid	test.c	/^dumpwid (widptr, enftype)$/;"	f
+dwid	coredisk.h	/^        typewid dwid;$/;"	m	struct:structduc
+ealloc	credel.c	/^ealloc (nbytes)   \/* with tag*\/$/;"	f
+eallocwithtag	credel.c	/^eallocwithtag(nbytes, tag)$/;"	f
+eatbrossubtreend	recombine.c	/^eatbrossubtreend (me, bro)$/;"	f
+eatbrossubtreeseq	recombine.c	/^eatbrossubtreeseq (me)$/;"	f
+eatchar	get2.c	/^eatchar (taskptr, c)$/;"	f
+eatchar	get2fe.c	/^eatchar (taskptr, c)$/;"	f
+efree	credel.c	/^void efree (ptr)  \/* with tag *\/$/;"	f
+enffiledes	disk.c	/^INT enffiledes;	 \/* enfilade file descriptor where disk stuff is *\/$/;"	v
+enffiledes	diskalloc.c	/^INT enffiledes;$/;"	v
+enffileread	disk.c	/^bool enffileread;       \/* yeah another external *\/$/;"	v
+enftypestring	test.c	/^enftypestring (type)$/;"	f
+error	put.c	/^error (taskptr, string)$/;"	f
+error	putfe.c	/^error (taskptr, string)$/;"	f
+errp	common.h	/^        FILE *inp, *outp, *errp;$/;"	m	struct:structtask
+establishprotocol	be.c	/^bool establishprotocol(inp, outp)$/;"	f
+establishprotocol	bed.c	/^bool establishprotocol(inp, outp)$/;"	f
+examine	test.c	/^examine (taskptr)$/;"	f
+exitbert	bert.c	/^exitbert(connection)$/;"	f
+exp	common.h	/^        short exp;$/;"	m	struct:structtumbler
+expandcrumleftward	makeroom.c	/^expandcrumleftward (crumptr, newdsp, base, index)$/;"	f
+exponentof	tumbleari.c	/^exponentof(ptr)$/;"	f
+fakepartialuberloaf	coredisk.h	/^	INT fakepartialuberloaf;$/;"	m	struct:structuberdiskloaffake
+fakepartialuberloaf	coredisk.h	/^	typediskloaf fakepartialuberloaf;$/;"	m	struct:structuberdiskloaf
+falloc	alloc.c	/^falloc(nbytes)$/;"	f
+fdhash	multiloaf.c	/^INT fdhash(diskblocknumber)$/;"	f
+fdhashtable	multiloaf.c	/^static freediskconscell *fdhashtable[FDHASHTABLESIZE];$/;"	v	file:
+fdorderedtable	multiloaf.c	/^static freediskconscell *fdorderedtable[NUMBEROFFREEDISKBUCKETS];$/;"	v	file:
+fdtoplayer	socketbe.c	/^INT fdtoplayer[32];$/;"	v
+febelog	bed.c	/^ FILE *febelog;$/;"	v
+febelog	putfe.c	/^extern FILE *febelog = NULL;$/;"	v
+febelog	xumain.c	/^FILE *febelog = NULL;$/;"	v
+fetchorglgr	granf2.c	/^fetchorglgr(taskptr, fullcrumptr, address)$/;"	f
+ffree	alloc.c	/^ffree(ap)$/;"	f
+filesize	coredisk.h	/^        unsigned filesize;              \/* number of last allocated block *\/$/;"	m
+fillupcbcseq	insert.c	/^fillupcbcseq (ptr, crumboundary, info) $/;"	f
+findaddressofsecondcutforinsert	insertnd.c	/^findaddressofsecondcutforinsert (position, secondcut)$/;"	f
+findandallocateinsidediskblocknumber	multiloaf.c	/^findandallocateinsidediskblocknumber(diskblocknumber,size,loafp)$/;"	f
+findcbcinarea2d	retrie.c	/^findcbcinarea2d(crumptr,offsetptr,span1start,span1end,index1,span2start,span2end, index2, headptr, infoptr)$/;"	f
+findcbcinspanseq	retrie.c	/^findcbcinspanseq (crumptr, offsetptr, spanstart, spanend, headptr)$/;"	f
+findcbcnd	retrie.c	/^findcbcnd (father, offsetptr, address, index)$/;"	f
+findcbcseq	retrie.c	/^findcbcseq (ptr, offsetptr, address)$/;"	f
+findcbcseqcrum	retrie.c	/^findcbcseqcrum (ptr, offsetptr, address)$/;"	f
+finddocscontaining	fns.c	/^void finddocscontaining (taskptr)$/;"	f
+finddocscontainingsp	spanf1.c	/^finddocscontainingsp (taskptr, ispanset, addresssetptr)$/;"	f
+findfather	genf.c	/^findfather(son)$/;"	f
+findfreeenoughloafinbucket	multiloaf.c	/^freediskentry *findfreeenoughloafinbucket(size)$/;"	f
+findfullcrum	genf.c	/^findfullcrum(descendant)$/;"	f
+findinsideloaf	multiloaf.c	/^findinsideloaf(loafp,ninsideloaf)$/;"	f
+findisatoinsertgr	granf2.c	/^findisatoinsertgr (fullcrumptr, hintptr, isaptr)$/;"	f
+findisatoinsertmolecule	granf2.c	/^static findisatoinsertmolecule (fullcrumptr, hintptr, isaptr)$/;"	f	file:
+findisatoinsertnonmolecule	granf2.c	/^static findisatoinsertnonmolecule (fullcrumptr, hintptr, isaptr)$/;"	f	file:
+findlastcbcseq	retrie.c	/^findlastcbcseq (fullcrumptr)$/;"	f
+findlastisaincbcgr	granf2.c	/^findlastisaincbcgr (ptr, offset)$/;"	f
+findleftbro	genf.c	/^findleftbro(ptr)$/;"	f
+findleftmostbro	genf.c	/^findleftmostbro(ptr)$/;"	f
+findleftson	genf.c	/^findleftson (ptr)$/;"	f
+findlinksfromtothree	fns.c	/^void findlinksfromtothree (taskptr)$/;"	f
+findlinksfromtothreesp	spanf1.c	/^findlinksfromtothreesp (taskptr, spanfptr, fromvspecset, tovspecset, threevspecset, orglrange, linksetptr)$/;"	f
+findnextaddressinvspace	orglinks.c	/^findnextaddressinvspace (crumptr, offsetptr, nextvspacestartptr, vsaptr)$/;"	f
+findnextlinkvsa	do2.c	/^findnextlinkvsa (taskptr, docisaptr, vsaptr)$/;"	f
+findnextnlinksfromtothree	fns.c	/^void findnextnlinksfromtothree (taskptr)$/;"	f
+findnextnlinksfromtothreesp	spanf1.c	/^findnextnlinksfromtothreesp (taskptr, fromvspecset, tovspecset, threevspecset, orglrangeptr, lastlinkisaptr, nextlinksetptr, nptr)$/;"	f
+findnumberofdamnsons	disk.c	/^INT findnumberofdamnsons(diskptr)$/;"	f
+findnumoflinksfromtothree	fns.c	/^void findnumoflinksfromtothree (taskptr)$/;"	f
+findnumoflinksfromtothreesp	spanf1.c	/^findnumoflinksfromtothreesp (taskptr, spanfptr, fromvspecset, tovspecset, threevspecset, orglrange, numptr)$/;"	f
+findorgl	granf1.c	/^findorgl (taskptr, granfptr, isaptr, orglptr, type)\/*BERT*\/$/;"	f
+findpreviousisagr	granf2.c	/^findpreviousisagr (crumptr, upperbound, offset)$/;"	f
+findrightbro	common.h	152;"	d
+findrightmostbro	genf.c	/^findrightmostbro(leftbro)$/;"	f
+findrightmostson	genf.c	/^findrightmostson (ptr)$/;"	f
+findsontoinsertundernd	insertnd.c	/^findsontoinsertundernd (father, grasp, origin, width, index)$/;"	f
+findvsatoappend	orglinks.c	/^findvsatoappend (ptr, vsaptr)$/;"	f
+firstinsertionnd	insertnd.c	/^firstinsertionnd (father, origin, width, infoptr)$/;"	f
+firstputforrequest	putfe.c	/^bool firstputforrequest;$/;"	v
+fivetumbler	do1.c	/^tumbler fivetumbler = {0,0,0,0,500\/*100*\/,0,0,0,0,0,0,0};$/;"	v
+fixdspsofbroschildren	recombine.c	/^fixdspsofbroschildren (me, bro)$/;"	f
+fixincoresubtreewids	recombine.c	/^fixincoresubtreewids(ptr)$/;"	f
+flag	alloc.c	/^  static INT flag = 0;$/;"	v	file:
+flagquitting	bed.c	/^void flagquitting()$/;"	f
+followlink	fns.c	/^void followlink (taskptr)$/;"	f
+foo	test.c	/^foo (msg)$/;"	f
+fooalloc	tumbleari.c	/^fooalloc(size)$/;"	f
+foocontext	test.c	/^foocontext (msg, context)$/;"	f
+foocontextlist	test.c	/^foocontextlist (msg, context)$/;"	f
+foocounter	insert.c	/^ static foocounter(){}$/;"	f	file:
+foocrum	test.c	/^foocrum(msg,crumptr)$/;"	f
+foodec	test.c	/^foodec (msg, num)$/;"	f
+foodsp	test.c	/^foodsp (msg, dptr, enftype)$/;"	f
+foofree	tumbleari.c	/^foofree(ptr)$/;"	f
+foohex	test.c	/^foohex (msg, num)$/;"	f
+fooitem	test.c	/^fooitem (msg, iptr)$/;"	f
+fooitemset	test.c	/^fooitemset (msg, iptr)$/;"	f
+foospan	test.c	/^foospan(msg,span)$/;"	f
+foospanset	test.c	/^foospanset(msg,spanset)$/;"	f
+footumbler	test.c	/^footumbler (msg, tptr)$/;"	f
+foowid	test.c	/^foowid (msg, wptr, enftype)$/;"	f
+freecrum	credel.c	/^void freecrum (ptr)$/;"	f
+freediskarray	coredisk.h	/^} freediskarray;$/;"	t
+freediskconscell	multiloaf.c	/^typedef struct freediskconscell {$/;"	s	file:
+freediskconscell	multiloaf.c	/^} freediskconscell;$/;"	t	file:
+freediskentry	coredisk.h	/^} freediskentry;$/;"	t
+freeentryarray	coredisk.h	/^	freediskentry freeentryarray[NFREEENTRYS];$/;"	m
+freeloafptr	coredisk.h	/^	typediskloafptr freeloafptr;$/;"	m	struct:structfreediskloaf
+freespaceinloaf	coredisk.h	/^	unsigned short freespaceinloaf;$/;"	m
+freetoqueue	credel.c	/^void freetoqueue(ptr)$/;"	f
+frontenddied	be.c	/^frontenddied()$/;"	f
+frontenddied	bed.c	/^frontenddied()$/;"	f
+frontendeof	bed.c	/^jmp_buf frontendeof;$/;"	v
+frontendfilename	rcfile.c	/^char frontendfilename[256] =  "fex";$/;"	v
+frontendgluefilename	rcfile.c	/^char frontendgluefilename[256] = "ints";$/;"	v
+funcfindrightbro	genf.c	/^funcfindrightbro (ptr)$/;"	f
+funcrejuvinate	credel.c	/^funcrejuvinate(ptr)  \/* inner if is testing very useful test *\/$/;"	f
+functionintof	tumbleari.c	/^ unsigned INT functionintof(h)$/;"	f
+functionlengthof	tumbleari.c	/^functionlengthof(ptr)   \/* length of humber or vartumbler *\/$/;"	f
+functiontumbleradd	tumble.c	/^functiontumbleradd (aptr, bptr, cptr)  \/* tumbler add is ~50% of cpu so has been *\/$/;"	f
+functionweakfindfather	genf.c	/^functionweakfindfather(ptr)$/;"	f
+gerror	common.h	117;"	d
+getaccount	task.c	/^bool getaccount (taskptr, accountptr)$/;"	f
+getbool	get2.c	/^getbool (taskptr, boolptr)$/;"	f
+getboolset	get2.c	/^getboolset(taskptr, boolsetptr)$/;"	f
+getclose	get1.c	/^getclose(taskptr,tp)$/;"	f
+getclose	get1fe.c	/^getclose(taskptr,tp)$/;"	f
+getcopy	get1.c	/^getcopy (taskptr, docisaptr, vsaptr, localspecsetptr)$/;"	f
+getcopy	get1fe.c	/^getcopy (taskptr, docisaptr, vsaptr, localspecsetptr)$/;"	f
+getcreatelink	get1.c	/^getcreatelink (taskptr, docisaptr, fromspecsetptr, tospecsetptr, threespecsetptr)$/;"	f
+getcreatelink	get1fe.c	/^getcreatelink (taskptr, docisaptr, fromspecsetptr, tospecsetptr, threespecsetptr)$/;"	f
+getcreatenewdocument	get1.c	/^getcreatenewdocument()$/;"	f
+getcreatenewdocument	get1fe.c	/^getcreatenewdocument()$/;"	f
+getcreatenewversion	get1.c	/^getcreatenewversion(taskptr,docisaptr)$/;"	f
+getcreatenewversion	get1fe.c	/^getcreatenewversion (taskptr,docisaptr)$/;"	f
+getcreatenode_or_account	get1.c	/^getcreatenode_or_account(taskptr,tp)$/;"	f
+getcreatenode_or_account	get1fe.c	/^getcreatenode_or_account(taskptr,tp)$/;"	f
+getcutseq	get2.c	/^getcutseq(taskptr, cutseqptr)$/;"	f
+getcutseq	get2fe.c	/^getcutseq (taskptr, cutseqptr)$/;"	f
+getdeletevspan	get1.c	/^getdeletevspan (taskptr, docisaptr, vspanptr)$/;"	f
+getdeletevspan	get1fe.c	/^getdeletevspan (taskptr, docisaptr, vspanptr)$/;"	f
+getfather	genf.c	/^getfather(ptr)$/;"	f
+getfinddocscontaining	get1.c	/^getfinddocscontaining (taskptr, specsetptr)$/;"	f
+getfinddocscontaining	get1fe.c	/^getfinddocscontaining (taskptr, specsetptr)$/;"	f
+getfindlinksfromtothree	get1.c	/^getfindlinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr)$/;"	f
+getfindlinksfromtothree	get1fe.c	/^getfindlinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr)$/;"	f
+getfindnextnlinksfromtothree	get1.c	/^getfindnextnlinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr, lastlinkptr, nptr)$/;"	f
+getfindnextnlinksfromtothree	get1fe.c	/^getfindnextnlinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr, lastlinkptr, nptr)$/;"	f
+getfindnumoflinksfromtothree	get1.c	/^getfindnumoflinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr)$/;"	f
+getfindnumoflinksfromtothree	get1fe.c	/^getfindnumoflinksfromtothree (taskptr, fromvspecsetptr, tovspecsetptr, threevspecsetptr, homesetptr)$/;"	f
+getfollowlink	get1.c	/^getfollowlink (taskptr, linkisaptr, whichendptr)$/;"	f
+getfollowlink	get1fe.c	/^getfollowlink (taskptr, linkisaptr, whichendptr)$/;"	f
+getinsert	get1.c	/^getinsert (taskptr, docisaptr, vsaptr, textsetptr)$/;"	f
+getinsert	get1fe.c	/^getinsert (taskptr, docisaptr, vsaptr, textsetptr)$/;"	f
+getisa	get2.c	/^getisa (taskptr, isaptr)$/;"	f
+getleftbro	genf.c	/^getleftbro(ptr)$/;"	f
+getleftmostbro	genf.c	/^getleftmostbro(ptr)$/;"	f
+getleftson	genf.c	/^getleftson(ptr)$/;"	f
+getmuchtext	xumain.c	/^getmuchtext (taskptr, textptr)   \/*$/;"	f
+getnum	get2.c	/^getnum (taskptr, numptr)  \/* inside temporary *\/$/;"	f
+getnum	get2fe.c	/^getnum (taskptr, numptr)$/;"	f
+getnumber	get2.c	/^getnumber (taskptr, numptr)$/;"	f
+getnumber	get2fe.c	/^getnumber (taskptr, numptr)$/;"	f
+getopen	get1.c	/^getopen(taskptr,tp,typep,modep)$/;"	f
+getopen	get1fe.c	/^getopen(taskptr,tp,typep,modep)$/;"	f
+getorderedsons	recombine.c	/^getorderedsons (father, sons)$/;"	f
+getrearrange	get1.c	/^getrearrange (taskptr, docisaptr, cutseqptr)$/;"	f
+getrearrange	get1fe.c	/^getrearrange (taskptr, docisaptr, cutseqptr)$/;"	f
+getrequest	get2.c	/^getrequest (taskptr, requestptr)$/;"	f
+getrequest	get2fe.c	/^getrequest (taskptr, requestptr)$/;"	f
+getretrievedocvspan	get1.c	/^getretrievedocvspan (taskptr, docisaptr)$/;"	f
+getretrievedocvspan	get1fe.c	/^getretrievedocvspan (taskptr, docisaptr)$/;"	f
+getretrievedocvspanset	get1.c	/^getretrievedocvspanset (taskptr, docisaptr)$/;"	f
+getretrievedocvspanset	get1fe.c	/^getretrievedocvspanset (taskptr, docisaptr)$/;"	f
+getretrieveendsets	get1.c	/^getretrieveendsets (taskptr, specsetptr)$/;"	f
+getretrieveendsets	get1fe.c	/^getretrieveendsets (taskptr, specsetptr)$/;"	f
+getretrievev	get1.c	/^getretrievev (taskptr, specsetptr)$/;"	f
+getretrievev	get1fe.c	/^getretrievev (taskptr, specsetptr)$/;"	f
+getrightbro	common.h	132;"	d
+getrightmostbro	genf.c	/^getrightmostbro(ptr)$/;"	f
+getshowrelationof2versions	get1.c	/^getshowrelationof2versions (taskptr, version1ptr, version2ptr)$/;"	f
+getshowrelationof2versions	get1fe.c	/^getshowrelationof2versions (taskptr, version1ptr, version2ptr)$/;"	f
+getspan	get2.c	/^getspan (taskptr, spanptr, id)$/;"	f
+getspan	get2fe.c	/^getspan (taskptr, spanptr, id)$/;"	f
+getspanset	get2.c	/^getspanset(taskptr, spansetptr,id)$/;"	f
+getspanset	get2fe.c	/^getspanset (taskptr, spansetptr, id)$/;"	f
+getspecset	get2.c	/^getspecset (taskptr, specsetptr)$/;"	f
+getspecset	get2fe.c	/^getspecset (taskptr, specsetptr)$/;"	f
+gettdigit	get2fe.c	/^gettdigit (taskptr, valueptr)$/;"	f
+gettext	get2.c	/^gettext (taskptr, textptr)$/;"	f
+gettext	get2fe.c	/^gettext (taskptr, textptr)$/;"	f
+gettextset	get2.c	/^gettextset (taskptr, textsetptr)$/;"	f
+gettextset	get2fe.c	/^gettextset (taskptr, textsetptr)$/;"	f
+gettumbler	get2.c	/^gettumbler (taskptr, tumblerptr)$/;"	f
+gettumbler	get2fe.c	/^gettumbler (taskptr, tumblerptr)$/;"	f
+getvsa	get2.c	/^getvsa (taskptr, vsaptr)$/;"	f
+getvspec	get2.c	/^getvspec (taskptr, vspecptr)$/;"	f
+getvspec	get2fe.c	/^getvspec (taskptr, vspecptr)$/;"	f
+getxaccount	get1.c	/^bool getxaccount (taskptr, accountptr)$/;"	f
+getxaccount	get1fe.c	/^getxaccount(taskptr,accountptr)$/;"	f
+goodblock	diskalloc.c	/^goodblock (diskptr)$/;"	f
+granbottomcruminfo	wisp.h	/^        typegranbottomcruminfo granbottomcruminfo;$/;"	m	union:unionbottomcruminfo
+granf	corediskout.c	/^typegranf granf;$/;"	v
+granf2err	granf2.c	/^char granf2err[] = "g2error\\n";$/;"	v
+granstuff	wisp.h	/^        typegranstuff granstuff;$/;"	m	struct:structgranbottomcruminfo
+grimlyreap	credel.c	/^grimlyreap ()$/;"	f
+grimreaper	credel.c	/^typecorecrum *grimreaper;$/;"	v
+hasenftops	coredisk.h	/^        bool hasenftops;                \/* GRAN & SPAN tops are in file *\/$/;"	m
+hash	cashedisk.c	/^INT hash(blocknumber)$/;"	f
+hashcasheclash	cashedisk.c	/^hashcasheclash()$/;"	f
+hashfoo	cashedisk.c	/^typedef struct hashfoo{$/;"	s	file:
+hashfromdiskblock	multiloaf.c	/^freediskconscell *hashfromdiskblock(diskblocknumber)$/;"	f
+hashoftumbler	bert.c	/^int hashoftumbler(tp)$/;"	f
+hashtable	cashedisk.c	/^} hashtable;$/;"	t	file:
+header	alloc.h	/^union header {$/;"	u
+height	coredisk.h	/^        SINT height;      \/* if == 0, then dbcloaf *\/$/;"	m	struct:structdiskloafhedr
+height	enf.h	/^        SINT height;       \/* 0 => this is bottom crum *\/$/;"	m	struct:struct2dcbc
+height	enf.h	/^        SINT height;       \/* 0 => this is bottom crum *\/$/;"	m	struct:structcbc
+height	enf.h	/^        SINT height;       \/* 0 => this is bottom crum *\/$/;"	m	struct:structcorecrumhedr
+height	enf.h	/^        SINT height;       \/* 0 => this is bottom crum *\/$/;"	m	struct:structcuc
+hgetfromloaf	coredisk.h	138;"	d
+hgetinfo	corediskin.c	/^void hgetinfo(typecbc *ptr, char **loafptrptr)\/*this assumes ptr crum is ok except for info*\/\/*function_definition*\/$/;"	f
+hgetwiddsp	corediskin.c	/^  static hgetwiddsp(ptr,loafptrptr)$/;"	f	file:
+hintisa	xanadu.h	/^        typeisa hintisa;$/;"	m
+homedoc	wisp.h	/^        tumbler homedoc;$/;"	m	struct:struct2dbottomcruminfo
+hostname	rcfile.c	/^char hostname[256] = "localhost";$/;"	v
+hputinfo	corediskout.c	/^void hputinfo( typecbc *ptr, char **loafptrptr)\/*function_definition*\/$/;"	f
+hputinloaf	corediskout.c	87;"	d	file:
+hputwiddsp	corediskout.c	/^  static hputwiddsp(ptr,loafptrptr)$/;"	f	file:
+humber	common.h	/^typedef unsigned char * humber;$/;"	t
+humber3put	tumbleari.c	/^humber3put(i,humberfoo,lengthofhumberptr)$/;"	f
+humberput	tumbleari.c	/^humberput(i,humberfoo,lengthofhumberptr)$/;"	f
+incontextlistnd	context.c	/^incontextlistnd (clistptr, c, index)$/;"	f
+incrementalallocsize	rcfile.c	/^INT incrementalallocsize = INCREMENTALALLOCSIZE;$/;"	v
+incrementopen	bert.c	/^incrementopen(tp, connection)$/;"	f
+index2itemid	context.c	/^index2itemid (index, context)$/;"	f
+indiskexit	corediskout.c	/^static void indiskexit ()$/;"	f	file:
+infotype	wisp.h	/^        INT infotype;$/;"	m	struct:structgranbottomcruminfo
+ingrimreaper	alloc.c	/^INT ingrimreaper;$/;"	v
+ingrimreaper	credel.c	/^INT ingrimreaper = FALSE;$/;"	v
+init	init.c	/^init (safe)$/;"	f
+initcrum	credel.c	/^void initcrum(crumheight, enftype, ptr)$/;"	f
+initenffile	disk.c	/^initenffile ()$/;"	f
+initgrimreaper	credel.c	/^void initgrimreaper()$/;"	f
+inithash	cashedisk.c	/^inithash()$/;"	f
+initheader	diskalloc.c	/^initheader ()$/;"	f
+initincorealloctables	multiloaf.c	/^initincorealloctables()\/* since these tables are extern i.e. initialized, this$/;"	f
+initkluge	corediskin.c	/^void initkluge(typecuc **granfptr, typecuc **spanfptr)\/*function_edfinition*\/$/;"	f
+initmagicktricks	entexit.c	/^initmagicktricks ()$/;"	f
+initqueues	credel.c	/^initqueues()$/;"	f
+inittask	task.c	/^inittask (taskptr)$/;"	f
+inloaf	corediskin.c	/^void inloaf ( typecuc *father)\/*function_definition*\/$/;"	f
+inorgl	corediskin.c	/^void inorgl ( typecbc *granorglptr)\/*function_definition*\/$/;"	f
+inorglinternal	corediskin.c	/^void inorglinternal ( typecbc *granorglptr, typeuberrawdiskloaf *crumptr)\/*function_definition*\/$/;"	f
+inp	common.h	/^        FILE *inp, *outp, *errp;$/;"	m	struct:structtask
+inp	players.h	/^        FILE    *inp;$/;"	m	struct:_player
+inputbuffer	be.c	/^char inputbuffer[BUFSIZ];$/;"	v
+inputbuffer	bed.c	/^char inputbuffer[BUFSIZ];$/;"	v
+inputfds	socketbe.c	/^INT inputfds = 0;$/;"	v
+insert	fns.c	/^void insert (taskptr)\/* cheating version for unix zzz *\/$/;"	f
+insertcbcnd	insertnd.c	/^insertcbcnd (father, grasp, origin, width, infoptr)$/;"	f
+insertcutsectionnd	edit.c	/^insertcutsectionnd (ptr, offset, knives)$/;"	f
+insertendsetsinorgl	do2.c	/^insertendsetsinorgl (taskptr, linkisaptr, link, fromvsa, fromsporglset, tovsa, tosporglset, threevsa, threesporglset)$/;"	f
+insertendsetsinspanf	do2.c	/^insertendsetsinspanf (taskptr, spanfptr, linkisaptr, fromsporglset, tosporglset, threesporglset)$/;"	f
+insertmorend	insertnd.c	/^insertmorend (father, offset, origin, width, infoptr, index)$/;"	f
+insertnd	insertnd.c	/^insertnd (taskptr, fullcrumptr, origin, width, infoptr, index)$/;"	f
+insertpm	orglinks.c	/^insertpm (taskptr, orglisa, orgl, vsaptr, sporglset)$/;"	f
+insertseq	insert.c	/^insertseq (fullcrumptr, address, info)$/;"	f
+insertspanf	spanf1.c	/^insertspanf (taskptr, spanfptr, isaptr, sporglset, spantype)$/;"	f
+inserttextgr	granf2.c	/^inserttextgr (taskptr, fullcrumptr, hintptr, textset, ispansetptr)$/;"	f
+inserttextingranf	granf1.c	/^inserttextingranf (taskptr, granfptr, hintptr, textset, ispansetptr)$/;"	f
+insidediskblocknumber	enf.h	/^	INT		insidediskblocknumber;$/;"	m	struct:disktypeloafstruct
+interfaceinput	be.c	/^FILE *interfaceinput;$/;"	v
+interfaceinput	bed.c	/^ FILE *interfaceinput;$/;"	v
+interfaceinput	xumain.c	/^FILE *interfaceinput = NULL;$/;"	v
+intersectlinksets	spanf2.c	/^intersectlinksets (taskptr, linkset1, linkset2, linkset3, linkset4ptr)$/;"	f
+intersectspansets	correspond.c	/^intersectspansets (taskptr, set1, set2, set3, spantype)$/;"	f
+intervalcmp	tumble.c	/^intervalcmp (left, right, address)$/;"	f
+intervalcmppart1	retrie.c	396;"	d	file:
+intervalcmppart2	retrie.c	398;"	d	file:
+intlengthoflength	tumbleari.c	/^intlengthoflength(i)$/;"	f
+intof	common.h	188;"	d
+ioinfo	test.c	/^ioinfo(taskptr)$/;"	f
+is1story	tumble.c	/^is1story (tumblerptr)$/;"	f
+is2dcrum	genf.c	/^is2dcrum(ptr)$/;"	f
+isaexistsgr	granf2.c	/^isaexistsgr (crumptr, isaptr)$/;"	f
+isalloced	diskalloc.c	/^isalloced(n)$/;"	f
+isanextensionnd	insertnd.c	/^isanextensionnd (ptr, offsetptr, originptr, infoptr)$/;"	f
+isapex	coredisk.h	/^        SINT\/*bool*\/ isapex;    \/* TRUE if this is top of orgl *\/$/;"	m	struct:structdiskloafhedr
+isemptyenfilade	genf.c	/^isemptyenfilade(ptr)$/;"	f
+isemptyorgl	orglinks.c	/^isemptyorgl (fullcrumptr)$/;"	f
+isfullcrum	enf.h	176;"	d
+ishouldbother	recombine.c	/^ishouldbother (dest, src)$/;"	f
+isinlinklist	spanf2.c	/^isinlinklist (linkset, linkisaptr)$/;"	f
+islinkcrum	orglinks.c	/^bool islinkcrum(crumptr)$/;"	f
+ispan2vspanset	orglinks.c	/^ispan2vspanset (taskptr, orgl, ispanptr, vspansetptr)$/;"	f
+ispan2vstuffset	granf2.c	/^ispan2vstuffset (taskptr, fullcrumptr, ispanptr, vstuffsetptr)$/;"	f
+ispanset2vstuffset	granf1.c	/^ispanset2vstuffset (taskptr, granfptr, ispanset, vstuffsetptr)$/;"	f
+ispansetandspecsets2spanpairset	do2.c	/^ispansetandspecsets2spanpairset (taskptr, ispanset, specset1, specset2, pairsetptr)$/;"	f
+isreapable	credel.c	/^isreapable (fuckinap,localreaper)$/;"	f
+istextcrum	orglinks.c	/^bool istextcrum(crumptr)$/;"	f
+isthisusersdocument	be.c	/^isthisusersdocument(tp)$/;"	f
+isthisusersdocument	socketbe.c	/^bool isthisusersdocument(tp)$/;"	f
+isthisusersdocument	xumain.c	/^isthisusersdocument(tp)$/;"	f
+isxumain	be.c	/^bool isxumain = FALSE;$/;"	v
+isxumain	bed.c	/^bool isxumain = FALSE;$/;"	v
+isxumain	genf.c	/^bool isxumain;$/;"	v
+isxumain	xumain.c	/^bool isxumain = TRUE;$/;"	v
+iszerolock	wisp.c	/^iszerolock (lock, loxize)$/;"	f
+iszerotumbler	common.h	70;"	d
+itemid	xanadu.h	/^	typeitemid	itemid;$/;"	m	struct:structsporgl
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structitemheader
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structtypeaddress
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structtypeboolsetnode
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structtypespan
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structtypetext
+itemid	xanadu.h	/^        typeitemid      itemid;$/;"	m	struct:structtypevspec
+itemidstring	test.c	/^itemidstring (item)$/;"	f
+ivemodified	genf.c	/^ivemodified (ptr)$/;"	f
+kluge	get1fe.c	/^kluge()$/;"	f
+kluge	put.c	/^kluge()$/;"	f
+klugefindisatoinsertnonmolecule	granf2.c	/^static klugefindisatoinsertnonmolecule (fullcrumptr, hintptr, isaptr)$/;"	f	file:
+lastcontext	enf.h	/^        struct structcontext *lastcontext;$/;"	m	struct:structcontext
+lastdigitintumbler	tumble.c	/^lastdigitintumbler (tumblerptr)$/;"	f
+leave	socketbe.c	/^void *leave(player, xn_players)$/;"	f
+leftbroorfather	enf.h	/^        struct structcorecrumhedr *leftbroorfather;$/;"	m	struct:structcorecrumhedr
+leftbroorfather	enf.h	/^        typecorecrum *leftbroorfather;$/;"	m	struct:struct2dcbc
+leftbroorfather	enf.h	/^        typecorecrum *leftbroorfather;$/;"	m	struct:structcbc
+leftbroorfather	enf.h	/^        typecorecrum *leftbroorfather;$/;"	m	struct:structcuc
+leftson	enf.h	/^        typecorecrum            *leftson;$/;"	m	struct:structcuc
+length	xanadu.h	/^        INT length;$/;"	m	struct:structtypetext
+lengthof	common.h	190;"	d
+lengthofexp	tumbleari.c	/^lengthofexp(ptr)$/;"	f
+lengthoflength	tumbleari.c	/^lengthoflength(ptr)$/;"	f
+lengthoftumbler	common.h	156;"	d
+levelpull	genf.c	/^levelpull(fullcrumptr)$/;"	f
+levelpush	genf.c	/^levelpush(fullcrumptr)$/;"	f
+link2sporglset	sporgl.c	/^link2sporglset (taskptr, linkisa, sporglsetptr, whichend,type)$/;"	f
+linksporglset2specset	sporgl.c	/^linksporglset2specset (taskptr, homedoc, sporglset, specsetptr,type)$/;"	f
+linksporglset2vspec	sporgl.c	/^linksporglset2vspec (taskptr, homedoc,  sporglsetptr, specptr,type)$/;"	f
+loaffree	credel.c	/^void loaffree (father)$/;"	f
+lockadd	wisp.c	/^lockadd (lock1, lock2, lock3, loxize)$/;"	f
+lockeq	wisp.c	/^lockeq (lock1, lock2, loxize)$/;"	f
+lockis1story	wisp.c	/^lockis1story (lock, loxize)$/;"	f
+lockmax	wisp.c	/^lockmax (lock1, lock2, lock3, loxize)$/;"	f
+lockmin	wisp.c	/^lockmin (lock1, lock2, lock3, loxize)$/;"	f
+locksubtract	wisp.c	/^locksubtract (lock1, lock2, lock3, loxize)$/;"	f
+logaccount	get1fe.c	/^logaccount(tp)$/;"	f
+logbertmodified	bert.c	/^logbertmodified(tp, connection)$/;"	f
+logbertmodifiedforcrum	bert.c	/^logbertmodifiedforcrum(crumptr, connection)$/;"	f
+logfile	be.c	/^FILE *logfile;$/;"	v
+logfile	bed.c	/^FILE *logfile;$/;"	v
+logstuff	be.c	/^bool logstuff;$/;"	v
+logstuff	bed.c	/^bool logstuff;$/;"	v
+logstuff	xumain.c	/^bool logstuff;$/;"	v
+lookatalloc	alloc.c	/^lookatalloc()$/;"	f
+lookatalloc2	allocdebug.c	/^lookatalloc2(abaseallocated)\/*baseallocated is statics in alloc.d*\/$/;"	f
+lookinsideloaffor	corediskin.c	/^  typediskloaf* lookinsideloaffor(INT insidenumber, typediskloaf *uloafptr) \/*function_edfinition*\/{$/;"	f
+macrogetrightbro	common.h	135;"	d
+macrotumblermax	common.h	141;"	d
+macrotumblermin	common.h	142;"	d
+main	be.c	/^main ()$/;"	f
+main	bed.c	/^main ()  \/* inside temporary *\/$/;"	f
+main	xumain.c	/^main ()  \/* inside temporary *\/$/;"	f
+main_socket	bed.c	/^INT main_socket;$/;"	v
+main_socket	socketbe.c	/^INT     main_socket=ERROR;      \/* socket to accept connections on *\/$/;"	v
+makecontextfromcbc	context.c	/^makecontextfromcbc (crumptr, offsetptr)$/;"	f
+makecutsbackuptohere	ndcuts.c	/^makecutsbackuptohere(ptr,offset, knives)$/;"	f
+makecutsdownnd	ndcuts.c	/^makecutsdownnd (fullcrumptr,offset, knives)$/;"	f
+makecutsnd	ndcuts.c	/^makecutsnd(fullcrumptr, knives)$/;"	f
+makegappm	insertnd.c	/^makegappm (taskptr, fullcrumptr, origin, width)$/;"	f
+makehint	do2.c	/^makehint (typeabove, typebelow, typeofatom, isaptr, hintptr)$/;"	f
+makeithcutonson	ndcuts.c	/^makeithcutonson(ptr,offset,son,grasp,knives,i)$/;"	f
+makelinkitem	spanf2.c	/^makelinkitem (taskptr, linkisa)$/;"	f
+makeoffsetsfor3or4cuts	edit.c	/^makeoffsetsfor3or4cuts (knives, diff)$/;"	f
+makeroomonleftnd	makeroom.c	/^makeroomonleftnd (father, offset, origin, grasp)$/;"	f
+makespanpair	correspond.c	/^makespanpair (taskptr, doc1, start1, doc2, start2, width)$/;"	f
+makespanpairset	correspond.c	/^makespanpairset (taskptr, ispanset, specset1, specset2, pairsetptr)$/;"	f
+makespanpairsforispan	correspond.c	/^makespanpairsforispan (taskptr, iwidth, specset1ptr, specset2ptr, pairsetptr)$/;"	f
+makevspan	orglinks.c	/^makevspan (taskptr, spanptr, nextspan)$/;"	f
+mantissa	common.h	/^        tdigit mantissa[NPLACES];$/;"	m	struct:structtumbler
+mantissaof	tumbleari.c	/^mantissaof(ptr)  \/* returns a ptr to the first humber in the mantissa of the vartumbler of the tumbler*\/$/;"	f
+mask	diskalloc.c	/^char mask[8] = { 1, 2, 4, 8, 16, 32, 64, 128 };$/;"	v
+max	common.h	22;"	d
+maximumsetupsize	diskalloc.c	/^INT maximumsetupsize = 0;$/;"	v
+maximumsetupsize	xumain.c	/^INT maximumsetupsize;$/;"	v
+maximumsetupsizehasbeenhit	diskalloc.c	/^bool maximumsetupsizehasbeenhit = FALSE;$/;"	v
+maximumsetupsizehasbeenhit	xumain.c	/^bool maximumsetupsizehasbeenhit;$/;"	v
+maxtextwid	orglinks.c	/^maxtextwid (taskptr, crumptr, voffset, maxwidptr)$/;"	f
+maxthingies	entexit.c	/^INT maxthingies;$/;"	v
+metachar	common.h	45;"	d
+mexponentof	tumbleari.c	29;"	d	file:
+mightbeblocked	bed.c	/^bool mightbeblocked = FALSE;$/;"	v
+min	common.h	25;"	d
+mlengthoflength	tumbleari.c	28;"	d	file:
+modified	bert.c	/^	char created,modified;$/;"	m	file:
+moreallignmentdummy	coredisk.h	/^	SINT moreallignmentdummy;$/;"	m
+move2dinfo	wisp.h	110;"	d
+moveinfo	wisp.h	117;"	d
+movetumbler	common.h	71;"	d
+movewisp	wisp.h	58;"	d
+movmem	common.h	161;"	d
+myclose	fns.c	/^void myclose(taskptr)$/;"	f
+mymovmem	usefull.c	/^mymovmem (source, dest, count)$/;"	f
+myopen	fns.c	/^void myopen(taskptr)$/;"	f
+n_players	socketbe.c	/^INT n_players = 0;            $/;"	v
+name	players.h	/^        char    *name;          \/* Player's name        *\/$/;"	m	struct:_player
+navigateonht	fns.c	/^void navigateonht (taskptr)$/;"	f
+nblades	ndenf.h	/^        INT nblades;$/;"	m	struct:structknives
+nchecknumofsons	test.c	/^nchecknumofsons(ptr)$/;"	f
+needchar	get2.c	/^needchar (taskptr, c)$/;"	f
+new_players	socketbe.c	/^void  *new_players(player, n_playersp, block ,taskptr)$/;"	f
+newfindintersectionnd	ndinters.c	/^newfindintersectionnd (fullcrumptr, knives, ptrptr, offset)$/;"	f
+newpartialdiskfree	multiloaf.c	/^newpartialdiskfree(diskloaf)$/;"	f
+newpeelcrumoffnd	ndcuts.c	/^newpeelcrumoffnd (ptr,newuncle)$/;"	f
+next	bert.c	/^	struct conscell *next;$/;"	m	struct:conscell	file:
+next	multiloaf.c	/^  struct freediskconscell * next;$/;"	m	struct:freediskconscell	file:
+next	xanadu.h	/^	struct structsporgl *next;$/;"	m	struct:structsporgl
+next	xanadu.h	/^        struct structitemheader *next;$/;"	m	struct:structitemheader
+next	xanadu.h	/^        struct structtypeaddress *next;$/;"	m	struct:structtypeaddress
+next	xanadu.h	/^        struct structtypeboolsetnode *next;$/;"	m	struct:structtypeboolsetnode
+next	xanadu.h	/^        struct structtypespan *next;$/;"	m	struct:structtypespan
+next	xanadu.h	/^        struct structtypetext *next;$/;"	m	struct:structtypetext
+next	xanadu.h	/^        struct structtypevspec *next;$/;"	m	struct:structtypevspec
+nextcontext	enf.h	/^        \/*typecontext*\/struct struct2dcontext *nextcontext;$/;"	m	struct:struct2dcontext
+nextcontext	enf.h	/^        struct structcontext *nextcontext;$/;"	m	struct:structcontext
+nextcrum	enf.h	/^        struct structcorecrumhedr *nextcrum,$/;"	m	struct:structcorecrumhedr
+nextcrum	enf.h	/^        typecorecrum *nextcrum,$/;"	m	struct:struct2dcbc
+nextcrum	enf.h	/^        typecorecrum *nextcrum,$/;"	m	struct:structcbc
+nextcrum	enf.h	/^        typecorecrum *nextcrum,$/;"	m	struct:structcuc
+nextcrumcontext	enf.h	/^        struct structcrumcontext *nextcrumcontext;$/;"	m	struct:structcrumcontext
+nextdiskblocknumber	coredisk.h	/^	INT nextdiskblocknumber;$/;"	m
+nextloaftofree	coredisk.h	/^        struct structfreediskloaf *nextloaftofree;$/;"	m	struct:structfreediskloaf
+nextspanpair	xanadu.h	/^        struct structspanpair *nextspanpair;$/;"	m	struct:structspanpair
+nfds	socketbe.c	/^INT nfds = 0;$/;"	v
+nferror	genf.c	/^nferror(message)$/;"	f
+noeatbrosnd	corediskout.c	/^ INT noeatbrosnd;$/;"	v
+noeatbrosnd	recombine.c	/^long noeatbrosnd = 0;$/;"	v
+noishouldbother	corediskout.c	/^ INT noishouldbother;$/;"	v
+noishouldbother	recombine.c	/^long noishouldbother = 0;$/;"	v
+nolread	corediskout.c	/^ INT nolread;$/;"	v
+nolread	disk.c	/^ INT nolread = 0 \/* number of blocks read from disk in session *\/;$/;"	v
+nolread	test.c	/^long nolread;$/;"	v
+nolwrote	corediskout.c	/^ INT nolwrote;$/;"	v
+nolwrote	disk.c	/^ INT nolwrote = 0 \/* same for writes *\/;$/;"	v
+notakenephewnd	corediskout.c	/^ INT notakenephewnd;$/;"	v
+notakenephewnd	recombine.c	/^long notakenephewnd = 0;$/;"	v
+nowread	test.c	/^long nowread;$/;"	v
+nreapings	credel.c	/^INT nreapings = 0;$/;"	v
+nstories	tumble.c	/^nstories(tumblerptr)$/;"	f
+ntaskorcommand	common.h	/^long ntaskorcommand;$/;"	v
+nullfun	init.c	/^void nullfun(taskptr)$/;"	f
+nulllog	be.c	/^FILE *nulllog;$/;"	v
+nulllog	bed.c	/^FILE *nulllog;$/;"	v
+numberofcrums	coredisk.h	/^        SINT numberofcrums;$/;"	m	struct:structdiskloafhedr
+numberofcuts	common.h	/^        INT numberofcuts;$/;"	m	struct:structcutseq
+numberofentrysinthisblock	coredisk.h	/^	INT numberofentrysinthisblock;$/;"	m
+numberofliveunterloafs	multiloaf.c	/^numberofliveunterloafs(loafp)$/;"	f
+numberofsons	enf.h	/^        INT                      numberofsons;$/;"	m	struct:structcuc
+numberofunterloafs	coredisk.h	/^	unsigned short numberofunterloafs;$/;"	m	struct:structuberdiskloaf
+numberofunterloafs	coredisk.h	/^	unsigned short numberofunterloafs;$/;"	m	struct:structuberdiskloaffake
+numbytesinloaf	entexit.c	/^INT numbytesinloaf;$/;"	v
+numdiskblocksinloaf	entexit.c	/^INT numdiskblocksinloaf;$/;"	v
+numdiskloafsinheader	entexit.c	/^INT numdiskloafsinheader;     $/;"	v
+numfoo	test.c	/^INT numfoo = NUMDISKBLOCKSINLOAF;$/;"	v
+oncontextlistseq	context.c	/^oncontextlistseq (clistptr, c)\/* add to list of context *\/$/;"	f
+onitemlist	orglinks.c	/^onitemlist (taskptr, itemptr, itemsetptr)$/;"	f
+onlinklist	spanf2.c	/^onlinklist (taskptr, linksetptr, linkisaptr)$/;"	f
+open_sock	socketbe.c	/^INT open_sock()		\/* Open the main socket. *\/$/;"	f
+orglfree	credel.c	/^void orglfree (ptr)$/;"	f
+orglincore	wisp.h	/^        bool orglincore;$/;"	m	struct:structgranorgl
+orglptr	wisp.h	/^        struct structcuc *orglptr;$/;"	m	struct:structgranorgl
+orglptr	wisp.h	/^        struct structcuc *orglptr;$/;"	m	struct:structorgl
+orglstuff	wisp.h	/^        typegranorgl orglstuff;$/;"	m	union:uniongranstuff
+orglwrite	corediskout.c	/^void orglwrite ( typecbc *orglcbcptr)\/*function_definition*\/$/;"	f
+orglwritepart2	corediskout.c	/^static  void orglwritepart2 (taskptr, orglcbcptr)$/;"	f	file:
+outp	common.h	/^        FILE *inp, *outp, *errp;$/;"	m	struct:structtask
+outp	players.h	/^        FILE    *outp;$/;"	m	struct:_player
+outputbuffer	be.c	/^char outputbuffer[BUFSIZ];$/;"	v
+outputbuffer	bed.c	/^char outputbuffer[BUFSIZ];$/;"	v
+packloaf	corediskout.c	/^  static int packloaf (father, loafptr,refcount,flag)$/;"	f	file:
+partialdiskalloc	multiloaf.c	/^typediskloafptr partialdiskalloc(size, newloafp)$/;"	f
+partialdiskblocknumber	coredisk.h	/^	INT partialdiskblocknumber;$/;"	m
+partialtumblerjustify	tumble.c	/^partialtumblerjustify (tumblerptr)$/;"	f
+peelcrumoffnd	split.c	/^peelcrumoffnd(ptr)$/;"	f
+peeloffcorrectson	ndcuts.c	/^peeloffcorrectson(ptr,knives)$/;"	f
+peelsoncorrectly	ndcuts.c	/^peelsoncorrectly(ptr,offset,son,grasp,knives,i)$/;"	f
+permute	orglinks.c	/^permute(taskptr,orgl,restrictionspanset,restrictionindex,targspansetptr,targindex)$/;"	f
+player	be.c	/^PLAYER player[MAX_PLAYERS];$/;"	v
+player	socketbe.c	/^PLAYER player[MAX_PLAYERS];            \/* player information   *\/$/;"	v
+player	xumain.c	/^PLAYER player[MAX_PLAYERS];$/;"	v
+playwithalloc	get1.c	/^playwithalloc(taskptr)$/;"	f
+playwithalloc	get1fe.c	/^playwithalloc(taskptr)$/;"	f
+portname	rcfile.c	/^int  portname = PORT;$/;"	v
+prefixtumbler	tumble.c	/^prefixtumbler (aptr, bint, cptr)$/;"	f
+prevcrum	enf.h	/^                     *prevcrum;$/;"	m	struct:struct2dcbc
+prevcrum	enf.h	/^                     *prevcrum;$/;"	m	struct:structcbc
+prevcrum	enf.h	/^                     *prevcrum;$/;"	m	struct:structcorecrumhedr
+prevcrum	enf.h	/^                     *prevcrum;$/;"	m	struct:structcuc
+primes	bert.c	/^int primes[] = {3,7,11,17,37,41,59,71,97,103,113,131,151,137,277,421,433,567,643,743};$/;"	v
+processrcfile	rcfile.c	/^void processrcfile()$/;"	f
+prologuecontextnd	context.c	/^prologuecontextnd (ptr, grasp, reach)$/;"	f
+prologuend	retrie.c	/^prologuend (ptr, offset, grasp, reach)$/;"	f
+prompt	put.c	/^prompt (taskptr, string)$/;"	f
+prompt	putfe.c	/^prompt (taskptr, string)$/;"	f
+ptr	alloc.h	/^                union header *ptr;$/;"	m	struct:header::<anonymous>
+pullc	get2fe.c	/^pullc (taskptr)$/;"	f
+pushc	get2fe.c	/^pushc (taskptr, c)$/;"	f
+putclose	put.c	/^putclose(taskptr)$/;"	f
+putclose	putfe.c	/^putclose(taskptr)$/;"	f
+putcopy	put.c	/^putcopy (taskptr)$/;"	f
+putcopy	putfe.c	/^putcopy (taskptr)$/;"	f
+putcreatelink	put.c	/^putcreatelink (taskptr, istreamptr)$/;"	f
+putcreatelink	putfe.c	/^putcreatelink (taskptr, istreamptr)$/;"	f
+putcreatenewdocument	put.c	/^putcreatenewdocument (taskptr, newdocisaptr)$/;"	f
+putcreatenewdocument	putfe.c	/^putcreatenewdocument (taskptr, newdocisaptr)$/;"	f
+putcreatenewversion	put.c	/^putcreatenewversion (taskptr, newdocisaptr)$/;"	f
+putcreatenewversion	putfe.c	/^putcreatenewversion (taskptr, newdocisaptr)$/;"	f
+putcreatenode_or_account	put.c	/^putcreatenode_or_account(taskptr,tp)$/;"	f
+putcreatenode_or_account	putfe.c	/^putcreatenode_or_account(taskptr,tp)$/;"	f
+putdeletevspan	put.c	/^putdeletevspan (taskptr)$/;"	f
+putdeletevspan	putfe.c	/^putdeletevspan (taskptr)$/;"	f
+putfinddocscontaining	put.c	/^putfinddocscontaining (taskptr, addressset)$/;"	f
+putfinddocscontaining	putfe.c	/^putfinddocscontaining (taskptr, addressset)$/;"	f
+putfindlinksfromtothree	put.c	/^putfindlinksfromtothree (taskptr, linkset)$/;"	f
+putfindlinksfromtothree	putfe.c	/^putfindlinksfromtothree (taskptr, linkset)$/;"	f
+putfindnextnlinksfromtothree	put.c	/^putfindnextnlinksfromtothree (taskptr, n, nextlinkset)$/;"	f
+putfindnextnlinksfromtothree	putfe.c	/^putfindnextnlinksfromtothree (taskptr, n, nextlinkset)$/;"	f
+putfindnumoflinksfromtothree	put.c	/^putfindnumoflinksfromtothree (taskptr, num)$/;"	f
+putfindnumoflinksfromtothree	putfe.c	/^putfindnumoflinksfromtothree (taskptr, num)$/;"	f
+putfollowlink	put.c	/^putfollowlink (taskptr, specset)$/;"	f
+putfollowlink	putfe.c	/^putfollowlink (taskptr, specset)$/;"	f
+putinsert	put.c	/^putinsert (taskptr)$/;"	f
+putinsert	putfe.c	/^putinsert (taskptr)$/;"	f
+putisa	put.c	/^putisa(taskptr, isaptr)$/;"	f
+putisa	putfe.c	/^putisa (taskptr, isaptr)$/;"	f
+putitem	put.c	/^putitem (taskptr, itemptr)$/;"	f
+putitem	putfe.c	/^putitem (taskptr, itemptr)$/;"	f
+putitemset	put.c	/^putitemset (taskptr, itemset)$/;"	f
+putitemset	putfe.c	/^putitemset (taskptr, itemset)$/;"	f
+putnum	put.c	/^putnum(outfile, num)$/;"	f
+putnum	putfe.c	/^putnum (outfile, num)$/;"	f
+putnumber	putfe.c	/^putnumber (outfile, num)$/;"	f
+putopen	put.c	/^putopen(taskptr,tp)$/;"	f
+putopen	putfe.c	/^putopen(taskptr,tp)$/;"	f
+putquitxanadu	put.c	/^putquitxanadu(taskptr)$/;"	f
+putquitxanadu	putfe.c	/^putquitxanadu(taskptr)$/;"	f
+putrearrange	put.c	/^putrearrange (taskptr)$/;"	f
+putrearrange	putfe.c	/^putrearrange (taskptr)$/;"	f
+putrequestfailed	put.c	/^putrequestfailed (taskptr)$/;"	f
+putrequestfailed	putfe.c	/^putrequestfailed (taskptr)$/;"	f
+putretrievedocvspan	put.c	/^putretrievedocvspan (taskptr, vspanptr)$/;"	f
+putretrievedocvspan	putfe.c	/^putretrievedocvspan (taskptr, vspanptr)$/;"	f
+putretrievedocvspanset	put.c	/^putretrievedocvspanset (taskptr, spansetptr)$/;"	f
+putretrievedocvspanset	putfe.c	/^putretrievedocvspanset (taskptr, spansetptr)$/;"	f
+putretrieveendsets	put.c	/^putretrieveendsets (taskptr, fromset, toset, threeset)$/;"	f
+putretrieveendsets	putfe.c	/^putretrieveendsets (taskptr, fromset, toset, threeset)$/;"	f
+putretrievev	put.c	/^putretrievev (taskptr, vstuffsetptr)$/;"	f
+putretrievev	putfe.c	/^putretrievev (taskptr, vstuffsetptr)$/;"	f
+putshowrelationof2versions	put.c	/^putshowrelationof2versions (taskptr, relation)$/;"	f
+putshowrelationof2versions	putfe.c	/^putshowrelationof2versions (taskptr, relation)$/;"	f
+putspan	put.c	/^putspan (taskptr, spanptr)$/;"	f
+putspan	putfe.c	/^putspan (taskptr, spanptr)$/;"	f
+putspanpair	put.c	/^putspanpair (taskptr, spanpair)$/;"	f
+putspanpair	putfe.c	/^putspanpair (taskptr, spanpair)$/;"	f
+putspanpairset	put.c	/^putspanpairset (taskptr, spanpairset)$/;"	f
+putspanpairset	putfe.c	/^putspanpairset (taskptr, spanpairset)$/;"	f
+puttext	put.c	/^puttext (taskptr, textptr)$/;"	f
+puttext	putfe.c	/^puttext (taskptr, textptr)$/;"	f
+puttextset	putfe.c	/^puttextset (taskptr, textptrptr)$/;"	f
+puttumbler	put.c	/^puttumbler(outfile, tumblerptr)$/;"	f
+puttumbler	putfe.c	/^puttumbler (outfile, tumblerptr)$/;"	f
+putvspaninlist	orglinks.c	/^putvspaninlist (taskptr, spanptr, spansetptr)$/;"	f
+putxaccount	put.c	/^putxaccount(taskptr)$/;"	f
+putxaccount	putfe.c	/^putxaccount(taskptr)$/;"	f
+qdchain	queues.c	/^struct queue *qdchain(qitem)$/;"	f
+qempty	queues.h	25;"	d
+qerror	genf.c	/^qerror (message)$/;"	f
+qinit	queues.c	/^void qinit(qhead)$/;"	f
+qinsert	queues.c	/^void qinsert(qhead, object)$/;"	f
+qlength	queues.c	/^int qlength(qhead)$/;"	f
+qnext	queues.c	/^struct queue *qnext(qthis, qhead)$/;"	f
+qnext	queues.h	/^	struct queue *qnext,	   \/* Next item in queue *\/$/;"	m	struct:queue
+qprev	queues.h	/^		     *qprev;	   \/* Previous item in queue *\/$/;"	m	struct:queue
+qpush	queues.c	/^void qpush(qhead, object)$/;"	f
+qremove	queues.c	/^struct queue *qremove(qhead)$/;"	f
+queue	queues.h	/^struct queue {$/;"	s
+quitafteruser	bed.c	/^bool quitafteruser = FALSE;$/;"	v
+quitxanadu	fns.c	/^void quitxanadu(taskptr)$/;"	f
+qvalid	queues.c	/^Boolean qvalid(qhead)$/;"	f
+randomness	recombine.c	/^  bool randomness(probability)$/;"	f
+rawdiskloaf	coredisk.h	/^	char	     rawdiskloaf[NUMBYTESINLOAF];$/;"	m	union:unionuberrawdiskloaf
+readallocinfo	diskalloc.c	/^readallocinfo (fd)$/;"	f
+readloaf	disk.c	/^void readloaf (loafptr, diskptr)$/;"	f
+readpartialdiskalloctablefromdisk	multiloaf.c	/^readpartialdiskalloctablefromdisk()$/;"	f
+reallog	be.c	/^FILE *reallog;$/;"	v
+reallog	bed.c	/^FILE *reallog;$/;"	v
+reap	credel.c	/^void reap(localreaper)$/;"	f
+reaplevel	credel.c	/^INT reaplevel = 0;$/;"	v
+reapnumber	credel.c	/^INT reapnumber = 0;$/;"	v
+rearrange	fns.c	/^void rearrange (taskptr) \/* speed hack for unix *\/$/;"	f
+rearrangecutsectionnd	edit.c	/^rearrangecutsectionnd (ptr, offset, knives)$/;"	f
+rearrangend	edit.c	/^rearrangend (fullcrumptr, cutseqptr, index)$/;"	f
+rearrangepm	orglinks.c	/^rearrangepm (taskptr, docisaptr, docorgl, cutseqptr)$/;"	f
+recombine	recombine.c	/^recombine (father)$/;"	f
+recombinend	recombine.c	/^recombinend (father)$/;"	f
+recombineseq	recombine.c	/^recombineseq (father) \/** zzz reg 1999 this recombines too much *\/$/;"	f
+refcount	coredisk.h	/^        SINT refcount;      \/* for subtree sharing, *\/$/;"	m	struct:structdiskloafhedr
+rejuvinate	common.h	126;"	d
+rejuvinateifnotRESERVED	common.h	124;"	d
+removefromopen	bert.c	/^bool removefromopen(tp, connection)$/;"	f
+removespansnotinoriginal	correspond.c	/^removespansnotinoriginal (taskptr, original, newptr)$/;"	f
+requestfns	init.c	/^void (*requestfns[NREQUESTS])();$/;"	v
+reserve	credel.c	/^void reserve(ptr)$/;"	f
+reservnumber	credel.c	/^INT reservnumber = 0;$/;"	v
+restrictspecsetsaccordingtoispans	correspond.c	/^restrictspecsetsaccordingtoispans (taskptr, ispanset, specset1, specset2)$/;"	f
+restrictvspecsetovercommonispans	correspond.c	/^restrictvspecsetovercommonispans (taskptr, ispanset, specset, newspecsetptr)$/;"	f
+retrieve	retrie.c	/^retrieve (fullcrumptr, address, index)$/;"	f
+retrievecrums	retrie.c	/^retrievecrums (fullcrumptr, address, index)$/;"	f
+retrievedocumentpartofvspanpm	orglinks.c	/^retrievedocumentpartofvspanpm (taskptr, orgl, vspanptr)$/;"	f
+retrievedocvspan	fns.c	/^void retrievedocvspan (taskptr)$/;"	f
+retrievedocvspanset	fns.c	/^void retrievedocvspanset (taskptr)$/;"	f
+retrieveendsets	fns.c	/^void retrieveendsets (taskptr)$/;"	f
+retrieveendsetsfromspanf	spanf1.c	/^retrieveendsetsfromspanf (taskptr, specset, fromsetptr, tosetptr, threesetptr)$/;"	f
+retrieveinarea	retrie.c	/^retrieveinarea (fullcrumptr, span1start, span1end, index1, span2start, span2end, index2, infoptr)$/;"	f
+retrieveinspan	retrie.c	/^retrieveinspan (fullcrumptr, spanstart, spanend, index)$/;"	f
+retrieverestricted	retrie.c	/^retrieverestricted (fullcrumptr, span1ptr, index1, span2ptr, index2, docisaptr)$/;"	f
+retrievesporglsetinrange	spanf1.c	/^retrievesporglsetinrange (taskptr, sporglptr, whichspace, sporglsetptr)$/;"	f
+retrievev	fns.c	/^void retrievev (taskptr)$/;"	f
+retrievevspanpm	orglinks.c	/^retrievevspanpm (taskptr, orgl, vspanptr)$/;"	f
+retrievevspansetpm	orglinks.c	/^retrievevspansetpm (taskptr, orgl, vspansetptr)\/* return spans  for doc and link part *\/$/;"	f
+rightbro	enf.h	/^        struct structcorecrumhedr *rightbro;$/;"	m	struct:structcorecrumhedr
+rightbro	enf.h	/^        typecorecrum *rightbro;$/;"	m	struct:struct2dcbc
+rightbro	enf.h	/^        typecorecrum *rightbro;$/;"	m	struct:structcbc
+rightbro	enf.h	/^        typecorecrum *rightbro;$/;"	m	struct:structcuc
+roomformoresons	genf.c	/^roomformoresons(ptr)$/;"	f
+routinegetrightbro	genf.c	/^routinegetrightbro(ptr)$/;"	f
+s	alloc.h	/^        }s;$/;"	m	union:header
+savepartialdiskalloctabletodisk	multiloaf.c	/^savepartialdiskalloctabletodisk()$/;"	f
+sendresultoutput	putfe.c	/^sendresultoutput (taskptr)$/;"	f
+setdebug	get1.c	/^setdebug (taskptr)$/;"	f
+setdebug	get1fe.c	/^setdebug (taskptr)$/;"	f
+setlinkvsas	do2.c	/^setlinkvsas (fromvsaptr, tovsaptr, threevsaptr)$/;"	f
+setmaximumsetupsize	be.c	/^bool setmaximumsetupsize (taskptr) typetask *taskptr; {}$/;"	f
+setmaximumsetupsize	bed.c	/^setmaximumsetupsize (taskptr)$/;"	f
+setmaximumsetupsize	xumain.c	/^setmaximumsetupsize (taskptr)$/;"	f
+setmem	usefull.c	/^setmem (addr, count, byte)$/;"	f
+setwidnd	wisp.c	/^setwidnd (father)$/;"	f
+setwidseq	wisp.c	/^setwidseq (father)$/;"	f
+setwisp	wisp.c	/^setwisp (ptr)$/;"	f
+setwispnd	wisp.c	/^setwispnd (father)$/;"	f
+setwispsofsons	wisp.c	/^setwispsofsons(ptr)$/;"	f
+setwispupwards	wisp.c	/^setwispupwards (ptr,testflag)$/;"	f
+shellsort	recombine.c	/^shellsort (v, n)$/;"	f
+showenfilades	test.c	/^showenfilades(taskptr)$/;"	f
+showgranwids	test.c	/^showgranwids (crum, down, retptr)        \/* down is distance from top *\/$/;"	f
+showistream	test.c	/^showistream (granfptr)$/;"	f
+showorgl	test.c	/^showorgl (taskptr)$/;"	f
+showpoomwisps	test.c	/^showpoomwisps (crum, down)        \/* down is distance from top *\/$/;"	f
+showrelationof2versions	fns.c	/^void showrelationof2versions (taskptr)$/;"	f
+showspanf	test.c	/^showspanf (spanfptr)$/;"	f
+showspanfcrum	test.c	/^showspanfcrum (crumptr, offsetptr, enfheight)$/;"	f
+showsubtree	test.c	/^showsubtree (father)$/;"	f
+size	alloc.h	/^                unsigned size;$/;"	m	struct:header::<anonymous>
+sizeofthisloaf	coredisk.h	/^	INT sizeofthisloaf;$/;"	m	struct:structdiskloafhedr
+slicecbcpm	ndcuts.c	/^slicecbcpm (ptr, offset, new, cut, index)$/;"	f
+socket	players.h	/^        INT     socket;         \/* To communicate with player on*\/$/;"	m	struct:_player
+sonloafptr	coredisk.h	/^        typediskloafptr sonloafptr;$/;"	m	struct:structduc
+sonloaftofree	coredisk.h	/^        struct structfreediskloaf *sonloaftofree;$/;"	m	struct:structfreediskloaf
+sonorigin	enf.h	/^        typediskloafptr sonorigin;$/;"	m	struct:structcuc
+sonoriginok	test.c	/^sonoriginok (father)$/;"	f
+sonsarecut	ndcuts.c	/^sonsarecut (ptr,offset, knives)$/;"	f
+sortknives	edit.c	/^sortknives (knifeptr)$/;"	f
+sourceunixcommand	be.c	/^bool sourceunixcommand (taskptr) typetask *taskptr; {}$/;"	f
+sourceunixcommand	bed.c	/^sourceunixcommand (taskptr)$/;"	f
+sourceunixcommand	xumain.c	/^sourceunixcommand (taskptr)$/;"	f
+span2spanset	orglinks.c	/^span2spanset (taskptr, orgl, restrictionspanptr, restrictionindex, targspansetptr, targindex)$/;"	f
+spanf	corediskout.c	/^typespanf spanf;$/;"	v
+spanintersection	correspond.c	/^spanintersection (aptr, bptr, cptr)$/;"	f
+spansubtract	correspond.c	/^spansubtract (aptr, bptr, cptr) \/* no negative spans (whatever they may be) *\/$/;"	f
+spec	do1.c	/^  typespec spec,spec2,spec3;$/;"	v
+spec2	do1.c	/^  typespec spec,spec2,spec3;$/;"	v
+spec3	do1.c	/^  typespec spec,spec2,spec3;$/;"	v
+specset2ispanset	do2.c	/^specset2ispanset (taskptr, specset, ispansetptr,type)$/;"	f
+specset2sporglset	sporgl.c	/^specset2sporglset (taskptr, specset, sporglsetptr,type)$/;"	f
+splitcrum	split.c	/^splitcrum(father)$/;"	f
+splitcrumpm	split.c	/^splitcrumpm(father)$/;"	f
+splitcrumpminthiscrum	split.c	/^splitcrumpminthiscrum(father)$/;"	f
+splitcrumseq	split.c	/^splitcrumseq(father)$/;"	f
+splitcrumsp	split.c	/^splitcrumsp(father)$/;"	f
+splitcrumupwards	split.c	/^splitcrumupwards(father)$/;"	f
+sporgladdress	xanadu.h	/^        typeisa sporgladdress;$/;"	m	struct:structsporgl
+sporglorigin	xanadu.h	/^        tumbler sporglorigin;$/;"	m	struct:structsporgl
+sporglset2linkset	sporgl.c	/^sporglset2linkset (taskptr, spanfptr, sporglset, linksetptr, homeset, spantype)$/;"	f
+sporglset2linksetinrange	sporgl.c	/^sporglset2linksetinrange (taskptr, spanfptr, sporglset, linksetptr, orglrange, spantype)$/;"	f
+sporglset2vspanset	sporgl.c	/^sporglset2vspanset (taskptr,homedoc, sporglsetptr, vspansetptr,type)$/;"	f
+sporglwidth	xanadu.h	/^        tumbler sporglwidth;$/;"	m	struct:structsporgl
+statusofalloc	alloc.c	/^statusofalloc(c)$/;"	f
+stdprint	common.h	42;"	d
+stream	xanadu.h	/^        tumbler stream;$/;"	m	struct:structtypespan
+stream1	xanadu.h	/^        tumbler stream1;$/;"	m	struct:structspanpair
+stream2	xanadu.h	/^        tumbler stream2;$/;"	m	struct:structspanpair
+string	xanadu.h	/^        char string[GRANTEXTLENGTH];$/;"	m	struct:structtypetext
+strongsub	tumble.c	/^strongsub (aptr, bptr, cptr)$/;"	f
+struct2dbottomcruminfo	wisp.h	/^typedef struct struct2dbottomcruminfo {$/;"	s
+struct2dcbc	enf.h	/^struct struct2dcbc {$/;"	s
+struct2dcontext	enf.h	/^typedef struct struct2dcontext {$/;"	s
+struct2ddbc	coredisk.h	/^typedef struct struct2ddbc {$/;"	s
+struct2ddbcloaf	coredisk.h	/^typedef struct  struct2ddbcloaf {$/;"	s
+structcbc	enf.h	/^struct structcbc {$/;"	s
+structcontext	enf.h	/^typedef struct structcontext {$/;"	s
+structcorecrumhedr	enf.h	/^struct  structcorecrumhedr {$/;"	s
+structcrumcontext	enf.h	/^typedef struct structcrumcontext {$/;"	s
+structcuc	enf.h	/^struct structcuc {$/;"	s
+structcutseq	common.h	/^typedef struct structcutseq {$/;"	s
+structdbc	coredisk.h	/^typedef struct structdbc {$/;"	s
+structdiskloafhedr	coredisk.h	/^typedef struct  structdiskloafhedr {$/;"	s
+structduc	coredisk.h	/^ typedef struct  structduc {$/;"	s
+structducloaf	coredisk.h	/^typedef struct  structducloaf {$/;"	s
+structfreediskloaf	coredisk.h	/^typedef struct structfreediskloaf {$/;"	s
+structgranbottomcruminfo	wisp.h	/^typedef struct structgranbottomcruminfo {$/;"	s
+structgranorgl	wisp.h	/^typedef struct structgranorgl {$/;"	s
+structgrantext	wisp.h	/^typedef struct structgrantext {$/;"	s
+structitemheader	xanadu.h	/^typedef struct structitemheader{$/;"	s
+structknives	ndenf.h	/^typedef struct structknives {$/;"	s
+structorgl	wisp.h	/^struct structorgl {$/;"	s
+structspanpair	xanadu.h	/^typedef struct structspanpair {$/;"	s
+structsporgl	xanadu.h	/^typedef struct structsporgl{$/;"	s
+structtask	common.h	/^typedef struct structtask {$/;"	s
+structtthingheader	common.h	/^struct structtthingheader {$/;"	s
+structtumbler	common.h	/^typedef struct structtumbler {$/;"	s
+structtypeaddress	xanadu.h	/^typedef struct structtypeaddress{$/;"	s
+structtypeboolsetnode	xanadu.h	/^typedef struct structtypeboolsetnode{$/;"	s
+structtypespan	xanadu.h	/^typedef struct structtypespan{$/;"	s
+structtypetext	xanadu.h	/^typedef struct structtypetext{$/;"	s
+structtypevspec	xanadu.h	/^typedef struct structtypevspec{$/;"	s
+structuberdiskloaf	coredisk.h	/^typedef struct structuberdiskloaf{$/;"	s
+structuberdiskloaffake	coredisk.h	/^typedef struct structuberdiskloaffake{$/;"	s
+structwid	wisp.h	/^struct structwid {$/;"	s
+stuff	bert.c	/^	bertentry *stuff;$/;"	m	struct:conscell	file:
+stuff	multiloaf.c	/^  freediskentry   * stuff;$/;"	m	struct:freediskconscell	file:
+subtreefree	credel.c	/^void subtreefree (ptr)$/;"	f
+subtreewrite	corediskout.c	/^void subtreewrite ( typecuc *father)\/*function_definition*\/$/;"	f
+subtreewriterecurs	corediskout.c	/^static  void subtreewriterecurs (taskptr, father)$/;"	f	file:
+subtype	xanadu.h	/^        INT subtype;$/;"	m
+supertype	xanadu.h	/^        INT supertype;$/;"	m
+tagtype	common.h	/^typedef unsigned tagtype;   \/* for tagging allocated things -- see credel.d*\/  $/;"	t
+takenephewnd	recombine.c	/^takenephewnd (me, nephew)$/;"	f
+takeovernephewsnd	recombine.c	/^takeovernephewsnd (meptr, broptr)$/;"	f
+takeovernephewsseq	recombine.c	/^takeovernephewsseq (me)$/;"	f
+talloc	task.c	/^talloc (taskptr, nbytes)$/;"	f
+taskalloc	task.c	/^taskalloc (taskptr, nbytes)$/;"	f
+taskptrx	be.c	/^typetask *taskptrx;$/;"	v
+taskptrx	xumain.c	/^typetask *taskptrx;$/;"	v
+tdigit	common.h	/^typedef unsigned INT tdigit;$/;"	t
+tempspacehead	common.h	/^        typetthingheader *tempspacehead; \/* doubly linked talloc space so *\/$/;"	m	struct:structtask
+tempspacetail	common.h	/^        typetthingheader *tempspacetail; \/* that single items can be freed *\/$/;"	m	struct:structtask
+testforrejuvinate	credel.c	/^testforrejuvinate(ptr)$/;"	f
+testforreservedness	credel.c	/^void testforreservedness(msg)\/* test to see if any reserved flags linger in the memory.  if they do is a gross error in crum stuff *\/$/;"	f
+teststack	test.c	/^teststack ()$/;"	f
+textlength	wisp.h	/^        unsigned textlength;$/;"	m	struct:structgrantext
+textstring	wisp.h	/^        char textstring[GRANTEXTLENGTH];$/;"	m	struct:structgrantext
+textstuff	wisp.h	/^        typegrantext textstuff;$/;"	m	union:uniongranstuff
+tfree	task.c	/^tfree (taskptr)$/;"	f
+tfreeexplicit	task.c	/^tfreeexplicit (taskptr, ptr)$/;"	f
+tfreeitemset	task.c	/^tfreeitemset (taskptr, itemset)$/;"	f
+timeout	bed.c	/^struct timeval timeout;$/;"	v
+timesaroundreaper	credel.c	/^INT timesaroundreaper = 0;$/;"	v
+tlast	common.h	/^        typetthingheader *tlast;$/;"	m	struct:structtthingheader
+tnext	common.h	/^        typetthingheader *tnext;$/;"	m	struct:structtthingheader
+toofewsons	genf.c	/^toofewsons(ptr)$/;"	f
+toomanysons	genf.c	/^toomanysons(ptr)$/;"	f
+totaloffset	enf.h	/^        typedsp totaloffset;$/;"	m	struct:struct2dcontext
+totaloffset	enf.h	/^        typedsp totaloffset;$/;"	m	struct:structcontext
+totaloffset	enf.h	/^        typedsp totaloffset;$/;"	m	struct:structcrumcontext
+transferloaf	genf.c	/^transferloaf(from, to)$/;"	f
+tumbler	common.h	/^} tumbler;$/;"	t
+tumbler2spanset	do2.c	/^tumbler2spanset (taskptr, tumblerptr, spansetptr)$/;"	f
+tumbleraccounteq	tumble.c	/^tumbleraccounteq (aptr, bptr)$/;"	f
+tumbleradd	common.h	195;"	d
+tumblercheck	tumble.c	/^tumblercheck(ptr)$/;"	f
+tumblercheckptr	tumble.c	/^tumblercheckptr (ptr,crumptr)$/;"	f
+tumblerclear	common.h	69;"	d
+tumblercmp	tumble.c	/^tumblercmp (aptr, bptr)$/;"	f
+tumblercopy	tumble.c	/^tumblercopy (fromptr, toptr)$/;"	f
+tumblereq	tumble.c	/^tumblereq (a,b)$/;"	f
+tumblerfixedtoptr	tumbleari.c	/^INT tumblerfixedtoptr(ptr,p)$/;"	f
+tumblerincrement	tumble.c	/^tumblerincrement (aptr, rightshift, bint, cptr)$/;"	f
+tumblerintdiff	tumble.c	/^tumblerintdiff (aptr, bptr)$/;"	f
+tumblerjustify	tumble.c	/^tumblerjustify (tumblerptr)$/;"	f
+tumblerlength	tumble.c	/^tumblerlength (tumblerptr)$/;"	f
+tumblermax	tumble.c	/^tumblermax (aptr, bptr, cptr)$/;"	f
+tumblerptrtofixed	tumbleari.c	/^INT tumblerptrtofixed(p,tptr)$/;"	f
+tumblersub	tumble.c	/^tumblersub (aptr, bptr, cptr)$/;"	f
+tumblertruncate	tumble.c	/^tumblertruncate (aptr, bint, cptr)$/;"	f
+type	bert.c	/^	int type;$/;"	m	file:
+type2dbottomcruminfo	wisp.h	/^}type2dbottomcruminfo ;$/;"	t
+type2dcbc	enf.h	/^typedef struct struct2dcbc type2dcbc;$/;"	t
+type2dcontext	enf.h	/^} type2dcontext;$/;"	t
+type2ddbc	coredisk.h	/^} type2ddbc;$/;"	t
+type2ddbcloaf	coredisk.h	/^} type2ddbcloaf;$/;"	t
+typeaddress	xanadu.h	/^} typeaddress;$/;"	t
+typeaddressset	xanadu.h	/^typedef typeaddress * typeaddressset;$/;"	t
+typeboolsetnode	xanadu.h	/^} typeboolsetnode;$/;"	t
+typebottomcruminfo	wisp.h	/^} typebottomcruminfo;$/;"	t
+typecbc	enf.h	/^typedef struct structcbc typecbc;$/;"	t
+typecontext	enf.h	/^} typecontext;$/;"	t
+typecorecrum	enf.h	/^typedef typecorecrumhedr typecorecrum;$/;"	t
+typecorecrumhedr	enf.h	/^typedef struct structcorecrumhedr typecorecrumhedr;$/;"	t
+typecrumcontext	enf.h	/^} typecrumcontext;$/;"	t
+typecuc	enf.h	/^typedef struct structcuc  typecuc;$/;"	t
+typecutseq	common.h	/^}typecutseq;$/;"	t
+typedbc	coredisk.h	/^} typedbc ;$/;"	t
+typedbcloaf	coredisk.h	37;"	d
+typediskcrum	coredisk.h	/^} typediskcrum ;$/;"	t
+typediskloaf	coredisk.h	/^} typediskloaf;   $/;"	t
+typediskloafhedr	coredisk.h	/^} typediskloafhedr;$/;"	t
+typediskloafptr	enf.h	/^} typediskloafptr;$/;"	t
+typediskloafptrdigit	enf.h	/^typedef INT typediskloafptrdigit; \/*long  disk block number*\/$/;"	t
+typedsp	wisp.h	/^typedef typewid typedsp;$/;"	t
+typeduc	coredisk.h	/^} typeduc;$/;"	t
+typeducloaf	coredisk.h	/^} typeducloaf;$/;"	t
+typefreediskloaf	coredisk.h	/^} typefreediskloaf;$/;"	t
+typegranbottomcruminfo	wisp.h	/^} typegranbottomcruminfo;$/;"	t
+typegranf	xanadu.h	13;"	d
+typegranorgl	wisp.h	/^} typegranorgl;$/;"	t
+typegranstuff	wisp.h	/^}typegranstuff  ;$/;"	t
+typegrantext	wisp.h	/^} typegrantext;$/;"	t
+typehint	xanadu.h	/^} typehint;$/;"	t
+typeisa	xanadu.h	/^typedef tumbler typeisa;$/;"	t
+typeispan	xanadu.h	/^typedef typespan typeispan;$/;"	t
+typeispanset	xanadu.h	/^typedef typeispan * typeispanset;$/;"	t
+typeitem	xanadu.h	/^} typeitem;$/;"	t
+typeitemheader	xanadu.h	/^} typeitemheader;$/;"	t
+typeitemid	xanadu.h	25;"	d
+typeitemset	xanadu.h	/^typedef typeitem * typeitemset;$/;"	t
+typeknives	ndenf.h	/^}typeknives;$/;"	t
+typelink	xanadu.h	/^typedef typeaddress typelink;$/;"	t
+typelinkset	xanadu.h	/^typedef typelink * typelinkset;$/;"	t
+typeorgl	xanadu.h	17;"	d
+typerequest	socketbe.c	24;"	d	file:
+typerequest	xanadu.h	19;"	d
+typespan	xanadu.h	/^} typespan;$/;"	t
+typespanf	xanadu.h	15;"	d
+typespanpair	xanadu.h	/^} typespanpair;$/;"	t
+typespanpairset	xanadu.h	/^typedef typespanpair * typespanpairset;$/;"	t
+typespanset	xanadu.h	/^typedef typespan * typespanset;$/;"	t
+typespec	xanadu.h	/^} typespec;$/;"	t
+typespecset	xanadu.h	/^typedef typespec * typespecset;$/;"	t
+typesporgl	xanadu.h	/^} typesporgl;$/;"	t
+typesporglitem	xanadu.h	/^} typesporglitem;$/;"	t
+typesporglset	xanadu.h	/^typedef typesporglitem * typesporglset;$/;"	t
+typetask	common.h	/^}typetask;$/;"	t
+typetext	xanadu.h	/^} typetext;$/;"	t
+typetextset	xanadu.h	/^typedef typetext * typetextset;$/;"	t
+typetthingheader	common.h	90;"	d
+typeuberdiskloaf	coredisk.h	/^} typeuberdiskloaf;$/;"	t
+typeuberdiskloaffake	coredisk.h	/^} typeuberdiskloaffake;$/;"	t
+typeuberrawdiskloaf	coredisk.h	/^} typeuberrawdiskloaf;$/;"	t
+typevspan	xanadu.h	/^typedef typespan typevspan;$/;"	t
+typevspanset	xanadu.h	/^typedef typevspan * typevspanset;$/;"	t
+typevspec	xanadu.h	/^} typevspec;$/;"	t
+typevstuff	xanadu.h	/^} typevstuff;$/;"	t
+typevstuffset	xanadu.h	/^typedef typevstuff * typevstuffset;$/;"	t
+typewid	wisp.h	/^typedef struct structwid typewid;$/;"	t
+typewisp	wisp.h	/^typedef typewid typewisp; $/;"	t
+unionbottomcruminfo	wisp.h	/^typedef union unionbottomcruminfo {$/;"	u
+uniondiskcrum	coredisk.h	/^typedef union uniondiskcrum {$/;"	u
+uniondiskloaf	coredisk.h	/^typedef union uniondiskloaf {$/;"	u
+uniongranstuff	wisp.h	/^typedef union uniongranstuff {$/;"	u
+unionuberrawdiskloaf	coredisk.h	/^typedef union unionuberrawdiskloaf{$/;"	u
+uniqueoutloaf	corediskout.c	/^static void uniqueoutloaf (father,refcount)$/;"	f	file:
+unpackloaf	corediskin.c	/^  static unpackloaf (insidediskblocknumber,uloafptr, father)$/;"	f	file:
+unpacksporgl	sporgl.c	/^unpacksporgl (sporglptr, streamptr, widthptr, infoptr)$/;"	f
+uppervstuffset	do1.c	/^  typevstuffset uppervstuffset;$/;"	v
+urdloaf	cashedisk.c	/^    typeuberrawdiskloaf urdloaf;$/;"	m	struct:hashfoo	file:
+user	be.c	/^int user = 0;$/;"	v
+user	bed.c	/^int user = 0;		\/* Global current user ID *\/$/;"	v
+user	xumain.c	/^int user = 0;$/;"	v
+userid	players.h	/^        INT     userid;         \/* player's user id number      *\/$/;"	m	struct:_player
+val	xanadu.h	/^        typespanset val;$/;"	m	struct:structtypeboolsetnode
+validaccount	get2.c	/^validaccount(taskptr, accountptr)$/;"	f
+validaccount	get2fe.c	/^validaccount (taskptr, accountptr)$/;"	f
+validallocthinge	alloc.c	/^validallocthinge(ptr)$/;"	f
+validhint	do2.c	/^validhint (hintptr)$/;"	f
+validrequest	get2.c	/^validrequest (taskptr, request)$/;"	f
+validrequest	get2fe.c	/^validrequest (taskptr, request)$/;"	f
+varandnotfixed	common.h	/^	char varandnotfixed;$/;"	m	struct:structtumbler
+varcrums	coredisk.h	/^int varcrums;$/;"	v
+varpackloaf	corediskout.c	/^  static int varpackloaf (father, xloafptr, refcount,flag)$/;"	f	file:
+varunpackloaf	corediskin.c	/^  static varunpackloaf (insidediskblocknumber,uloafptr, father)$/;"	f	file:
+versiondisknumber	coredisk.h	/^	INT versiondisknumber;$/;"	m	struct:structuberdiskloaf
+versiondisknumber	coredisk.h	/^	INT versiondisknumber;$/;"	m	struct:structuberdiskloaffake
+vspanset	xanadu.h	/^        typevspanset vspanset;$/;"	m	struct:structtypevspec
+vspanset2ispanset	orglinks.c	/^vspanset2ispanset (taskptr, orgl, vspanptr, ispansetptr)$/;"	f
+vspanset2sporglset	sporgl.c	/^vspanset2sporglset (taskptr, docisa, vspanset, sporglsetptr,type)$/;"	f
+walkorglonvpm	orglinks.c	/^walkorglonvpm (taskptr, crumptr, voffset, vspansetptr)$/;"	f
+wantsout	players.h	/^        INT     wantsout;       \/* Quit after this hand?        *\/$/;"	m	struct:_player
+warning	disk.c	/^warning (message)$/;"	f
+weakfindfather	common.h	193;"	d
+weakfindleftmostbro	genf.c	/^weakfindleftmostbro (ptr)$/;"	f
+weakfindrightbro	genf.c	/^weakfindrightbro (ptr)$/;"	f
+weaksub	tumble.c	/^weaksub (aptr, bptr, cptr)$/;"	f
+weresurethatthisisourmorecore	alloc.c	/^weresurethatthisisourmorecore()$/;"	f	file:
+whereoncontext	context.c	/^whereoncontext (ptr, address, index)$/;"	f
+whereoncrum	retrie.c	/^whereoncrum (ptr, offset, address, index)\/*speed up by subsuming intervalcmp*\/$/;"	f
+widdiffs	insertnd.c	/^widdiffs(crumptr)$/;"	f	file:
+widopseq	wisp.c	161;"	d	file:
+widsize	wisp.h	60;"	d
+width	xanadu.h	/^        tumbler width;$/;"	m	struct:structtypespan
+widthofspan	xanadu.h	/^        tumbler widthofspan;$/;"	m	struct:structspanpair
+writeallocinfo	diskalloc.c	/^writeallocinfo (fd)$/;"	f
+writeenfilades	corediskout.c	/^void writeenfilades()\/*function_definition*\/$/;"	f
+writeloaf	disk.c	/^void writeloaf (loafptr, diskptr,newloaf)$/;"	f
+writethruhash	cashedisk.c	/^void writethruhash(loafptr,blocknumber)$/;"	f
+x	alloc.h	/^        ALIGN x;$/;"	m	union:header
+x2dbottomcruminfo	wisp.h	/^        type2dbottomcruminfo x2dbottomcruminfo;$/;"	m	union:unionbottomcruminfo
+x2ddbc	coredisk.h	/^        type2ddbc x2ddbc;$/;"	m	union:uniondiskcrum
+x2ddbcloaf	coredisk.h	/^        type2ddbcloaf   x2ddbcloaf;$/;"	m	union:uniondiskcrum
+x2ddbcloaf	coredisk.h	/^        type2ddbcloaf   x2ddbcloaf;$/;"	m	union:uniondiskloaf
+x2ddbcloafhedr	coredisk.h	/^        typediskloafhedr        x2ddbcloafhedr;$/;"	m	struct:struct2ddbcloaf
+xaccount	fns.c	/^void xaccount(taskptr)$/;"	f
+xanadu	be.c	/^xanadu(taskptr)$/;"	f
+xanadu	bed.c	/^xanadu(taskptr)$/;"	f
+xanadu	xumain.c	/^xanadu(taskptr)$/;"	f
+xdbc	coredisk.h	/^        typedbc xdbc;$/;"	m	union:uniondiskcrum
+xdbchedr	coredisk.h	/^     \/**\/   typediskloafhedr        xdbchedr;\/**\/$/;"	m	struct:structdbc
+xdbchedr	coredisk.h	/^    \/* *\/   typediskloafhedr        xdbchedr;\/**\/$/;"	m	struct:struct2ddbc
+xdbcloaf	coredisk.h	/^        typedbcloaf     xdbcloaf;$/;"	m	union:uniondiskcrum
+xdbcloaf	coredisk.h	/^        typedbcloaf     xdbcloaf;$/;"	m	union:uniondiskloaf
+xduc	coredisk.h	/^        typeduc xduc;$/;"	m	union:uniondiskcrum
+xducloaf	coredisk.h	/^        typeducloaf     xducloaf;$/;"	m	union:uniondiskcrum
+xducloaf	coredisk.h	/^        typeducloaf     xducloaf;$/;"	m	union:uniondiskloaf
+xducloafhedr	coredisk.h	/^        typediskloafhedr        xducloafhedr;$/;"	m	struct:structducloaf
+xgrabmorecore	credel.c	/^xgrabmorecore()$/;"	f
+xhashtable	cashedisk.c	/^hashtable xhashtable[HASHSIZE];$/;"	v
+xuberdiskloaf	coredisk.h	/^	typeuberdiskloaffake xuberdiskloaf;$/;"	m	union:unionuberrawdiskloaf
+xuputc	putfe.c	/^xuputc (c, fd)$/;"	f
+xuputstring	putfe.c	/^xuputstring (string, fd)$/;"	f
+xvartumbler	common.h	/^	humber xvartumbler;$/;"	m	struct:structtumbler
+xxaddress	xanadu.h	/^        typeaddress     xxaddress;$/;"	m
+xxboolsetnode	xanadu.h	/^        typeboolsetnode xxboolsetnode;$/;"	m
+xxspan	xanadu.h	/^        typespan        xxspan;$/;"	m
+xxsporgl	xanadu.h	/^        typesporgl      xxsporgl;$/;"	m
+xxtext	xanadu.h	/^        typetext        xxtext;$/;"	m
+xxvspec	xanadu.h	/^        typevspec       xxvspec;$/;"	m
+xxxispan	xanadu.h	/^        typeispan xxxispan;$/;"	m
+xxxlink	xanadu.h	/^        typelink xxxlink;$/;"	m
+xxxtext	xanadu.h	/^        typetext xxxtext;$/;"	m
+xxxvspec	xanadu.h	/^        typevspec xxxvspec;$/;"	m
+xxxxispan	xanadu.h	/^        typeispan xxxxispan;$/;"	m
+xxxxsporgl	xanadu.h	/^        typesporgl xxxxsporgl;$/;"	m
+yesdump	test.c	/^yesdump (ptr)   \/* because dbx has a builtin dump   name conflict*\/$/;"	f
+yetanotherallignmentdummy	coredisk.h	/^	SINT yetanotherallignmentdummy;$/;"	m	struct:structuberdiskloaffake
+zzallocbot	alloc.c	/^  static char *zzalloctop=0,*zzallocbot=0;$/;"	v	file:
+zzalloctop	alloc.c	/^  static char *zzalloctop=0,*zzallocbot=0;$/;"	v	file:
+zzzeroloaf	corediskout.c	/^typediskloaf zzzeroloaf;$/;"	v
+zzzerouberloaf	corediskout.c	/^typeuberdiskloaf zzzerouberloaf;$/;"	v

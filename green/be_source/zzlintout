@@ -1,0 +1,25 @@
+
+get2fe.c:361:9: Test expression for while is assignment expression:
+                   c = pullc(taskptr)
+  The condition test is an assignment expression. Probably, you mean to use ==
+  instead of =. If an assignment is intended, add an extra parentheses nesting
+  (e.g., if ((a = b)) ...) to suppress this message. (Use -predassign to
+  inhibit warning)
+credel.c:64:8: Test expression for if is assignment expression:
+                  ret = allocfromqueue(nbytes + sizeof(tagtype))
+credel.c:656:9: Test expression for if is assignment expression:
+                   tmp = qlength(&allocqueuearray[i])
+genf.c:56:9: Test expression for while is assignment expression:
+                p = routinegetrightbro(ptr)
+genf.c:81:9: Test expression for while is assignment expression:
+                p = getleftbro(ptr)
+genf.c:165:8: Test expression for if is assignment expression:
+    ptr = ((typecuc *)(((!(((typecuc *)(son))->isapex)) && (((typecuc
+multiloaf.c:406:6: Test expression for if is assignment expression: oldptr = 0
+multiloaf.c: (in function deallocateinloaf)
+retrie.c:258:29: Test expression for if is assignment expression:
+                    retr = findcbcnd(ptr, &grasp, address, index)
+spanf2.c:43:34: Test expression for for is assignment expression:
+                   nextlink = temp->next
+sporgl.c:100:6: Test expression for if is assignment expression:
+    context = retrieverestricted((typecuc *)orgl, &vspan, 1, (typespan *)NULL,
