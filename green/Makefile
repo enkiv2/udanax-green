@@ -3,7 +3,7 @@
 # 
 
 
-SHELL=/bin/csh
+#SHELL=/bin/csh
 
 code:  backend
 

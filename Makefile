@@ -1,6 +1,6 @@
 demo:
 	(cd green; make)
-	(echo; echo; cd pyxi; python pyxi)
+	(echo; echo; cd pyxi; python2 pyxi)
 
 clean:
 	(cd green; make clean)
