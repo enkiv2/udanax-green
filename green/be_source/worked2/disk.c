@@ -90,9 +90,9 @@ INT changeunterrefcount (wholeloafp,originalloafp, delta)
   char *loafp;
   INT height,enftype;
   INT isapex;
-  unsigned INT refcount;
+  UINT refcount;
   INT foo;
-  unsigned INT oldlength, newlength,dummylength, dummy;
+  UINT oldlength, newlength,dummylength, dummy;
   INT lengthdif;
   INT size;
   char *refcountloafp;

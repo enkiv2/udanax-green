@@ -83,7 +83,7 @@ writeenfilades()
 }
 
 
-#define hputinloaf(hp,lp,tp) ((void)humberput((INT)(hp),(humber)(lp),(unsigned INT*)(tp)),(lp)=((char*)lp)+*(tp))
+#define hputinloaf(hp,lp,tp) ((void)humberput((INT)(hp),(humber)(lp),(UINT*)(tp)),(lp)=((char*)lp)+*(tp))
 /*#define hputwisp(wp,lp,tp) ((tp)=tumblerfixedtoptr((lp),&(wp.dsas[0])),((char*)lp)+=(tp),(tp)=tumblerfixedtoptr((lp),&(wp.dsas[1])),((char *)lp)+=(tp))*/
 
   static
@@ -92,7 +92,7 @@ hputwiddsp(ptr,loafptrptr)
   char **loafptrptr;
 {
   int i,nstreams;
-  unsigned INT temp;
+  UINT temp;
   typewid *wptr;
 
 	nstreams = widsize(ptr->cenftype);
@@ -133,7 +133,7 @@ varpackloaf (father, xloafptr, refcount,flag)
   typecorecrum *ptr;
   INT ret;
   char *loafptr; /*,*tempptr;*/
-  unsigned INT temp;
+  UINT temp;
 
 	loafptr = (char *)xloafptr;
 	if (!flag) {
@@ -234,7 +234,7 @@ hputinfo(ptr,loafptrptr)
   typecbc *ptr;
   char **loafptrptr;
 {
-  unsigned INT temp;
+  UINT temp;
 
 	if (!is2dcrum((typecorecrum*)ptr)) {
 		(void) humberput(ptr->cinfo.infotype,(humber)*loafptrptr,&temp);
@@ -316,7 +316,7 @@ static orglwritepart2 (taskptr, orglcbcptr)
   typediskloaf loaf;
   typediskloafptr temploaf;
   INT size;
-  unsigned INT dummy;
+  UINT dummy;
   INT newloaf;
   typecuc *orglptr;
   static subtreewriterecurs();
@@ -539,7 +539,7 @@ static uniqueoutloaf (father,refcount)
   typeuberdiskloaf loaf;
   typediskloafptr diskalloc();
   INT size;
-  unsigned INT temp;
+  UINT temp;
   INT newloaf;
 /*fprintf(stderr,"entering uniqueoutloaf\n");*/
 	if (!father->modified) {

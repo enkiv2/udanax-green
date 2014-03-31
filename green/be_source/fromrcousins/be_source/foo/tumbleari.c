@@ -7,9 +7,9 @@
 * http://udanax.xanadu.com/license.html and http://www.udanax.com/license.html
 */
 #include "common.h"
- unsigned INT calculatetotallength();
- unsigned INT functionintof();
-  unsigned INT functionlengthof();
+ UINT calculatetotallength();
+ UINT functionintof();
+  UINT functionlengthof();
   humber humberput();
   humber fooalloc();
   humber vartumbleralloc();
@@ -24,8 +24,8 @@
 
 /* --------- Routines below set and change tumblers -------- */
 
-unsigned INT lengthoflength();
-#define mlengthoflength(x) (unsigned INT)((*(x))<128?1:lengthoflength(x))
+UINT lengthoflength();
+#define mlengthoflength(x) (UINT)((*(x))<128?1:lengthoflength(x))
 #define mexponentof(x) (humber)((x)+mlengthoflength(x))
 
 INT tumblerptrtofixed(p,tptr)
@@ -69,15 +69,15 @@ INT tumblerfixedtoptr(ptr,p)
   tumbler * ptr;
   humber p; 
 {                
-  unsigned INT tumblerlength;
-  unsigned INT lengthofexponent;
-  unsigned INT i;
-  unsigned INT digitlength;
-  unsigned INT totallength;
-  unsigned INT lengthlength;
-  unsigned INT numberofsignificantdigits;
+  UINT tumblerlength;
+  UINT lengthofexponent;
+  UINT i;
+  UINT digitlength;
+  UINT totallength;
+  UINT lengthlength;
+  UINT numberofsignificantdigits;
   humber op;
-  unsigned INT intlengthoflength();
+  UINT intlengthoflength();
         if(ptr->sign)
                 gerror("negative tumbler in tumblerfixedtoptr\n");
 	op = p;
@@ -108,14 +108,14 @@ humberfree(ptr)
 */
 /*  humber
 vartumbleralloc(size)
- unsigned INT size;
+ UINT size;
 {
         return(fooalloc(size));
 }
 */
   humber
 fooalloc(size)
-  unsigned INT size;
+  UINT size;
 {
         return((humber)eallocwithtag((unsigned)size, HUMBERTAG));
 }
@@ -126,9 +126,9 @@ foofree(ptr)
         efree((char *)ptr);
 }
   
- unsigned INT
+ UINT
 calculatetotallength(lengthofbody) /* of tumbler ie adds length of exponent in length of body*/
- unsigned INT lengthofbody;
+ UINT lengthofbody;
 {
         if(lengthofbody <127){
                 return(lengthofbody + 1);
@@ -147,7 +147,7 @@ calculatetotallength(lengthofbody) /* of tumbler ie adds length of exponent in l
 humberput(i,humberfoo,lengthofhumberptr)
  /*unsigned*/ INT i;                   
   humber humberfoo; 
- unsigned INT *lengthofhumberptr;
+ UINT *lengthofhumberptr;
 {
 	if((int)i == -1){
 		gerror("humberput of -1\n");
@@ -195,7 +195,7 @@ humberput(i,humberfoo,lengthofhumberptr)
 humber3put(i,humberfoo,lengthofhumberptr)
  /*unsigned*/ INT i;                   
   humber humberfoo; 
- unsigned INT *lengthofhumberptr;
+ UINT *lengthofhumberptr;
 {
 	if((int)i == -1){
 		gerror("humber3put of -1\n");
@@ -234,7 +234,7 @@ humber3put(i,humberfoo,lengthofhumberptr)
         return(humberfoo);
 }
 
- unsigned INT functionintof(h)
+ UINT functionintof(h)
   humber h;
 {
   INT k;
@@ -281,9 +281,9 @@ humber3put(i,humberfoo,lengthofhumberptr)
         return 0 ;/* for lint */
 }
 
-  unsigned INT
+  UINT
 intlengthoflength(i)
-  unsigned INT i;
+  UINT i;
 {
         if (i<127) {
 		return(1);
@@ -300,7 +300,7 @@ intlengthoflength(i)
 	return(0);
 } 
 
-unsigned INT
+UINT
 lengthoflength(ptr)
   humber ptr;
 {/* YUCK */int i;
@@ -338,14 +338,14 @@ exponentof(ptr)
         return(ptr + mlengthoflength(ptr));
 }
  
- unsigned INT
+ UINT
 lengthofexp(ptr)
   tumbler * ptr;
 {
         return(lengthof(mexponentof(ptr->xvartumbler))); /* ZZZ ECH 8-26-88 */
 }
  
- unsigned INT
+ UINT
 functionlengthof(ptr)   /* length of humber or vartumbler */
   humber ptr; 
 {

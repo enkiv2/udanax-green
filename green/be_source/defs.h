@@ -7,6 +7,8 @@
 * http://udanax.xanadu.com/license.html and http://www.udanax.com/license.html
 */
 #ifndef INT
-#define INT int
+#include <stdint.h>
+#define INT int32_t
+#define UINT uint32_t
 #define SINT unsigned char/*short*/
 #endif

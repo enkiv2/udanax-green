@@ -140,7 +140,7 @@ int varcrums;
 
 #define SIZEOFUBERDISKHEADER 6
 
-extern unsigned INT intlengthoflength();
+extern UINT intlengthoflength();
 
 extern void writeloaf();
 extern void readloaf();

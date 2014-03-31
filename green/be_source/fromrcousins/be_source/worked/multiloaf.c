@@ -442,9 +442,9 @@ deallocateinloaf(loafp,insidediskblocknumber)
   INT insidediskblocknumber;
 {
   char *lp;
-  unsigned INT number, n;
+  UINT number, n;
   INT i;
-  unsigned INT temp;
+  UINT temp;
 
 	/*lp = (char *)&loafp->fakepartialuberloaf;*/lp = (char *) loafp +6;
 
@@ -519,10 +519,10 @@ numberofliveunterloafs(loafp)
   typeuberdiskloaf *loafp;
 {
   char *lp;
-  unsigned INT number, n;
+  UINT number, n;
   INT i;
   INT ret;
-  unsigned INT temp;
+  UINT temp;
 
 	ret = 0;
 	lp = /*(char *)&loafp->fakepartialuberloaf;*/ (char *)loafp +6;
@@ -548,9 +548,9 @@ findinsideloaf(loafp,ninsideloaf)
   INT ninsideloaf;
 {
   char *lp;
-  unsigned INT number, n;
+  UINT number, n;
   INT i;
-  unsigned INT temp;
+  UINT temp;
 
 /*fprintf(stderr,"findinsideloaf ninsideloaf = %x \n",ninsideloaf);*/
 /*fprintf(stderr,"findinsideloaf loafp = %x \n",loafp);*/

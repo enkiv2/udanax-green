@@ -51,7 +51,7 @@ typedef unsigned  bool;
 #define RECURSIVE
 typedef unsigned char * humber;
 #define TUMBLERMINUS 129
-typedef unsigned INT tdigit;
+typedef UINT tdigit;
 /* tumbler */
 typedef struct structtumbler {
 	humber xvartumbler;
@@ -184,9 +184,9 @@ extern INT tumblercmp();
 extern INT intervalcmp();
 extern bool is1story();
 extern bool tumblercheckptr();
-#define intof(x) ((unsigned INT)((unsigned)((humber)(x))[0]<=127)?((humber)(x))[0]:functionintof(x))
+#define intof(x) ((UINT)((unsigned)((humber)(x))[0]<=127)?((humber)(x))[0]:functionintof(x))
  
-#define lengthof(x) ((unsigned INT)((unsigned)((humber)(x))[0]<=127)?(unsigned INT)1:functionlengthof(x))
+#define lengthof(x) ((UINT)((unsigned)((humber)(x))[0]<=127)?(UINT)1:functionlengthof(x))
 /*
 #define lengthof(x) functionlengthof(x)*/
 #define weakfindfather(x) ((typecuc *)(((!(((typecuc*)(x))->isapex))&&(((typecuc*)(x))->isleftmost))?((typecuc*)((typecuc*)(x))->leftbroorfather):(typecuc*)functionweakfindfather((typecuc*)(x))))

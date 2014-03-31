@@ -191,7 +191,7 @@ inorglinternal (granorglptr,crumptr)
 {
   typediskloaf loaf;
   typecuc *ptr;
-  unsigned INT temp,temp2;
+  UINT temp,temp2;
   char *loafp;
   int size;
 
@@ -251,7 +251,7 @@ hgetwiddsp(ptr,loafptrptr)
   char **loafptrptr;
 {
   int i,nstreams;
-  unsigned INT temp;
+  UINT temp;
   typewid *wptr;
 	nstreams = widsize(ptr->cenftype);
 	wptr = &ptr->cdsp;
@@ -270,7 +270,7 @@ hgetinfo(ptr,loafptrptr)/*this assumes ptr crum is ok except for info*/
   typecbc *ptr;
   char **loafptrptr;
 {
-  unsigned INT temp;
+  UINT temp;
 	if (!is2dcrum((typecorecrum*)ptr)) {
 		hgetfromloaf(&ptr->cinfo.infotype,*loafptrptr);
 /*	dump(ptr);*/
